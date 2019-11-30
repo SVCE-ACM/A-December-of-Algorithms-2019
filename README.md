@@ -177,26 +177,26 @@ We have a small collection of algorithms, one for every day of the month. Scroll
        - For example, suppose `N = 3`
     - Then the series will have 3 Fibonacci prime numbers : 2,3,5
     - Given the count of prime numbers needed by Henry , compute the series for him.
-    
   - **Example**
       ```
-      INPUT: 5
-      OUTPUT: 2, 3, 5, 13, 89
-      
+        Enter the value for (n): 5
+        
+        Generated Fibonacci Prime Number Generation upto (5): 
+        2, 3, 5, 13, 89
       ```
   - **Resources**
     - [Fibonacci Numbers](https://en.wikipedia.org/wiki/Fibonacci_number)
-   
   - **Fun Facts on Fibonacci**
     - Every positive integer can be written in a unique way as the sum of one or more distinct Fibonacci numbers in such a way that the sum does not include any two consecutive Fibonacci numbers. This is Zeckendorf Theorem.
     - Any three consecutive Fibonacci numbers, taken two at a time, are relatively prime.
     - No Fibonacci number greater than 8 is one greater or one less than any prime number.
     
+    
 ## Maintainers
 - [K-Kraken](https://github.com/K-Kraken)
 - [jyuvaraj03](https://github.com/jyuvaraj03)
 - [mahavisvanathan](https://github.com/mahavisvanathan)
-
+- [shrusri27](https://github.com/shrusri27)
 
 
 
