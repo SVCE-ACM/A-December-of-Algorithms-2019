@@ -208,10 +208,10 @@ We have a small collection of algorithms, one for every day of the month. Scroll
 	 - Print the reversed string using stacks
 
 - **Example**
-      ```
-      Enter string: abcdef<br>
-	  The reversed string is: fedcba
-      ```
+	```
+ 	Enter string: abcdef
+ 	The reversed string is: fedcba
+	```
 - **Resources**
     - [Stacks and queues](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Stacks%20and%20Queues/Stacks%20and%20Queues.html)
     - [Stack implementation](https://www.geeksforgeeks.org/stack-data-structure/)
@@ -260,6 +260,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
 - [jyuvaraj03](https://github.com/jyuvaraj03)
 - [mahavisvanathan](https://github.com/mahavisvanathan)
 - [shrusri27](https://github.com/shrusri27)
+- [SHRIRAM0509](https://github.com/SHRIRAM0509)
 
 
 
