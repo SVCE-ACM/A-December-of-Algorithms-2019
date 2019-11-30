@@ -14,15 +14,15 @@ We have a small collection of algorithms, one for every day of the month. Scroll
 
 
 ## Index
-  - [**December 1 - The Decimation**](#december-1---the-decimation)
+  - [**December 2 - The Decimation**](#december-2---the-decimation)
   - [**FAQ**](#faq)
 
 
 
 ## Algorithms
-### **December 1 - The Decimation**
+### **December 2 - The Decimation**
   - **Problem**
-    - Well, this is day 1 so let's start with something easy. Perhaps an algorithm that might involve a list and the **Marvel Supervillain Thanos**!
+    - Well, this is day 2 so let's start with something easy. Perhaps an algorithm that might involve a list and the **Marvel Supervillain Thanos**!
     - While the list isn't sorted, snap half of all things (remove them from the list). Proceed until the list is sorted or only one item remains (which is sorted by default). This sorting algorithm may give varied results based on implementation.
     - The item removal (decimation) procedure is up to the implementation to decide, but the list should be half as long as before after one pass of the item removal procedure.
     - Your algorithm may commit to take away either the first half of the list, the last half of the list, all odd items, all even items, one at a time until the list is half as long, or any not specified above.
