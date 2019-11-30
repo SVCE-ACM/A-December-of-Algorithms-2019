@@ -132,13 +132,12 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - [Arrays in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
     - [Lists in Python](https://www.w3schools.com/python/python_lists.asp)
 
-
 ### **December 5 - Convert CSV data to a HTML table**
   - **Problem**
     - A comma-separated values (CSV) file is a delimited text file that uses a comma to separate values. A CSV file stores tabular data in plain text. Each line of the file is a data record. Each record consists of one or more fields, separated by commas. 
-    - Data in a CSV file is not very easy to understand. Your task is to read data from a CSV file and convert into a code for a HTML table and store it another file with a .html extension.
+    - Data in a CSV file is not very easy to understand. Your task is to read data from a CSV file and convert into a code for a HTML table and store it another file with a .html extension. Use the CSV file given in the resources to build your algorithm. 
   - **Example**
-    - **CSV**
+      - **CSV**
         ```
         column1,column2,column3
         a,123,abc123
@@ -146,7 +145,6 @@ We have a small collection of algorithms, one for every day of the month. Scroll
         c,345,cde345
         ```
     - **HTML**
-        
         ```html
         <html>
             <body>
@@ -159,18 +157,15 @@ We have a small collection of algorithms, one for every day of the month. Scroll
             </body>
         </html>
         ```
-  - **CSV source**   
-    Click [here](https://github.com/mahavisvanathan/A-December-of-Algorithms-2019/blob/p1/dec1/src/res/csv_to_html_res.csv) to get a sample CSV file to test your program with!  
-  - **Resources**  
+  - **Resources**
+    - [CSV file](/src/res/csv_to_html_res.csv)
     - [What are CSV files?](https://www.lifewire.com/csv-file-2622708)
     - [File handling in C](https://www.geeksforgeeks.org/basics-file-handling-c/)
     - [File handling in C++](https://www.geeksforgeeks.org/file-handling-c-classes/)
     - [File handling in Java](https://www.geeksforgeeks.org/file-handling-java-using-filewriter-filereader/)
     - [File handling in Python](https://www.geeksforgeeks.org/file-handling-python/)
     - [Tables in HTML](https://www.w3schools.com/html/html_tables.asp)
-    
-    
-    
+
     
 ## Maintainers
 - [K-Kraken](https://github.com/K-Kraken)
