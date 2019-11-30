@@ -15,7 +15,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
 
 ## Index
   - [**December 1 - Sevenish Number**](#december-1---sevenish-number)
-  - [**December 2 - The Decimation**](#december-3---the-decimation)
+  - [**December 2 - Is this a valid credit card number?**](#december-2---is-this-a-valid-credit-card-number)
   - [**December 3 - The Decimation**](#december-3---the-decimation)
   - [**FAQ**](#faq)
 
@@ -44,6 +44,46 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - [Brute Force](https://stackoverflow.com/questions/8103050/what-exactly-is-the-brute-force-algorithm)
     - [Dynamic Programming](https://www.codechef.com/wiki/tutorial-dynamic-programming)
     - [Recursion](https://web.mit.edu/6.005/www/fa15/classes/10-recursion/)
+
+
+### **December 2 - Is this a valid credit card number?**
+  - **Problem**  
+     Are credit card numbers just a random combination of the digits from 0-9? **NO!**  
+     Credit card numbers are a systematic combination of numbers that can satisfy a single test. This test is created so that errors can be avoided while typing in credit card numbers as well as detect counterfeit cards!  
+    
+    The algorithm is as follows:
+    - Reverse the order of the digits in the number.
+    - Take the first, third, ... and every other odd digit in the reversed digits and sum them to form the partial sum s1
+    - Taking the second, fourth ... and every other even digit in the reversed digits:
+        * Multiply each digit by two and sum the digits if the answer is greater than nine to form partial sums for the even digits
+        * Sum the partial sums of the even digits to form s2
+    - If s1 + s2 ends in zero then the original number is in the form of a valid credit card number as verified by the Luhn test.  
+    </br>
+    
+    ```
+    Reverse the digits:
+    61789372994
+    Sum the odd digits:
+      6 + 7 + 9 + 7 + 9 + 4 = 42 = s1
+    The even digits:
+        1,  8,  3,  2,  9
+      Two times each even digit:
+        2, 16,  6,  4, 18
+      Sum the digits of each multiplication:
+        2,  7,  6,  4,  9
+      Sum the last:
+        2 + 7 + 6 + 4 + 9 = 28 = s2
+
+    s1 + s2 = 70 which ends in zero which means that 49927398716 passes the Luhn test
+    ```
+    Your task is to implement to check if a given credit card number is valid or not using the above algorithm.  
+  - **Example**
+      ```
+      Input : 49927398716
+      Output: 49927398716 passes the test
+      ```
+  - **Resources**
+    - [This is cool! Tell me more](https://www.creditcards.com/credit-card-news/luhn-formula-credit-card-number-system-1273.php)
 
 
 ### **December 3 - The Decimation**
