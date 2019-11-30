@@ -20,7 +20,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - [**December 4 - Dr. Bruce Banner's H-Index**](#december-4---dr-bruce-banners-h-index)
   - [**December 5 - Convert CSV data to a HTML table**](#december-5---convert-csv-data-to-a-html-table)
   - [**December 6 - Fibonacci Prime number generation**](#december-6---fibonacci-prime-number-generation)
-  - [**December 7 - One to One?**](#december-2---one-to-one)
+  - [**December 7 - One to One?**](#december-7---one-to-one)
   - [**December 9 - Queued up**](#december-9---stack-up)
   - [**December 10 - Queued up**](#december-10---queued-up)
   - [**FAQ**](#faq)
