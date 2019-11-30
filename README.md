@@ -19,6 +19,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - [**December 3 - The Decimation**](#december-3---the-decimation)
   - [**December 4 - Dr. Bruce Banner's H-Index**](#december-4---dr-bruce-banners-h-index)
   - [**December 5 - Convert CSV data to a HTML table**](#december-5---convert-csv-data-to-a-html-table)
+  - [**December 6 - Fibonacci Prime number generation**](#december-6---fibonacci-prime-number-generation)
   - [**FAQ**](#faq)
 
 
@@ -167,7 +168,29 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - [File handling in Java](https://www.geeksforgeeks.org/file-handling-java-using-filewriter-filereader/)
     - [File handling in Python](https://www.geeksforgeeks.org/file-handling-python/)
     - [Tables in HTML](https://www.w3schools.com/html/html_tables.asp)
-
+    
+    
+### **December 6 - Fibonacci Prime Number Generation**
+  - **Problem**
+    - Fibonacci Numbers are a series of numbers where each number is the sum of preceding 2 numbers. 
+    - Henry wants to generate prime numbers present in the Fibonacci Series. He needs your help to generate them.
+       - For example, suppose `N = 3`
+    - Then the series will have 3 Fibonacci prime numbers : 2,3,5
+    - Given the count of prime numbers needed by Henry , compute the series for him.
+    
+  - **Example**
+      ```
+      INPUT: 5
+      OUTPUT: 2, 3, 5, 13, 89
+      
+      ```
+  - **Resources**
+    - [Fibonacci Numbers](https://en.wikipedia.org/wiki/Fibonacci_number)
+   
+  - **Fun Facts on Fibonacci**
+    - Every positive integer can be written in a unique way as the sum of one or more distinct Fibonacci numbers in such a way that the sum does not include any two consecutive Fibonacci numbers. This is Zeckendorf Theorem.
+    - Any three consecutive Fibonacci numbers, taken two at a time, are relatively prime.
+    - No Fibonacci number greater than 8 is one greater or one less than any prime number.
     
 ## Maintainers
 - [K-Kraken](https://github.com/K-Kraken)
