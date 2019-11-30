@@ -1,6 +1,6 @@
 <div align="left">
 <h1>
-    <img alt="header" src="/src/assets/Header.png" width="900" height="300"></img>
+    <img alt="header" src="/src/assets/Header.png" width="800"></img>
 </h1>
 Welcome to A December of Algorithms (2019). After the overwhelming response from last year, we present you with a new collection of algorithms to implement this December. Each Day, Each Algorithm ;) Finish them all to get prizes and certificate :)
 
@@ -14,26 +14,107 @@ We have a small collection of algorithms, one for every day of the month. Scroll
 
 
 ## Index
-  - [**December 1 - Sample Problem**](#december-1---sample-problem)
+  - [**December 1 - Sevenish Number**](#december-1---sevenish-number)
+  - [**December 2 - Is this a valid credit card number?**](#december-2---is-this-a-valid-credit-card-number)
+  - [**December 3 - The Decimation**](#december-3---the-decimation)
   - [**FAQ**](#faq)
 
 
 
 ## Algorithms
-### **December 1 - Sample Problem**
+
+### **December 1 - Sevenish Number**
   - **Problem**
-    - Problem?
+    - Let us now define what we mean by a sevenish number.
+    - A "sevenish" number is a natural number which is either a power of 7, or the sum of unique powers of 7
+    - The first 5 sevenish numbers are: `1`, `7`, `8`, `49`, `50`.
+    - Now, implement an algorithm to find the `n`th sevenish number.
   - **Example**
       ```bash
-      Sample Input and Output
+      > sevenish_number(1)
+        1
+      > sevenish_number(5)
+        50
+      > sevenish_number(10)
+        350
+      ```
+  - **Optional Task**
+    - Create a Dynamic Programming solution to reduce the time complexity of your algorithm (if you used a brute-force approach before).
+  - **Resources**
+    - [Brute Force](https://stackoverflow.com/questions/8103050/what-exactly-is-the-brute-force-algorithm)
+    - [Dynamic Programming](https://www.codechef.com/wiki/tutorial-dynamic-programming)
+    - [Recursion](https://web.mit.edu/6.005/www/fa15/classes/10-recursion/)
+
+
+### **December 2 - Is this a valid credit card number?**
+  - **Problem**  
+     Are credit card numbers just a random combination of the digits from 0-9? **NO!**  
+     Credit card numbers are a systematic combination of numbers that can satisfy a single test. This test is created so that errors can be avoided while typing in credit card numbers as well as detect counterfeit cards!  
+    
+    The algorithm is as follows:
+    - Reverse the order of the digits in the number.
+    - Take the first, third, ... and every other odd digit in the reversed digits and sum them to form the partial sum s1
+    - Taking the second, fourth ... and every other even digit in the reversed digits:
+        * Multiply each digit by two and sum the digits if the answer is greater than nine to form partial sums for the even digits
+        * Sum the partial sums of the even digits to form s2
+    - If s1 + s2 ends in zero then the original number is in the form of a valid credit card number as verified by the Luhn test.  
+    </br>
+    
+    ```
+    Reverse the digits:
+    61789372994
+    Sum the odd digits:
+      6 + 7 + 9 + 7 + 9 + 4 = 42 = s1
+    The even digits:
+        1,  8,  3,  2,  9
+      Two times each even digit:
+        2, 16,  6,  4, 18
+      Sum the digits of each multiplication:
+        2,  7,  6,  4,  9
+      Sum the last:
+        2 + 7 + 6 + 4 + 9 = 28 = s2
+
+    s1 + s2 = 70 which ends in zero which means that 49927398716 passes the Luhn test
+    ```
+    Your task is to implement to check if a given credit card number is valid or not using the above algorithm.  
+  - **Example**
+      ```
+      Input : 49927398716
+      Output: 49927398716 passes the test
       ```
   - **Resources**
-    - [Resource Link](https://duckducgo.com/)
+    - [This is cool! Tell me more](https://www.creditcards.com/credit-card-news/luhn-formula-credit-card-number-system-1273.php)
+
+
+### **December 3 - The Decimation**
+  - **Problem**
+    - Well, this is day 3 so let's start with something easy. Perhaps an algorithm that might involve a list and the **Marvel Supervillain Thanos**!
+    - While the list isn't sorted, snap half of all things (remove them from the list). Proceed until the list is sorted or only one item remains (which is sorted by default). This sorting algorithm may give varied results based on implementation.
+    - The item removal (decimation) procedure is up to the implementation to decide, but the list should be half as long as before after one pass of the item removal procedure.
+    - Your algorithm may commit to take away either the first half of the list, the last half of the list, all odd items, all even items, one at a time until the list is half as long, or any not specified above.
+    - **Decide for yourself:** What would Thanos do if the universe carried an odd amount of living things?
+ ![hello](/src/assets/thanos-snap.gif)
+    - The list is sorted if no elements are smaller than any previous item. Duplicates may exist in the input and may exist in the output.
+  - **Example**
+      ```c
+      // A sorted list remains sorted
+      [1, 2, 3, 4, 5] -> [1, 2, 3, 4, 5]
+      // A list with duplicates may keep duplicates in the result
+      [1, 2, 3, 4, 3] -> [1, 3, 3] // Removing every second item
+      [1, 2, 3, 4, 3] -> [3, 4, 3] -> [4, 3] -> [3] // Removing the first half
+      [1, 2, 3, 4, 3] -> [1, 2] // Removing the last half
+      ```
+  - **Resources**
+    - [Arrays in C++](http://www.cplusplus.com/doc/tutorial/arrays/)
+    - [Arrays in Java](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html)
+    - [Arrays in Python](https://www.w3schools.com/python/python_lists.asp)
 
 
 
 ## Maintainers
-- [Username](https://github.com/SVCE-ACM)
+- [K-Kraken](https://github.com/K-Kraken)
+- [jyuvaraj03](https://github.com/jyuvaraj03)
+- [mahavisvanathan](https://github.com/mahavisvanathan)
 
 
 
