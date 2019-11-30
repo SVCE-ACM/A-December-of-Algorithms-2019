@@ -20,6 +20,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - [**December 4 - Dr. Bruce Banner's H-Index**](#december-4---dr-bruce-banners-h-index)
   - [**December 5 - Convert CSV data to a HTML table**](#december-5---convert-csv-data-to-a-html-table)
   - [**December 6 - Fibonacci Prime number generation**](#december-6---fibonacci-prime-number-generation)
+  - [**December 7 - One to One?**](#december-2---one-to-one)
   - [**December 9 - Queued up**](#december-9---stack-up)
   - [**December 10 - Queued up**](#december-10---queued-up)
   - [**FAQ**](#faq)
@@ -193,6 +194,30 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - Any three consecutive Fibonacci numbers, taken two at a time, are relatively prime.
     - No Fibonacci number greater than 8 is one greater or one less than any prime number.
 
+### **December 7 - One to One?**
+  - **Problem**
+    - In mathematics a one to one function is that which has a unique element in the range for every corresponding domain.
+    - Let there be a function f: X->Y such that  if a,b belong to X and if f(a)=f(b) then a=b. This proves the one to one property of a function. If there exists more than one "X's" for the same "Y's" then the function is not one to one.
+    - Your task is to write a program that accepts two sets of numbers and the relationship between them and evaluate if they are indeed a one-one function.
+  - **Example**
+      ```
+      Set 1: {1,2,3,4}
+      Set 2: {1,4,9,16}
+      Function: x^2
+      Result: It is one-one.
+
+      Set 1: {1,-1,2,-2,3,-3,4,-4}
+      Set 2: {1,4,9,16}
+      Function: x^2
+      Result: It is not one-one.
+      
+      ```
+   - **Optional**
+     - Prove that the function is onto and hence bijective.
+   - **Resources**
+     - [One-One functions](http://mymathangels.com/tag/one-one-onto-function/)
+     - [Bijective functions](https://www.tutorialspoint.com/injective-surjective-and-bijective-functions)
+
 ### **December 9 - Stack up**
 
 - **Understanding Stacks**
@@ -261,8 +286,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
 - [mahavisvanathan](https://github.com/mahavisvanathan)
 - [shrusri27](https://github.com/shrusri27)
 - [SHRIRAM0509](https://github.com/SHRIRAM0509)
-
-
+- [dhirajv2000](https://github.com/dhirajv2000)
 
 FAQ:
 ======
