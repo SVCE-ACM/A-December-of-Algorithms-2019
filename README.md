@@ -86,8 +86,6 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - [This is cool! Tell me more](https://www.creditcards.com/credit-card-news/luhn-formula-credit-card-number-system-1273.php)
 
 
-
-
 ### **December 3 - The Decimation**
   - **Problem**
     - Well, this is day 3 so let's start with something easy. Perhaps an algorithm that might involve a list and the **Marvel Supervillain Thanos**!
