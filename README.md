@@ -14,26 +14,39 @@ We have a small collection of algorithms, one for every day of the month. Scroll
 
 
 ## Index
-  - [**December 1 - Sample Problem**](#december-1---sample-problem)
+  - [**December 2 - The Decimation**](#december-2---the-decimation)
   - [**FAQ**](#faq)
 
 
 
 ## Algorithms
-### **December 1 - Sample Problem**
+### **December 2 - The Decimation**
   - **Problem**
-    - Problem?
+    - Well, this is day 2 so let's start with something easy. Perhaps an algorithm that might involve a list and the **Marvel Supervillain Thanos**!
+    - While the list isn't sorted, snap half of all things (remove them from the list). Proceed until the list is sorted or only one item remains (which is sorted by default). This sorting algorithm may give varied results based on implementation.
+    - The item removal (decimation) procedure is up to the implementation to decide, but the list should be half as long as before after one pass of the item removal procedure.
+    - Your algorithm may commit to take away either the first half of the list, the last half of the list, all odd items, all even items, one at a time until the list is half as long, or any not specified above.
+    - **Decide for yourself:** What would Thanos do if the universe carried an odd amount of living things?
+ ![hello](/src/assets/thanos-snap.gif)
+    - The list is sorted if no elements are smaller than any previous item. Duplicates may exist in the input and may exist in the output.
   - **Example**
-      ```bash
-      Sample Input and Output
+      ```c
+      // A sorted list remains sorted
+      [1, 2, 3, 4, 5] -> [1, 2, 3, 4, 5]
+      // A list with duplicates may keep duplicates in the result
+      [1, 2, 3, 4, 3] -> [1, 3, 3] // Removing every second item
+      [1, 2, 3, 4, 3] -> [3, 4, 3] -> [4, 3] -> [3] // Removing the first half
+      [1, 2, 3, 4, 3] -> [1, 2] // Removing the last half
       ```
   - **Resources**
-    - [Resource Link](https://duckducgo.com/)
+    - [Arrays in C++](http://www.cplusplus.com/doc/tutorial/arrays/)
+    - [Arrays in Java](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html)
+    - [Arrays in Python](https://www.w3schools.com/python/python_lists.asp)
 
 
 
 ## Maintainers
-- [Username](https://github.com/SVCE-ACM)
+- [K-Kraken](https://github.com/K-Kraken)
 
 
 
