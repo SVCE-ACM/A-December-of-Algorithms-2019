@@ -14,6 +14,8 @@ We have a small collection of algorithms, one for every day of the month. Scroll
 
 
 ## Index
+  - [**December 1 - Sevenish Number**](#december-1---sevenish-number)
+  - [**December 2 - The Decimation**](#december-3---the-decimation)
   - [**December 3 - The Decimation**](#december-3---the-decimation)
   - [**FAQ**](#faq)
 
