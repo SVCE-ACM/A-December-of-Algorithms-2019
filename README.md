@@ -14,15 +14,39 @@ We have a small collection of algorithms, one for every day of the month. Scroll
 
 
 ## Index
-  - [**December 2 - The Decimation**](#december-2---the-decimation)
+  - [**December 3 - The Decimation**](#december-3---the-decimation)
   - [**FAQ**](#faq)
 
 
 
 ## Algorithms
-### **December 2 - The Decimation**
+
+### **December 1 - Sevenish Number**
   - **Problem**
-    - Well, this is day 2 so let's start with something easy. Perhaps an algorithm that might involve a list and the **Marvel Supervillain Thanos**!
+    - Let us now define what we mean by a sevenish number.
+    - A "sevenish" number is a natural number which is either a power of 7, or the sum of unique powers of 7
+    - The first 5 sevenish numbers are: `1`, `7`, `8`, `49`, `50`.
+    - Now, implement an algorithm to find the `n`th sevenish number.
+  - **Example**
+      ```bash
+      > sevenish_number(1)
+        1
+      > sevenish_number(5)
+        50
+      > sevenish_number(10)
+        350
+      ```
+  - **Optional Task**
+    - Create a Dynamic Programming solution to reduce the time complexity of your algorithm (if you used a brute-force approach before).
+  - **Resources**
+    - [Brute Force](https://stackoverflow.com/questions/8103050/what-exactly-is-the-brute-force-algorithm)
+    - [Dynamic Programming](https://www.codechef.com/wiki/tutorial-dynamic-programming)
+    - [Recursion](https://web.mit.edu/6.005/www/fa15/classes/10-recursion/)
+
+
+### **December 3 - The Decimation**
+  - **Problem**
+    - Well, this is day 3 so let's start with something easy. Perhaps an algorithm that might involve a list and the **Marvel Supervillain Thanos**!
     - While the list isn't sorted, snap half of all things (remove them from the list). Proceed until the list is sorted or only one item remains (which is sorted by default). This sorting algorithm may give varied results based on implementation.
     - The item removal (decimation) procedure is up to the implementation to decide, but the list should be half as long as before after one pass of the item removal procedure.
     - Your algorithm may commit to take away either the first half of the list, the last half of the list, all odd items, all even items, one at a time until the list is half as long, or any not specified above.
@@ -47,6 +71,8 @@ We have a small collection of algorithms, one for every day of the month. Scroll
 
 ## Maintainers
 - [K-Kraken](https://github.com/K-Kraken)
+- [jyuvaraj03](https://github.com/jyuvaraj03)
+- [mahavisvanathan](https://github.com/mahavisvanathan)
 
 
 
