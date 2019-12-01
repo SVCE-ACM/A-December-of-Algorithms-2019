@@ -274,6 +274,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
      - [One-One functions](http://mymathangels.com/tag/one-one-onto-function/)
      - [Bijective functions](https://www.tutorialspoint.com/injective-surjective-and-bijective-functions)
 
+
 ### **December 10 - Count The Cookies**
   - **Problem**
     - Tipsie, a cookie store sells cookies in jars. Each jar has one cookie in them. The store gives a free cookie if the customer returns enough cookie jars.
@@ -281,7 +282,9 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - Initially, he buys 5 cookies and has 5 jars after eating them. He turns in 4  of them, leaving him with 1 , for 2  more cookies.
     - After eating those two, he has 3 cookie jars, turns in 2 leaving him with 1 cookie jar and his new cookie. 
     - Once he eats that one, he has 2 cookie jars and turns them in for another cookie. After eating that one, he only has 1 cookie, and his shopping ends. Overall, he has eaten `5+2+1+1=9` cookies.
+    - The integers `n`, `p` and `c` represent money to spend, cost of a cookie, and the number of cookie jars he can turn in for a free cookie respectively.
     - Implement a function `cookieCount(n, p, c)` to count the number of cookies Alex could buy.
+   
   - **Example**
     ```bash
     > cookieCount(10, 2, 5)
