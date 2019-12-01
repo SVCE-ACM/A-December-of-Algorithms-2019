@@ -19,6 +19,9 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - [**December 3 - The Decimation**](#december-3---the-decimation)
   - [**December 4 - Dr. Bruce Banner's H-Index**](#december-4---dr-bruce-banners-h-index)
   - [**December 5 - Convert CSV data to a HTML table**](#december-5---convert-csv-data-to-a-html-table)
+  - [**December 6 - Fibonacci Prime number generation**](#december-6---fibonacci-prime-number-generation)
+  - [**December 7 - Queued up**](#december-7---queued-up)
+  - [**December 8 - Cheating Probability**](#december-8---cheating-probability)
   - [**FAQ**](#faq)
 
 
@@ -167,13 +170,89 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - [File handling in Java](https://www.geeksforgeeks.org/file-handling-java-using-filewriter-filereader/)
     - [File handling in Python](https://www.geeksforgeeks.org/file-handling-python/)
     - [Tables in HTML](https://www.w3schools.com/html/html_tables.asp)
+    
+    
+### **December 6 - Fibonacci Prime Number Generation**
+  - **Problem**
+    - Fibonacci Numbers are a series of numbers where each number is the sum of preceding 2 numbers. 
+    - Henry wants to generate prime numbers present in the Fibonacci Series. He needs your help to generate them.
+       - For example, suppose `N = 3`
+    - Then the series will have 3 Fibonacci prime numbers : 2,3,5
+    - Given the count of prime numbers needed by Henry , compute the series for him.
+  - **Example**
+      ```
+        Enter the value for (n): 5
+        
+        Generated Fibonacci Prime Number Generation upto (5): 
+        2, 3, 5, 13, 89
+      ```
+  - **Resources**
+    - [Fibonacci Numbers](https://en.wikipedia.org/wiki/Fibonacci_number)
+  - **Fun Facts on Fibonacci**
+    - Every positive integer can be written in a unique way as the sum of one or more distinct Fibonacci numbers in such a way that the sum does not include any two consecutive Fibonacci numbers. This is Zeckendorf Theorem.
+    - Any three consecutive Fibonacci numbers, taken two at a time, are relatively prime.
+    - No Fibonacci number greater than 8 is one greater or one less than any prime number.
+    
 
+### **December 7 - Queued up**
+- **Problem**
+	- A medical clinic assigns a token number to every patient who visits. The token number starts from 1 and it is given based on the order of arrival, to the `n` patients who arrive. But, the receptionist accepts bribe and lets a person `k` in first. The task is to print the token number and the patient's name in the order in which they see the doctor.
+ 	- Implement the concept of Queues to solve this problem
+	- <img src="https://media.giphy.com/media/6kyrz1j5uhJdK/giphy.gif" height=250/>
+- **Example**
+```
+	Enter N: 5
+	Enter (token no, id):
+	(1, a)
+	(2, b)
+	(3, c)
+	(4, d)
+	(5, e)
+	Enter k: c
+	The order is:
+	(3, c)
+	(1, a)
+	(2, b)
+	(4, d)
+	(5, e)
+```
+- **Resources**
+    - [Understanding queue data structure](https://www.geeksforgeeks.org/queue-data-structure/)
+    - [Stacks and queues](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Stacks%20and%20Queues/Stacks%20and%20Queues.html)
+
+### **December 8 - Cheating Probability**
+  - **Problem**
+    Given an RxC Matrix with its elements representing the branch being pursued by a student in the exam hall. Caluclate the probability of each student copying if a person from the same branch sits:
+    -  in front = 0.3
+    -  behind = 0.2
+    -  sides = 0.2
+    -  diagonal = 0.1
+  - **Example**
+    - **Input**
+       ``` 
+        CSE ECE CSE 
+        ECE ECE CSE
+        ```
+    - **Output**
+        ```
+        0.0 0.3 0.2
+        0.3 0.5 0.3
+        ```
+    - <img src="https://img.buzzfeed.com/buzzfeed-static/static/2016-09/26/6/asset/buzzfeed-prod-web11/anigif_sub-buzz-5611-1474885869-2.gif" height=250/>
+  - **Resources**
+    - [Arrays in C++](http://www.cplusplus.com/doc/tutorial/arrays/)
+    - [Arrays in Java](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html)
+    - [Arrays in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+    - [Lists in Python](https://www.w3schools.com/python/python_lists.asp) 
+   
     
 ## Maintainers
 - [K-Kraken](https://github.com/K-Kraken)
 - [jyuvaraj03](https://github.com/jyuvaraj03)
 - [mahavisvanathan](https://github.com/mahavisvanathan)
-
+- [shrusri27](https://github.com/shrusri27)
+- [ShriRam0509](https://github.com/SHRIRAM0509)
+- [ajaykrishnan23](https://github.com/ajaykrishnan23)
 
 
 
