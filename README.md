@@ -20,9 +20,9 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - [**December 4 - Dr. Bruce Banner's H-Index**](#december-4---dr-bruce-banners-h-index)
   - [**December 5 - Convert CSV data to a HTML table**](#december-5---convert-csv-data-to-a-html-table)
   - [**December 6 - Fibonacci Prime number generation**](#december-6---fibonacci-prime-number-generation)
-  - [**December 7 - One to One?**](#december-7---one-to-one)
-  - [**December 9 - Queued up**](#december-9---stack-up)
-  - [**December 10 - Queued up**](#december-10---queued-up)
+  - [**December 7 - Queued up**](#december-7---queued-up)
+  - [**December 8 - Cheating Probability**](#december-8---cheating-probability)
+  - [**December 9 - One to One?**](#december-9---one-to-one)
   - [**FAQ**](#faq)
 
 
@@ -193,8 +193,62 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - Every positive integer can be written in a unique way as the sum of one or more distinct Fibonacci numbers in such a way that the sum does not include any two consecutive Fibonacci numbers. This is Zeckendorf Theorem.
     - Any three consecutive Fibonacci numbers, taken two at a time, are relatively prime.
     - No Fibonacci number greater than 8 is one greater or one less than any prime number.
+    
 
-### **December 7 - One to One?**
+### **December 7 - Queued up**
+- **Problem**
+	- A medical clinic assigns a token number to every patient who visits. The token number starts from 1 and it is given based on the order of arrival, to the `n` patients who arrive. But, the receptionist accepts bribe and lets a person `k` in first. The task is to print the token number and the patient's name in the order in which they see the doctor.
+ 	- Implement the concept of Queues to solve this problem
+	- <img src="https://media.giphy.com/media/6kyrz1j5uhJdK/giphy.gif" height=250/>
+- **Example**
+```
+	Enter N: 5
+	Enter (token no, id):
+	(1, a)
+	(2, b)
+	(3, c)
+	(4, d)
+	(5, e)
+	Enter k: c
+	The order is:
+	(3, c)
+	(1, a)
+	(2, b)
+	(4, d)
+	(5, e)
+```
+- **Resources**
+    - [Understanding queue data structure](https://www.geeksforgeeks.org/queue-data-structure/)
+    - [Stacks and queues](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Stacks%20and%20Queues/Stacks%20and%20Queues.html)
+
+
+### **December 8 - Cheating Probability**
+  - **Problem**
+    - Given an RxC Matrix with its elements representing the branch being pursued by a student in the exam hall. Caluclate the probability of each student copying if a person from the same branch sits:
+    	-  In front = 0.3
+    	-  Behind = 0.2
+    	-  Sides = 0.2
+    	-  Diagonal = 0.1
+  - **Example**
+    - **Input**
+       ``` 
+        CSE ECE CSE 
+        ECE ECE CSE
+        ```
+    - **Output**
+        ```
+        0.0 0.3 0.2
+        0.3 0.5 0.3
+        ```
+    - <img src="https://img.buzzfeed.com/buzzfeed-static/static/2016-09/26/6/asset/buzzfeed-prod-web11/anigif_sub-buzz-5611-1474885869-2.gif" height=250/>
+  - **Resources**
+    - [Arrays in C++](http://www.cplusplus.com/doc/tutorial/arrays/)
+    - [Arrays in Java](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html)
+    - [Arrays in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+    - [Lists in Python](https://www.w3schools.com/python/python_lists.asp) 
+
+
+### **December 9 - One to One?**
   - **Problem**
     - In mathematics a one to one function is that which has a unique element in the range for every corresponding domain.
     - Let there be a function f: X->Y such that  if a,b belong to X and if f(a)=f(b) then a=b. This proves the one to one property of a function. If there exists more than one "X's" for the same "Y's" then the function is not one to one.
@@ -218,66 +272,6 @@ We have a small collection of algorithms, one for every day of the month. Scroll
      - [One-One functions](http://mymathangels.com/tag/one-one-onto-function/)
      - [Bijective functions](https://www.tutorialspoint.com/injective-surjective-and-bijective-functions)
 
-### **December 9 - Stack up**
-
-- **Understanding Stacks**
-	- A stack is a container of objects that are inserted and removed according to the *last-in first-out* (LIFO) principle. 
-	- A stack is a limited access data structure - elements can be added and removed from the stack only at the top. push adds an item to the top of the stack, pop removes the item from the top. 
-	- A helpful analogy is to think of a stack of books; you can remove only the top book, also you can add a new book on the top.
-
-- **Problem**
- 	 It's day 10! Congrats on completing one-third of the challenge.The task for the day is to reverse a string using stack data structure.
-
-	 The algorithm is as follows:
-	 - Get the string
-	 - Print the reversed string using stacks
-
-- **Example**
-	```
- 	Enter string: abcdef
- 	The reversed string is: fedcba
-	```
-- **Resources**
-    - [Stacks and queues](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Stacks%20and%20Queues/Stacks%20and%20Queues.html)
-    - [Stack implementation](https://www.geeksforgeeks.org/stack-data-structure/)
-
- !<img src="https://media.giphy.com/media/WtCHRSPCuqS8E/giphy.gif" width=500 height=250>
-
-### **December 10 - Queued up**
-
-- **Problem**
- 	 A medical clinic assigns a token number to every patient who visits. The token number starts from 1 and it is given based on the order of arrival, to the n patients who arrive. But, the receptionist accepts bribe and lets a person k in first. The task is to print the token number and the patient's name in the order in which they see the doctor.
- 	
- 	 The algorithm is as follows:
-
- 	 - Get n
- 	 - For every person that arrives, store their name and token number.
- 	 - Get k
- 	 - Print kth person's token number and name followed by the rest.
-
-
-- **Example**
-	```
-	Enter n: 5
-	Enter token no - name
-	1 a
-	2 b
-	3 c
-	4 d
-	5 e
-	Enter k: c
-	The order is:
-	3 c
-	1 a
-	2 b
-	4 d
-	5 e
-	```
-- **Resources**
-    - [Understanding queue data structure](https://www.geeksforgeeks.org/queue-data-structure/)
-    - [Stacks and queues](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Stacks%20and%20Queues/Stacks%20and%20Queues.html)
-
- <img src="https://media.giphy.com/media/6kyrz1j5uhJdK/giphy.gif" width=500 height=250>
    
     
 ## Maintainers
@@ -285,8 +279,11 @@ We have a small collection of algorithms, one for every day of the month. Scroll
 - [jyuvaraj03](https://github.com/jyuvaraj03)
 - [mahavisvanathan](https://github.com/mahavisvanathan)
 - [shrusri27](https://github.com/shrusri27)
-- [SHRIRAM0509](https://github.com/SHRIRAM0509)
+- [ShriRam0509](https://github.com/SHRIRAM0509)
+- [ajaykrishnan23](https://github.com/ajaykrishnan23)
 - [dhirajv2000](https://github.com/dhirajv2000)
+
+
 
 FAQ:
 ======
