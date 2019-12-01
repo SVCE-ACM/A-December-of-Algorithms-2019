@@ -251,7 +251,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
 ### **December 9 - One to One?**
   - **Problem**
     - In mathematics a one to one function is that which has a unique element in the range for every corresponding domain.
-    - Let there be a function f: X->Y such that  if a,b belong to X and if f(a)=f(b) then a=b. This proves the one to one property of a function. If there exists more than one "X's" for the same "Y's" then the function is not one to one.
+    - Let there be a function `f`: `X->Y` such that  if a,b belong to `X` and if `f(a)=f(b)` then `a=b`. This proves the one to one property of a function. If there exists more than one "X's" for the same "Y's" then the function is not one to one.
     - Your task is to write a program that accepts two sets of numbers and the relationship between them and evaluate if they are indeed a one-one function.
   - **Example**
       ```
@@ -259,7 +259,8 @@ We have a small collection of algorithms, one for every day of the month. Scroll
       Set 2: {1,4,9,16}
       Function: x^2
       Result: It is one-one.
-
+      ```
+      ```
       Set 1: {1,-1,2,-2,3,-3,4,-4}
       Set 2: {1,4,9,16}
       Function: x^2
