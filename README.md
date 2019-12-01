@@ -22,6 +22,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - [**December 6 - Fibonacci Prime number generation**](#december-6---fibonacci-prime-number-generation)
   - [**December 7 - Queued up**](#december-7---queued-up)
   - [**December 8 - Cheating Probability**](#december-8---cheating-probability)
+  - [**December 9 - One to One?**](#december-9---one-to-one)
   - [**FAQ**](#faq)
 
 
@@ -220,6 +221,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - [Understanding queue data structure](https://www.geeksforgeeks.org/queue-data-structure/)
     - [Stacks and queues](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Stacks%20and%20Queues/Stacks%20and%20Queues.html)
 
+
 ### **December 8 - Cheating Probability**
   - **Problem**
     - Given an RxC Matrix with its elements representing the branch being pursued by a student in the exam hall. Caluclate the probability of each student copying if a person from the same branch sits:
@@ -244,6 +246,33 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - [Arrays in Java](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html)
     - [Arrays in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
     - [Lists in Python](https://www.w3schools.com/python/python_lists.asp) 
+
+
+### **December 9 - One to One?**
+  - **Problem**
+    - In mathematics a one to one function is that which has a unique element in the range for every corresponding domain.
+    - Let there be a function `f`: `X->Y` such that  if a,b belong to `X` and if `f(a)=f(b)` then `a=b`. This proves the one to one property of a function. If there exists more than one "X's" for the same "Y's" then the function is not one to one.
+    - Your task is to write a program that accepts two sets of numbers and the relationship between them and evaluate if they are indeed a one-one function.
+  - **Example**
+      ```
+      Set 1: {1,2,3,4}
+      Set 2: {1,4,9,16}
+      Function: x^2
+      Result: It is one-one.
+      ```
+      ```
+      Set 1: {1,-1,2,-2,3,-3,4,-4}
+      Set 2: {1,4,9,16}
+      Function: x^2
+      Result: It is not one-one.
+      
+      ```
+   - **Optional**
+     - Prove that the function is onto and hence bijective.
+   - **Resources**
+     - [One-One functions](http://mymathangels.com/tag/one-one-onto-function/)
+     - [Bijective functions](https://www.tutorialspoint.com/injective-surjective-and-bijective-functions)
+
    
     
 ## Maintainers
@@ -253,6 +282,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
 - [shrusri27](https://github.com/shrusri27)
 - [ShriRam0509](https://github.com/SHRIRAM0509)
 - [ajaykrishnan23](https://github.com/ajaykrishnan23)
+- [dhirajv2000](https://github.com/dhirajv2000)
 
 
 
