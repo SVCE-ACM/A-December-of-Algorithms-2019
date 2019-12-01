@@ -21,6 +21,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - [**December 5 - Convert CSV data to a HTML table**](#december-5---convert-csv-data-to-a-html-table)
   - [**December 6 - Fibonacci Prime number generation**](#december-6---fibonacci-prime-number-generation)
   - [**December 7 - Queued up**](#december-7---queued-up)
+  - [**December 8 - Cheating Probability**](#december-8---cheating-probability)
   - [**FAQ**](#faq)
 
 
@@ -219,7 +220,30 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - [Understanding queue data structure](https://www.geeksforgeeks.org/queue-data-structure/)
     - [Stacks and queues](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Stacks%20and%20Queues/Stacks%20and%20Queues.html)
 
- 
+### **December 8 - Cheating Probability**
+  - **Problem**
+    Given an RxC Matrix with its elements representing the branch being pursued by a student in the exam hall. Caluclate the probability of each student copying if a person from the same branch sits:
+    -  in front = 0.3
+    -  behind = 0.2
+    -  sides = 0.2
+    -  diagonal = 0.1
+  - **Example**
+    - **Input**
+       ``` 
+        CSE ECE CSE 
+        ECE ECE CSE
+        ```
+    - **Output**
+        ```
+        0.0 0.3 0.2
+        0.3 0.5 0.3
+        ```
+    - <img src="https://img.buzzfeed.com/buzzfeed-static/static/2016-09/26/6/asset/buzzfeed-prod-web11/anigif_sub-buzz-5611-1474885869-2.gif" height=250/>
+  - **Resources**
+    - [Arrays in C++](http://www.cplusplus.com/doc/tutorial/arrays/)
+    - [Arrays in Java](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html)
+    - [Arrays in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+    - [Lists in Python](https://www.w3schools.com/python/python_lists.asp) 
    
     
 ## Maintainers
@@ -227,7 +251,8 @@ We have a small collection of algorithms, one for every day of the month. Scroll
 - [jyuvaraj03](https://github.com/jyuvaraj03)
 - [mahavisvanathan](https://github.com/mahavisvanathan)
 - [shrusri27](https://github.com/shrusri27)
-- [SHRIRAM0509](https://github.com/SHRIRAM0509)
+- [ShriRam0509](https://github.com/SHRIRAM0509)
+- [ajaykrishnan23](https://github.com/ajaykrishnan23)
 
 
 
