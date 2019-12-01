@@ -238,6 +238,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
         0.0 0.3 0.2
         0.3 0.5 0.3
         ```
+    - <img src="https://img.buzzfeed.com/buzzfeed-static/static/2016-09/26/6/asset/buzzfeed-prod-web11/anigif_sub-buzz-5611-1474885869-2.gif" height=250/>
   - **Resources**
     - [Arrays in C++](http://www.cplusplus.com/doc/tutorial/arrays/)
     - [Arrays in Java](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html)
@@ -250,7 +251,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
 - [jyuvaraj03](https://github.com/jyuvaraj03)
 - [mahavisvanathan](https://github.com/mahavisvanathan)
 - [shrusri27](https://github.com/shrusri27)
-- [SHRIRAM0509](https://github.com/SHRIRAM0509)
+- [ShriRam0509](https://github.com/SHRIRAM0509)
 - [ajaykrishnan23](https://github.com/ajaykrishnan23)
 
 
