@@ -222,11 +222,11 @@ We have a small collection of algorithms, one for every day of the month. Scroll
 
 ### **December 8 - Cheating Probability**
   - **Problem**
-    Given an RxC Matrix with its elements representing the branch being pursued by a student in the exam hall. Caluclate the probability of each student copying if a person from the same branch sits:
-    -  in front = 0.3
-    -  behind = 0.2
-    -  sides = 0.2
-    -  diagonal = 0.1
+    - Given an RxC Matrix with its elements representing the branch being pursued by a student in the exam hall. Caluclate the probability of each student copying if a person from the same branch sits:
+    	-  In front = 0.3
+    	-  Behind = 0.2
+    	-  Sides = 0.2
+    	-  Diagonal = 0.1
   - **Example**
     - **Input**
        ``` 
