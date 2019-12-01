@@ -21,6 +21,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - [**December 5 - Convert CSV data to a HTML table**](#december-5---convert-csv-data-to-a-html-table)
   - [**December 6 - Fibonacci Prime number generation**](#december-6---fibonacci-prime-number-generation)
   - [**December 7 - Queued up**](#december-7---queued-up)
+  - [**December 8 - Cheating Probability**](#december-8---cheating-probability)
   - [**FAQ**](#faq)
 
 
