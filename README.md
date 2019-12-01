@@ -219,7 +219,29 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - [Understanding queue data structure](https://www.geeksforgeeks.org/queue-data-structure/)
     - [Stacks and queues](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Stacks%20and%20Queues/Stacks%20and%20Queues.html)
 
- 
+### **December 8 - Cheating Probability**
+  - **Problem**
+    Given an RxC Matrix with its elements representing the branch being pursued by a student in the exam hall. Caluclate the probability of each student copying if a person from the same branch sits:
+    -  in front = 0.3
+    -  behind = 0.2
+    -  sides = 0.2
+    -  diagonal = 0.1
+  - **Example**
+    - **Input**
+       ``` 
+        CSE ECE CSE 
+        ECE ECE CSE
+        ```
+    - **Output**
+        ```
+        0.0 0.3 0.2
+        0.3 0.5 0.3
+        ```
+  - **Resources**
+    - [Arrays in C++](http://www.cplusplus.com/doc/tutorial/arrays/)
+    - [Arrays in Java](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html)
+    - [Arrays in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+    - [Lists in Python](https://www.w3schools.com/python/python_lists.asp) 
    
     
 ## Maintainers
@@ -228,6 +250,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
 - [mahavisvanathan](https://github.com/mahavisvanathan)
 - [shrusri27](https://github.com/shrusri27)
 - [SHRIRAM0509](https://github.com/SHRIRAM0509)
+- [ajaykrishnan23](https://github.com/ajaykrishnan23)
 
 
 
