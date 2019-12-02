@@ -24,6 +24,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - [**December 8 - Cheating Probability**](#december-8---cheating-probability)
   - [**December 9 - One to One?**](#december-9---one-to-one)
   - [**December 10 - Count The Cookies**](#december-10---count-the-cookies)
+  - [**December ? - Show JaSON the way**](#december-?---show-jason-the-way)
   - [**FAQ**](#faq)
 
 
@@ -297,7 +298,106 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - [Div Mod in C & C++](https://www.cprogramming.com/tutorial/modulus.html)
     - [Div Mod in Java](http://www.cs.ukzn.ac.za/~hughm/java/intro/week2/21.html)
     
-    
+### **December ? - Show JaSON the way**
+  - **Problem** 
+  	- Jason is stranded in a desert.His phone's battery is going to die out and all he has left is a compass.
+    - Parse the JaSON.json(in src/res) file and get the latitude and logitude values of the current and destination location.
+    - Also find the distance between those two locations (refer resources for the link)
+    - Return a Directions json file with your personalized message, distance and some direction.
+  
+  - **Example**
+       ```
+       sample output:
+       {
+        "directions": [
+          {
+            "message": "Meet at the destination point",
+            "distance": 21.17,
+            "direction": "N"
+          }
+        ]
+      }
+       ```
+  - **Resources**
+    - [Java JSON parsing](https://www.mkyong.com/java/json-simple-example-read-and-write-json/)
+    - [Python JSON parsing](https://docs.python.org/3/library/json.html)
+    - [C++ JSON parsing](https://nlohmann.github.io/json/)
+    - [Calculate distance](https://stackoverflow.com/questions/365826/calculate-distance-between-2-gps-coordinates)
+  - **Note**
+    JSON format can differ and values like message and direction are totally upto you.
+
+### **December ? - Greyscale**
+  - **Problem** 
+    - In Image Processing, RGB images are often converted to greyscale images.
+    - This is because, an RGB image has 3 colour channels and represents 3D space.
+    - Converting RGB to greyscale reduces it to just a 2D space (b&w).
+    - For your next task, you are given an image (go to src/res/beagle.jpg).
+    - Use OpenCV to convert the image to a greyscale image.
+    - Return greyscale matrix(array) for the RGB image.
+
+  - **Example**
+       ```
+       For some image,
+       sample output:
+       [[ 85,  85,  85, ...,  82,  82,  82],
+       [ 85,  85,  85, ...,  82,  82,  82],
+       [ 85,  85,  85, ...,  82,  82,  82],
+       ...,
+       [ 82,  82,  82, ..., 101, 101, 101],
+       [ 82,  82,  82, ..., 101, 101, 101],
+       [ 82,  82,  82, ..., 101, 101, 101]]
+       ```
+  - **Resources**
+    - [Java opencv](https://opencv-java-tutorials.readthedocs.io/en/latest/)
+    - [Python opencv](https://docs.opencv.org/master/d0/de3/tutorial_py_intro.html)
+    - [C++ opencv](https://www.opencv-srf.com/p/introduction.html)
+
+### **December ? - Toggling Switches**
+  - **Problem**  
+    - There are n switches labeled from 1 to n,to turn on/off n bulbs.
+    - At start all the bulbs are switched off
+    - At first round, every bulb is turned 'on'
+    - At second round, every second switch is turned 'off'
+    - At third round, every third switch is toggled on/off(on->off and off->on)
+    - This goes on and during nth round, every nth switch is toggled on/off.
+    - How many switches are in the 'on' state.
+    - [optional] Find the switch nos. that are in the 'on' state after n such iterations.
+
+  - **Example**
+       ```
+       Enter no of switches: 200
+       No of switches in the 'on' state at the end: 14
+       ```
+  - **Resources**
+    - [Java math module](https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html)
+    - [Python math module](https://docs.python.org/3/library/math.html)
+    - [C++ math module](http://www.cplusplus.com/reference/cmath/)
+
+### **December ? - A Wordplay with Vowels and Consonants**
+  - **Problem**  
+    - There are two players A and B. Initially, they are given the same string ```s```. 
+    - They have to make substrings with letters in 's'.
+    - A makes substrings starting with a vowel(a,e,i,o,u) and B makes substrings starting with consonants.
+    - For each occurence of their substring in 's', the players get 1 point.
+    - The task is to find who has the maximum score and what's the winner's score for a string 's'.
+  
+  - **Format**
+      ```
+      Enter string: monkey
+      The winner is B with 14 pts
+      ```
+  - **Example**
+       ```
+       string: london
+       A's score:7 (o,on,ond,ondo,ondon)
+       B's score:14 (l,lo,lon,lond,londo,london,n,nd,ndo,ndon,d,do,don) 
+       The winner is B with 14 points
+       ```
+  - **Resources**
+    - [String in c++](https://www.w3schools.com/cpp/cpp_strings.asp)
+    - [Strings in python](https://www.w3schools.com/python/python_strings.asp)
+    - [Strings in java](https://www.javatpoint.com/java-string)
+   
 ## Maintainers
 - [K-Kraken](https://github.com/K-Kraken)
 - [jyuvaraj03](https://github.com/jyuvaraj03)
