@@ -1,4 +1,10 @@
--- December 1 - Sevenish Number
+{- 
+    December 1 - Sevenish Number
+    Run the program: 
+        ghci haskell_atarv.hs 
+        main
+            (or call the function directly: sevenishNumber 7)
+-}
 module Main where
 import Prelude
 import Data.List
@@ -11,11 +17,6 @@ powersOfSeven = iterate (*7) 1
 generateAllSums :: Num a => [a] -> [a]
 generateAllSums [] = []
 generateAllSums list = map sum $ filter (not . null) $ subsequences list
-
--- Calculate how many powers are needed to be able to calcualate the number in
--- index i
-powersNeeded :: (Num a, Ord a) => a -> Int
-powersNeeded i = (1+) $ length $ takeWhile (<i) $ map (\n -> (2^n)-1) [1..]
 
 -- Calculate the nth sevenish number
 sevenishNumber :: Num a => Int -> a
