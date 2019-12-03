@@ -5,11 +5,9 @@ import           Prelude
 
 -- Checks that list is sorted in ascending order
 isSorted :: Ord a => [a] -> Bool
-isSorted []       = True
-isSorted [_     ] = True
-isSorted (x : xs) = case all (>= x) xs of
-    True  -> isSorted xs
-    False -> False
+isSorted []           = True
+isSorted [_         ] = True
+isSorted (x : y : xs) = x <= y && isSorted (y:xs)
 
 -- Snap (remove) the latter half of list until it is sorted
 snap :: Ord a => [a] -> [a]
