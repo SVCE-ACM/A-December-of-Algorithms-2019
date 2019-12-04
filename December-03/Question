@@ -1,0 +1,17 @@
+def dec(lst):
+    if (sorted(lst) == lst):
+        return lst
+    else:
+        result = []
+        j = 0
+        for i in lst[:len(lst)//2]:      
+            result.append(i)
+            j += 1
+
+        print(result)
+
+
+
+
+
+dec([1, 2, 3, 4, 3])

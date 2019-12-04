@@ -1,0 +1,12 @@
+
+def sevenish_number(no):
+    no = bin(no)[2:]
+    result = 0
+    power = 0
+    for digit in reversed(no):
+        result += int(digit) * 7 ** power
+        power = power + 1
+    print(result)
+
+
+sevenish_number(10)

@@ -1,0 +1,45 @@
+import math
+def valid(nos):
+    
+    def helper(no):
+        result = 0
+        while (no > 0):
+            result += (no % 10) 
+            no = math.floor(no / 100)  
+        return result
+
+
+    def helper2(no):
+        result = 0
+        while (no > 0):
+            if (((no%10) * 2) < 10):
+                result += (no % 10) * 2
+            else:
+                temp = (no % 10) * 2
+                result += (temp % 10) + 1
+            no = math.floor(no / 100)
+            
+          
+        return result
+    
+    s1 = helper(nos)
+    s2 = helper2(math.floor(nos/10))
+
+    if ((s1+s2) % 10 == 0):
+        return True
+    else:
+        return False
+
+    
+
+valid(49927398716)
+## valid(61789372994)
+'''
+- Reverse the order of the digits in the number.
+    - Take the first, third, ... and every other odd digit in the reversed digits and sum them to form the partial sum s1
+    - Taking the second, fourth ... and every other even digit in the reversed digits:
+        * Multiply each digit by two and sum the digits if the answer is greater than nine to form partial sums for the even digits
+        * Sum the partial sums of the even digits to form s2
+    - If s1 + s2 ends in zero then the original number is in the form of a valid credit card number as verified by the Luhn test.  
+
+'''

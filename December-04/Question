@@ -1,0 +1,18 @@
+def h_index(N, cit):
+    result = 0
+    for i in cit:
+        if (i >= N):
+            result += 1
+
+    if (result != N):
+        return h_index(N - 1, cit)
+    else:
+        print(N)
+        return N
+
+
+h_index(5, [4,3,0,1,5])
+h_index(6, [4,5,2,0,6,4])
+# index h if at least h of his N papers have h citations each
+
+# create histogram
