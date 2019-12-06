@@ -230,7 +230,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     	-  In front of him = 0.3
     	-  Behind him = 0.2
     	-  To his left or right = 0.2
-    	-  In any of his 4 closest diagonals = 0.1
+    	-  In any of his 4 closest diagonals = 0.025
   - **Example**
     - **Input**
        ``` 
@@ -239,8 +239,8 @@ We have a small collection of algorithms, one for every day of the month. Scroll
         ```
     - **Output**
         ```
-        0.0 0.3 0.2
-        0.3 0.5 0.3
+        0.0 0.225 0.2
+        0.225 0.5 0.3
         ```
     - <img src="https://img.buzzfeed.com/buzzfeed-static/static/2016-09/26/6/asset/buzzfeed-prod-web11/anigif_sub-buzz-5611-1474885869-2.gif" height=250/>
   - **Resources**
