@@ -24,6 +24,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - [**December 8 - Cheating Probability**](#december-8---cheating-probability)
   - [**December 9 - One to One?**](#december-9---one-to-one)
   - [**December 10 - Count The Cookies**](#december-10---count-the-cookies)
+  - [**December 11 - Is This A Valid Email Address**](#december-11---is-this-a-valid-email-address)
   - [**FAQ**](#faq)
 
 
@@ -225,11 +226,11 @@ We have a small collection of algorithms, one for every day of the month. Scroll
 
 ### **December 8 - Cheating Probability**
   - **Problem**
-    - Given an RxC Matrix with its elements representing the branch being pursued by a student in the exam hall. Caluclate the probability of each student copying if a person from the same branch sits:
-    	-  In front = 0.3
-    	-  Behind = 0.2
-    	-  Sides = 0.2
-    	-  Diagonal = 0.1
+    - Given an RxC Matrix in which each element represents the Department of a student seated in that row and column in an examination hall, write a code to calculate the probability of each student copying if a person from the same department sits:
+    	-  In front of him = 0.3
+    	-  Behind him = 0.2
+    	-  To his left or right = 0.2
+    	-  In any of his 4 closest diagonals = 0.025
   - **Example**
     - **Input**
        ``` 
@@ -238,8 +239,8 @@ We have a small collection of algorithms, one for every day of the month. Scroll
         ```
     - **Output**
         ```
-        0.0 0.3 0.2
-        0.3 0.5 0.3
+        0.0 0.225 0.2
+        0.225 0.5 0.3
         ```
     - <img src="https://img.buzzfeed.com/buzzfeed-static/static/2016-09/26/6/asset/buzzfeed-prod-web11/anigif_sub-buzz-5611-1474885869-2.gif" height=250/>
   - **Resources**
@@ -297,6 +298,35 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - [Div Mod in C & C++](https://www.cprogramming.com/tutorial/modulus.html)
     - [Div Mod in Java](http://www.cs.ukzn.ac.za/~hughm/java/intro/week2/21.html)
     
+
+### **December 11 - Is This A Valid Email Address**
+  - **Problem**
+    - While signing up for a website, you must have seen that when an invalid email address is entered, you get a warning. This is because the website validates the given email address according to some specification of a valid email address (check the resources section to know the format of a valid email address). 
+    - Now, for today's challenge implement your own email address verification algorithm.
+    - For the sake of simplicity, assume that a valid email address has the following format:
+      - `local_part@domain`
+      - The `local_part` should contain only alphabets, numbers and the characters: `_`, `.`, `-`.
+      - The `domain` should contain only alphabets followed by `.com`
+  - **Example**
+      ```
+      // Valid email addresses
+      john-doe31@gmail.com
+      jane.austen_691@dnarifle.com
+      ```
+  - **Optional Problem**
+    - Implement an algorithm to verify an email address based on the complete syntax specification (given in the resources section).
+  - **Resources**
+    - [Complete Syntax Specification of Email Addresses](https://en.wikipedia.org/wiki/Email_address#Syntax)
+  - <details><summary><b>Still stuck?</b></summary>
+      <ul>
+          <li>Use Regular Expressions to verify the format of the email.</li>
+          <li><a href="http://www.cplusplus.com/reference/regex/">Regular Expressions in C++</a></li>
+          <li><a href="https://www.tutorialspoint.com/python/python_reg_expressions.htm">Regular Expressions in Python</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions">Regular Expressions in JavaScript</a></li>
+          <li><a href="https://www.javatpoint.com/java-regex">Regular Expressions in Java</a></li>
+      </ul>
+    </details>
+
     
 ## Maintainers
 - [K-Kraken](https://github.com/K-Kraken)
