@@ -400,7 +400,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
 
 ### **December ? - Intruder Alert**
   - **Problem**  
-    - Rick Sanchez just discovered that someone from another planet have been intruding into his private planet use its resources.
+    - Rick Sanchez just discovered that someone from another planet has been intruding into his private planet use its resources.
     - In order to lure that person in to humiliate him, Rick decides to send a dish as a gift. This dish has been cooked with a balance between its main ingredients: Animal A and Liquid B.
     - If for every 1g of A 1ml of B has to be added, write a code that uses **Backtracking** to print the number of ways the ingredients can be added when the quantity of A needed is provided.
   - **Example**
