@@ -29,7 +29,8 @@ neighbor (rowA, colA, _) (rowB, colB, _) =
         (-1, 0)   -> Just Behind
         (1 , 0)   -> Just Front
         (0 , 1)   -> Just Side
-        (_ , 1)   -> Just Diagonal
+        (-1, 1)   -> Just Diagonal
+        (1 , 1)   -> Just Diagonal
         otherwise -> Nothing
 
 -- Calculate cheating probability from neighbors relative position
@@ -38,7 +39,7 @@ cheatingRelation neighbor = case neighbor of
     Just Front    -> 0.3
     Just Behind   -> 0.2
     Just Side     -> 0.2
-    Just Diagonal -> 0.1
+    Just Diagonal -> 0.025
     otherwise     -> 0.0
 
 -- Cheating probability for one student
@@ -63,7 +64,7 @@ positionsToRows probs =
 
 -- Print one row of doubles
 printRow :: [Double] -> IO ()
-printRow row = sequence_ $ flip (++) [putStrLn ""] $ map (printf "%.1f ") row
+printRow row = sequence_ $ flip (++) [putStrLn ""] $ map (printf "%.3f ") row
 
 -- Print each row
 printRows :: [[Double]] -> IO ()
