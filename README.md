@@ -25,6 +25,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - [**December 9 - One to One?**](#december-9---one-to-one)
   - [**December 10 - Count The Cookies**](#december-10---count-the-cookies)
   - [**December 11 - Is This A Valid Email Address**](#december-11---is-this-a-valid-email-address)
+  - [**December 12 - Show JaSON the way**](#december-12---show-jason-the-way)
   - [**FAQ**](#faq)
 
 
@@ -327,6 +328,50 @@ We have a small collection of algorithms, one for every day of the month. Scroll
       </ul>
     </details>
 
+### **December 12 - Show JaSON the way**
+  - **Problem** 
+  	- Jason is stranded in a desert.His phone's battery is going to die out and all he has left is a compass.
+    - Parse the JaSON.json(in src/res) file and get the latitude and longitude values of the current and destination location.
+    - Also find the distance between those two locations (refer resources for the link)
+    - Return a Directions json file with your personalized message, distance and some direction.
+  
+  - **Example**
+       - **JaSON.json(src/res):**
+       ```json
+       {
+  		"markers": 
+		[
+			{
+				"name": "start",
+				"location": [25.1212, 55.1535],
+			},
+			{
+				"name": "destination",
+				"location": [25.2285, 55.3273]
+			}
+  		]
+       }
+       ```
+       - **sample output:**
+       ```json
+       {
+        "directions": 
+		[
+			  {
+			    "message": "Meet at the destination point",
+			    "distance": 21.17,
+			    "direction": "N"
+			  }
+        ]
+       }
+       ```
+  - **Resources**
+    - [Java JSON parsing](https://www.mkyong.com/java/json-simple-example-read-and-write-json/)
+    - [Python JSON parsing](https://docs.python.org/3/library/json.html)
+    - [C++ JSON parsing](https://nlohmann.github.io/json/)
+    - [Calculate distance](https://stackoverflow.com/questions/365826/calculate-distance-between-2-gps-coordinates)
+  - **Note**  
+    JSON format can differ and values like message and direction are totally upto you.
     
 ## Maintainers
 - [K-Kraken](https://github.com/K-Kraken)
