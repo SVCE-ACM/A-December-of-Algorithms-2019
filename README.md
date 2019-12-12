@@ -331,13 +331,13 @@ We have a small collection of algorithms, one for every day of the month. Scroll
       </ul>
     </details>
 
+
 ### **December 12 - Show JaSON the way**
   - **Problem** 
   	- Jason is stranded in a desert.His phone's battery is going to die out and all he has left is a compass.
     - Parse the JaSON.json(in src/res) file and get the latitude and longitude values of the current and destination location.
     - Also find the distance between those two locations (refer resources for the link)
     - Return a Directions json file with your personalized message, distance and some direction.
-  
   - **Example**
        - **JaSON.json(src/res):**
        ```json
@@ -355,7 +355,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   		]
        }
        ```
-       - **sample output:**
+       - **Sample Output:**
        ```json
        {
         "directions": 
@@ -376,36 +376,36 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - **Note**  
     JSON format can differ and values like message and direction are totally upto you.
 
+
 ### **December 13 - Toggling Switches**
   - **Problem**  
-    - There are n switches labeled from 1 to n,to turn on/off n bulbs.
+    - There are `n` switches labeled from 1 to `n`,to turn on/off `n` bulbs.
     - At start all the bulbs are switched off
-    - At first round, every bulb is turned 'on'
-    - At second round, every second switch is turned 'off'
-    - At third round, every third switch is toggled on/off(on->off and off->on)
+    - At first round, every bulb is turned `on`
+    - At second round, every second switch is turned `off`
+    - At third round, every third switch is toggled on/off (on->off and off->on)
     - This goes on and during nth round, every nth switch is toggled on/off.
-    - The task is to write **O(n) and constant time** functions to find how many switches are in the 'on' state(two separate functions).
+    - The task is to write `O(n)` and constant time functions to find how many switches are in the `on` state (two separate functions).
     - [optional] Find the switch nos. that are in the 'on' state after n such iterations.
 
   - **Example**
-
-       ```
-       Enter no of switches: 5
+  ```
+  Enter no of switches: 5
        
-       Iter 0: 1->off 2->off 3->off 4->off 5->off
-       Iter 1: 1->on 2->on 3->on 4->on 5->on
-       Iter 2: 1->on 2->off 3->on 4->off 5->on
-       Iter 3: 1->on 2->off 3->off 4->off 5->on
-       Iter 4: 1->on 2->off 3->off 4->on 5->on
-	   Iter 5: 1->on 2->off 3->off 4->on 5->off
-
-       No of switches in the 'on' state at the end: 2
-       ```
-
+  Iteration 0: 1->off  2->off  3->off  4->off  5->off
+  Iteration 1: 1->on   2->on   3->on   4->on   5->on
+  Iteration 2: 1->on   2->off  3->on   4->off  5->on
+  Iteration 3: 1->on   2->off  3->off  4->off  5->on
+  Iteration 4: 1->on   2->off  3->off  4->on   5->on
+  Iteration 5: 1->on   2->off  3->off  4->on   5->off
+  
+  No of switches in the 'on' state at the end: 2
+  ```
   - **Resources**
     - [Java math module](https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html)
     - [Python math module](https://docs.python.org/3/library/math.html)
     - [C++ math module](http://www.cplusplus.com/reference/cmath/)
+
 
 ### **December 14 - A Wordplay with Vowels and Consonants**
   - **Problem**  
@@ -414,15 +414,13 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - A makes substrings starting with a vowel(a,e,i,o,u) and B makes substrings starting with consonants.
     - For each occurence of their substring in 's', the players get 1 point.
     - The task is to find who has the maximum score and what's the winner's score for a string 's'.
-  
   - **Example**
        ```
-       string: london
+       String: london
        A's score:7 (o,on,ond,ondo,ondon)
        B's score:14 (l,lo,lon,lond,londo,london,n,nd,ndo,ndon,d,do,don) 
        The winner is B with 14 points
        ```
-      
    - **Format**
       ```
       Enter string: monkey
@@ -432,6 +430,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - [String in c++](https://www.w3schools.com/cpp/cpp_strings.asp)
     - [Strings in python](https://www.w3schools.com/python/python_strings.asp)
     - [Strings in java](https://www.javatpoint.com/java-string)
+
 
 ### **December 15 - Intruder Alert**
   - **Problem**  
@@ -447,6 +446,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     ```
   - **Resources**
     - [Backtracking](https://www.javatpoint.com/backtracking-introduction)
+    
     
 ## Maintainers
 - [K-Kraken](https://github.com/K-Kraken)
