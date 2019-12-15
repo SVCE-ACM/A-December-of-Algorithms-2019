@@ -481,7 +481,8 @@ We have a small collection of algorithms, one for every day of the month. Scroll
      4h  4s  ks  5d  10s: one-pair
      qc  10c 7c  6c  4c:  flush
     ```
-  ![hello](/src/assets/casino.gif)
+  - <img src="/src/assets/casino.gif" height=250/>
+  
   - **Resources**
     - [Poker hand ranking](https://en.wikipedia.org/wiki/List_of_poker_hands#Hand-ranking_categories)
     - [Arrays](https://makecode.microbit.org/types/array)
