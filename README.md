@@ -453,9 +453,9 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - **Problem**  
     - In poker, players form sets of five playing cards, called hands, according to the rules of the game. Each hand has a rank, which is compared against the ranks of other hands of all those in the game and the highest hand wins all the money that everybody puts in.
     - A poker hand is specified as a space separated list of five playing cards:
-    - Each input card has two characters indicating face and suit.   For example:   2d   (two of diamonds).
-    	- Faces are: a, 2, 3, 4, 5, 6, 7, 8, 9, 10, j, q, k
-		- Suits are: `h` (hearts), `d` (diamonds), `c` (clubs), and `s` (spades)
+    - Each input card has two characters indicating face and suit. For example: `2d` (two of diamonds).
+    	- Faces are: `a`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9`, `10`, `j`, `q`, `k`
+		- Suits are: `h` :hearts: (hearts), `d` :diamonds: (diamonds), `c` :clubs: (clubs), and `s` :spades: (spades)
     - Create a program to parse a single five card poker hand and specify the poker hand ranking and produce one of the following outputs.
     ```
      straight-flush
@@ -471,16 +471,17 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     ```
   - **Example**
     ```
-     2h 2h 2h kc qd: three-of-a-kind
-     2h 5h 7d 8c 9s: high-card
-     ah 2d 3c 4c 5d: straight
-     2h 3h 2d 3c 3d: full-house
-     2h 7h 2d 3c 3d: two-pair
-     2h 7h 7d 7c 7s: four-of-a-kind 
-     10h jh qh kh ah: straight-flush
-     4h 4s ks 5d 10s: one-pair
-     qc 10c 7c 6c 4c: flush
+     2h  2h  2h  kc  qd:  three-of-a-kind
+     2h  5h  7d  8c  9s:  high-card
+     ah  2d  3c  4c  5d:  straight
+     2h  3h  2d  3c  3d:  full-house
+     2h  7h  2d  3c  3d:  two-pair
+     2h  7h  7d  7c  7s:  four-of-a-kind 
+     10h jh  qh  kh  ah:  straight-flush
+     4h  4s  ks  5d  10s: one-pair
+     qc  10c 7c  6c  4c:  flush
     ```
+  ![hello](/src/assets/casino.gif)
   - **Resources**
     - [Poker hand ranking](https://en.wikipedia.org/wiki/List_of_poker_hands#Hand-ranking_categories)
     - [Arrays](https://makecode.microbit.org/types/array)
