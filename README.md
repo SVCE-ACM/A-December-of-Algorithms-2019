@@ -456,7 +456,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - Each input card has two characters indicating face and suit.   For example:   2d   (two of diamonds).
     	- Faces are: a, 2, 3, 4, 5, 6, 7, 8, 9, 10, j, q, k
 		- Suits are: `h` (hearts), `d` (diamonds), `c` (clubs), and `s` (spades)
-    - Create a program to parse a single five card poker hand and specify the poker hand and produce oe of the following outputs.
+    - Create a program to parse a single five card poker hand and specify the poker hand ranking and produce one of the following outputs.
     ```
      straight-flush
 	 four-of-a-kind
