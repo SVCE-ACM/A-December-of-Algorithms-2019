@@ -492,9 +492,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
 ### **December 17 - Subway Surfer**
   - **Problem**
     - Many metro train systems across the world have multiple lines. These lines often meet each other at few stations called interchanges. Commuters often change lines at interchanges based on their destination.
-    
-     ![image](/src/assets/December-17 Subway Surfers.png)
-     
+    - <img src="/src/assets/December-17 Subway Surfers.png" height=250/>     
     - In the above diagram we can observe that if we want to travel between Greenwich station and the Airport we have to travel for 10 stations in the red line : `GREENWICH -> SUNTECH  -> MARINA -> CENTRAL -> CITY HALL -> BAY -> MUSEUM -> RIVERFRONT -> DOWNTOWN -> AIRPORT`
     - However if the passengers switch trains to the blue line in CENTRAL station they can save time and reach their destination faster: `GREENWICH -> SUNTECH ->MARINA -> CENTRAL -> ZOO -> ESTATE ->AIRPORT`
     - Write a program that accepts two ordered arrays of railway lines and calculates the fastest route possible between two stations.
