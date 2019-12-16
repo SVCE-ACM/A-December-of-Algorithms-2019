@@ -30,6 +30,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - [**December 14 - A Wordplay with Vowels and Consonants**](#december-14---a-wordplay-with-vowels-and-consonants)
   - [**December 15 - Intruder Alert**](#december-15---intruder-alert)
   - [**December 16 - Casino Royale**](#december-16---casino-royale)
+  - [**December 17 - Subway Surfer**](#december-17---subway-surfer)
   - [**FAQ**](#faq)
 
 
@@ -487,6 +488,32 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - [Poker hand ranking](https://en.wikipedia.org/wiki/List_of_poker_hands#Hand-ranking_categories)
     - [Arrays](https://makecode.microbit.org/types/array)
     - [Sorting](https://www.geeksforgeeks.org/sorting-algorithms)
+    
+### **December 17 - Subway Surfer**
+  - **Problem**
+    - Many metro train systems across the world have multiple lines. These lines often meet each other at few stations called interchanges. Commuters often change lines at interchanges based on their destination.
+    
+     ![Untitled Diagram (1)](https://user-images.githubusercontent.com/54794049/70930026-4b424080-205a-11ea-89d7-439947af76a6.png)
+     
+    - In the above diagram we can observe that if we want to travel between Greenwich station and the Airport we have to travel for 10 stations in the red line : (GREENWICH -> SUNTECH  -> MARINA -> CENTRAL -> CITY HALL -> BAY -> MUSEUM -> RIVERFRONT -> DOWNTOWN -> AIRPORT)
+    - However if the passengers switch trains to the blue line in CENTRAL station they can save time and reach their destination faster: (GREENWICH -> SUNTECH ->MARINA -> CENTRAL -> ZOO -> ESTATE ->AIRPORT)
+    - Write a program that accepts two ordered arrays of railway lines and calculates the fastest route possible between two stations.
+  - **Example**
+      ```c
+      INPUT
+      Line 1: Park, Central, Beach, Mylapore, Kilpauk
+      Line 2: Central, T.Nagar, Washerampet, MKB Nagar.
+      Start: Park
+      End: T.Nagar
+
+      OUTPUT
+      Fastest Path: Park ->Central -> T.nagar
+
+      ```
+  - **Resources**
+    - [Arrays in C++](http://www.cplusplus.com/doc/tutorial/arrays/)
+    - [Arrays in Java](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html)
+    - [Arrays in Python](https://www.w3schools.com/python/python_lists.asp)
     
 ## Maintainers
 - [K-Kraken](https://github.com/K-Kraken)
