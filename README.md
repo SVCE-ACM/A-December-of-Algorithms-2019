@@ -30,6 +30,8 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - [**December 14 - A Wordplay with Vowels and Consonants**](#december-14---a-wordplay-with-vowels-and-consonants)
   - [**December 15 - Intruder Alert**](#december-15---intruder-alert)
   - [**December 16 - Casino Royale**](#december-16---casino-royale)
+  - [**December 17 - Subway Surfer**](#december-17---subway-surfer)
+  - [**December 18 - Your Password is too WEAK**](#december-18---your-password-is-too-weak)
   - [**FAQ**](#faq)
 
 
@@ -453,9 +455,9 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - **Problem**  
     - In poker, players form sets of five playing cards, called hands, according to the rules of the game. Each hand has a rank, which is compared against the ranks of other hands of all those in the game and the highest hand wins all the money that everybody puts in.
     - A poker hand is specified as a space separated list of five playing cards:
-    - Each input card has two characters indicating face and suit.   For example:   2d   (two of diamonds).
-    	- Faces are: a, 2, 3, 4, 5, 6, 7, 8, 9, 10, j, q, k
-		- Suits are: `h` (hearts), `d` (diamonds), `c` (clubs), and `s` (spades)
+    - Each input card has two characters indicating face and suit. For example: `2d` (two of diamonds).
+    	- Faces are: `a`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9`, `10`, `j`, `q`, `k`
+		- Suits are: `h` :hearts: (hearts), `d` :diamonds: (diamonds), `c` :clubs: (clubs), and `s` :spades: (spades)
     - Create a program to parse a single five card poker hand and specify the poker hand ranking and produce one of the following outputs.
     ```
      straight-flush
@@ -471,20 +473,60 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     ```
   - **Example**
     ```
-     2h 2h 2h kc qd: three-of-a-kind
-     2h 5h 7d 8c 9s: high-card
-     ah 2d 3c 4c 5d: straight
-     2h 3h 2d 3c 3d: full-house
-     2h 7h 2d 3c 3d: two-pair
-     2h 7h 7d 7c 7s: four-of-a-kind 
-     10h jh qh kh ah: straight-flush
-     4h 4s ks 5d 10s: one-pair
-     qc 10c 7c 6c 4c: flush
+     2h  2h  2h  kc  qd:  three-of-a-kind
+     2h  5h  7d  8c  9s:  high-card
+     ah  2d  3c  4c  5d:  straight
+     2h  3h  2d  3c  3d:  full-house
+     2h  7h  2d  3c  3d:  two-pair
+     2h  7h  7d  7c  7s:  four-of-a-kind 
+     10h jh  qh  kh  ah:  straight-flush
+     4h  4s  ks  5d  10s: one-pair
+     qc  10c 7c  6c  4c:  flush
     ```
+  - <img src="/src/assets/casino.gif" height=250/>
+  
   - **Resources**
     - [Poker hand ranking](https://en.wikipedia.org/wiki/List_of_poker_hands#Hand-ranking_categories)
     - [Arrays](https://makecode.microbit.org/types/array)
     - [Sorting](https://www.geeksforgeeks.org/sorting-algorithms)
+    
+### **December 17 - Subway Surfer**
+  - **Problem**
+    - Many metro train systems across the world have multiple lines. These lines often meet each other at few stations called interchanges. Commuters often change lines at interchanges based on their destination.
+    - <img src="/src/assets/December-17 Subway Surfers.png" height=250/>     
+    - In the above diagram we can observe that if we want to travel between Greenwich station and the Airport we have to travel for 10 stations in the red line : `GREENWICH -> SUNTECH  -> MARINA -> CENTRAL -> CITY HALL -> BAY -> MUSEUM -> RIVERFRONT -> DOWNTOWN -> AIRPORT`
+    - However if the passengers switch trains to the blue line in CENTRAL station they can save time and reach their destination faster: `GREENWICH -> SUNTECH ->MARINA -> CENTRAL -> ZOO -> ESTATE ->AIRPORT`
+    - Write a program that accepts two ordered arrays of railway lines and calculates the fastest route possible between two stations.
+  - **Example**
+      ```
+      Enter Train Lines, Start and Endpoint:
+      Line 1: Park, Central, Beach, Mylapore, Kilpauk
+      Line 2: Central, T.Nagar, Washerampet, MKB Nagar.
+      Start: Park
+      End: T.Nagar
+      ```
+      ```
+      Fastest Path: Park ->Central -> T.nagar
+      ```
+  - **Resources**
+    - [Arrays in C++](http://www.cplusplus.com/doc/tutorial/arrays/)
+    - [Arrays in Java](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html)
+    - [Arrays in Python](https://www.w3schools.com/python/python_lists.asp)
+    
+### **December 18 - Your Password is too WEAK**
+  - **Problem**
+    - Brute Force Attack is the simplest password cracking method. This attack simply tries to use every possible ASCII printable characters (character code 32-126) combination as a password. Brute Forcing takes time but the chances of getting it right is certain.
+    - The problem is to calculate the time taken to find the password given that you know the length of the password string using Brute Force and Multithreading. 
+    **Note:** Brute Forcing doesn't work in real life.
+  - **Example**
+  ```
+  Enter Password: T!Kk@
+  Time Taken: 6723.45 seconds
+  ```
+  - **Resources**
+    - [Multithreading in C++](https://www.geeksforgeeks.org/multithreading-in-cpp/)
+    - [Multithreading in Java](https://www.geeksforgeeks.org/multithreading-in-java/)
+    
     
 ## Maintainers
 - [K-Kraken](https://github.com/K-Kraken)
