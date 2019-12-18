@@ -1,5 +1,4 @@
 {- December 17 - Subway Surfer -}
-{-# OPTIONS_GHC -fwarn-incomplete-patterns #-}
 
 import           Prelude                 hiding ( lines )
 import           Data.List               hiding ( lines )
@@ -17,7 +16,7 @@ parseLine [x] stations = if isJust (find ((== x) . name) stations)
     else parseLine [] (addStation stations)
   where
     updateStations = map
-        (\a -> if (name a) == x
+        (\a -> if name a == x
             then Station { name = x, routes = routes a }
             else a
         )
@@ -36,21 +35,6 @@ parseLine (x : y : xs) stations = if isJust (find ((== x) . name) stations)
 parseStations :: [[String]] -> [Station]
 parseStations lines = foldl (flip parseLine) [] (map bothWays lines)
 
-exampleStations = parseStations
-    [ [ "Greenwhich"
-      , "Suntech"
-      , "Marina"
-      , "Central"
-      , "CityHall"
-      , "Bay"
-      , "Museum"
-      , "RiverFront"
-      , "Downtown"
-      , "Airport"
-      ]
-    , ["Park", "Central", "Zoo", "Estate", "Airport"]
-    ]
-
 getStations :: [String] -> [Station] -> [Station]
 getStations names stations =
     mapMaybe (\x -> find ((== x) . name) stations) names
@@ -66,18 +50,35 @@ shortestRoute start end stations =
   where
     shortestRoute' :: Station -> Station -> [Station] -> [Station]
     shortestRoute' start end stations =
-        minimumBy (\a b -> (length a) `compare` (length b))
+        minimumBy (\a b -> length a `compare` length b)
             $ catMaybes
-            $ possibleRoutes (getStations (routes start) stations) end [start] []
-      where
-        possibleRoutes :: [Station] -> Station -> [Station] -> [Maybe [Station]] ->[Maybe [Station]]
-        possibleRoutes []       _   _   routes    = routes
-        possibleRoutes (x : xs) end visited routes = if x `elem` visited
-            then possibleRoutes xs end visited routes
-            else if x == end
-                then possibleRoutes xs end (visited ++ [x]) (routes ++ [Just (visited ++ [x])])
-                else possibleRoutes xs end (visited ++ [x]) routes
+            $ possibleRoutes (getStations (routes start) stations)
+                             end
+                             stations
+                             [start]
+                             []
 
+possibleRoutes
+    :: [Station]
+    -> Station
+    -> [Station]
+    -> [Station]
+    -> [Maybe [Station]]
+    -> [Maybe [Station]]
+possibleRoutes []       _   _        _       result = result
+possibleRoutes (x : xs) end stations visited result = if x `elem` visited
+    then possibleRoutes xs end stations visited result
+    else if name x == name end
+        then
+            (result ++ [Just (visited ++ [x])])
+                ++ possibleRoutes xs end stations visited result
+        else
+            possibleRoutes (getStations (routes x) stations)
+                           end
+                           stations
+                           (visited ++ [x])
+                           result
+                ++ possibleRoutes xs end stations visited result
 
 main :: IO ()
 main = do
@@ -90,4 +91,7 @@ main = do
     start <- getLine
     putStr "End: "
     end <- getLine
-    print $ parseStations [words line1, words line2]
+    let stations = parseStations [words line1, words line2]
+    let route    = shortestRoute start end stations
+    putStr "Fastest route: "
+    putStrLn $ intercalate " -> " $ map name route
