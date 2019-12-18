@@ -31,6 +31,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - [**December 15 - Intruder Alert**](#december-15---intruder-alert)
   - [**December 16 - Casino Royale**](#december-16---casino-royale)
   - [**December 17 - Subway Surfer**](#december-17---subway-surfer)
+  - [**December 18 - Your Password is too WEAK**](#december-18---your-password-is-too-weak)
   - [**FAQ**](#faq)
 
 
@@ -511,6 +512,21 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - [Arrays in C++](http://www.cplusplus.com/doc/tutorial/arrays/)
     - [Arrays in Java](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html)
     - [Arrays in Python](https://www.w3schools.com/python/python_lists.asp)
+    
+### **December 18 - Your Password is too WEAK**
+  - **Problem**
+    - Brute Force Attack is the simplest password cracking method. This attack simply tries to use every possible ASCII printable characters (character code 32-126) combination as a password. Brute Forcing takes time but the chances of getting it right is certain.
+    - The problem is to calculate the time taken to find the password given that you know the length of the password string using Brute Force and Multithreading. 
+    **Note:** Brute Forcing doesn't work in real life.
+  - **Example**
+  ```
+  Enter Password: T!Kk@
+  Time Taken: 6723.45 seconds
+  ```
+  - **Resources**
+    - [Multithreading in C++](https://www.geeksforgeeks.org/multithreading-in-cpp/)
+    - [Multithreading in Java](https://www.geeksforgeeks.org/multithreading-in-java/)
+    
     
 ## Maintainers
 - [K-Kraken](https://github.com/K-Kraken)
