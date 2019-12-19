@@ -32,6 +32,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - [**December 16 - Casino Royale**](#december-16---casino-royale)
   - [**December 17 - Subway Surfer**](#december-17---subway-surfer)
   - [**December 18 - Your Password is too WEAK**](#december-18---your-password-is-too-weak)
+  - [**December 19 - Periphery of a lake**](#december-19---periphery-of-a-lake)
   - [**FAQ**](#faq)
 
 
@@ -527,7 +528,23 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - [Multithreading in C++](https://www.geeksforgeeks.org/multithreading-in-cpp/)
     - [Multithreading in Java](https://www.geeksforgeeks.org/multithreading-in-java/)
     
+### **December 19 - Periphery of a lake**
+  - **Problem**
+    - Reshwin wants to experience the scenic view of the kolleru lake from the periphery of the lake.
+    - Given a set of random points (which also contains the points which lie in the periphery of the lake), Reshwin has to find the points which lie in the periphery of a lake to traverse the outer limits of the lake.
+    -<img src="/src/assets/" height=250/> 
+    - Develop an algorithm to help Reshwin
     
+  - **Example**
+  ```
+  {{0, 3}, {2, 2}, {1, 1}, {2, 1}, {1, 2},{3, 0}, {0, 0}, {3, 3}}
+  ```
+  ```
+  The outer limits are - {{0, 3}, {0, 0}, {3, 0}, {3, 3}}
+  ```
+  - **Resources**
+    - [Convex Hull](https://www.geeksforgeeks.org/convex-hull-set-1-jarviss-algorithm-or-wrapping/)
+  
 ## Maintainers
 - [K-Kraken](https://github.com/K-Kraken)
 - [jyuvaraj03](https://github.com/jyuvaraj03)
