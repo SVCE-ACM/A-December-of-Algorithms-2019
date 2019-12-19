@@ -554,6 +554,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
 - [ajaykrishnan23](https://github.com/ajaykrishnan23)
 - [dhirajv2000](https://github.com/dhirajv2000)
 - [dhivya141](https://github.com/dhivya141)
+- [Humaidabdullah](https://github.com/Humaidabdullah)
 
 
 FAQ:
