@@ -554,7 +554,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     -  The input is in the form of a matrix where the indices represent the city number and the value in the matrix represents the distance between the two cities
     - The output is the least distance
   - **Example**  
- 	For four cities A,B,C,D the input will be in the following format
+ 	For four cities A,B,C,D the input will be in the following format (**Note**: The matrix is symmetric since the distance from A->B is the distance from B->A)
  	- Input
  	```	
 		A	B	C	D
