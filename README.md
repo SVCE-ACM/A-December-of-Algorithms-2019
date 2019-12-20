@@ -544,6 +544,25 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   ```
   - **Resources**
     - [Convex Hull](https://www.geeksforgeeks.org/convex-hull-set-1-jarviss-algorithm-or-wrapping/)
+    
+    ### **December 20 - 100 days of summer**
+  - **Problem**
+    - Nitya wants to visit a number of cities in her summer vacation.
+    -  Given a set of cities and distance between every pair of cities, the problem is to find the shortest possible route that visits every city exactly once and returns to the starting point.
+    - <img src="/src/assets/Convexhull.jpg" height=250/> 
+    - Develop an algorithm to help Nitya. 
+    
+  - **Example**
+  ```
+  If size of S is 2, then S must be {1, i},
+ C(S, i) = dist(1, i) 
+  ```
+  ```
+  lse if size of S is greater than 2.
+ C(S, i) = min { C(S-{i}, j) + dis(j, i)} where j belongs to S, j != i and j != 1.
+  ```
+  - **Resources**
+    - [Travelling Salesman Problem](https://www.tutorialspoint.com/Travelling-Salesman-Problem)
   
 ## Maintainers
 - [K-Kraken](https://github.com/K-Kraken)
@@ -555,6 +574,8 @@ We have a small collection of algorithms, one for every day of the month. Scroll
 - [dhirajv2000](https://github.com/dhirajv2000)
 - [dhivya141](https://github.com/dhivya141)
 - [Humaidabdullah](https://github.com/Humaidabdullah)
+- [Vignesh040](https://github.com/Vignesh0404)
+
 
 
 FAQ:
