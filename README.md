@@ -558,7 +558,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
  C(S, i) = dist(1, i) 
   ```
   ```
-  lse if size of S is greater than 2.
+  Else if size of S is greater than 2.
  C(S, i) = min { C(S-{i}, j) + dis(j, i)} where j belongs to S, j != i and j != 1.
   ```
   - **Resources**
