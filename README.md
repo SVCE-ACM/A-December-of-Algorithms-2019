@@ -532,7 +532,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - **Problem**
     - Reshwin wants to experience the scenic view of the kolleru lake from the periphery of the lake.
     - Given a set of random points (which also contains the points which lie in the periphery of the lake), Reshwin has to find the points which lie in the periphery of a lake to traverse the outer limits of the lake.
-    - <img src="/src/assets/Convexhull.jpg" height=250/> 
+    - <img src="/src/assets/tsp.jpg" height=250/> 
     - Develop an algorithm to help Reshwin
     
   - **Example**
