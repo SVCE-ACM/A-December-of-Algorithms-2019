@@ -33,6 +33,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - [**December 17 - Subway Surfer**](#december-17---subway-surfer)
   - [**December 18 - Your Password is too WEAK**](#december-18---your-password-is-too-weak)
   - [**December 19 - Periphery of a lake**](#december-19---periphery-of-a-lake)
+  - [**December 20 - 100 days of summer**](#december-20---100-days-of-summer)
   - [**FAQ**](#faq)
 
 
@@ -545,26 +546,31 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - **Resources**
     - [Convex Hull](https://www.geeksforgeeks.org/convex-hull-set-1-jarviss-algorithm-or-wrapping/)
     
-    ### **December 20 - 100 days of summer**
+### **December 20 - 100 days of summer**
   - **Problem**
     - Nitya wants to visit a number of cities in her summer vacation.
     -  Given a set of cities and distance between every pair of cities, the problem is to find the shortest possible route that visits every city exactly once and returns to the starting point.
-    - <img src="/src/assets/tsp.jpg" height=250/> 
-    - Develop an algorithm to help Nitya. 
-    
-  - **Example**
-  ```
- The input is a file with the coordinates of points. There are two lines: first all the x-coordinates then all the y-coordinates per line. For example:
-    0.0  4.0  1.0  3.0  
-    4.0  0.0  2.0  1.0  
-    1.0  2.0  0.0  5.0
-    3.0  1.0  5.0  0.0 
-is the input for a problem with six cities.
+    	<img src="/src/assets/tsp.jpg" height=250/> 
+    -  The input is in the form of a matrix where the indices represent the city number and the value in the matrix represents the distance between the two cities
+    - The output is the least distance
+  - **Example**  
+ 	For four cities A,B,C,D the input will be in the following format
+ 	- Input
+ 	```	
+		A	B	C	D
+	 A	0km	40km	10km	30km			
 
-  ```
-  ```
-  Output: 7.0
-  ```
+	 B	40km	0km	20km	10km	
+
+	 C	10km	20km	0km	50km		
+
+	 D	30km	10km	50km	0km
+  	```
+  	- Output 
+	```
+	The shortest distance is 70km
+	```
+	
   - **Resources**
     - [Travelling Salesman Problem](https://www.tutorialspoint.com/Travelling-Salesman-Problem)
   
