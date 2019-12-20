@@ -532,7 +532,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - **Problem**
     - Reshwin wants to experience the scenic view of the kolleru lake from the periphery of the lake.
     - Given a set of random points (which also contains the points which lie in the periphery of the lake), Reshwin has to find the points which lie in the periphery of a lake to traverse the outer limits of the lake.
-    - <img src="/src/assets/tsp.jpg" height=250/> 
+    - <img src="/src/assets/Convexhull.jpg" height=250/> 
     - Develop an algorithm to help Reshwin
     
   - **Example**
@@ -549,7 +549,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - **Problem**
     - Nitya wants to visit a number of cities in her summer vacation.
     -  Given a set of cities and distance between every pair of cities, the problem is to find the shortest possible route that visits every city exactly once and returns to the starting point.
-    - <img src="/src/assets/Convexhull.jpg" height=250/> 
+    - <img src="/src/assets/tsp.jpg" height=250/> 
     - Develop an algorithm to help Nitya. 
     
   - **Example**
