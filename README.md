@@ -32,6 +32,8 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - [**December 16 - Casino Royale**](#december-16---casino-royale)
   - [**December 17 - Subway Surfer**](#december-17---subway-surfer)
   - [**December 18 - Your Password is too WEAK**](#december-18---your-password-is-too-weak)
+  - [**December 19 - Periphery of a lake**](#december-19---periphery-of-a-lake)
+  - [**December 20 - 100 days of summer**](#december-20---100-days-of-summer)
   - [**FAQ**](#faq)
 
 
@@ -527,7 +529,51 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - [Multithreading in C++](https://www.geeksforgeeks.org/multithreading-in-cpp/)
     - [Multithreading in Java](https://www.geeksforgeeks.org/multithreading-in-java/)
     
+### **December 19 - Periphery of a lake**
+  - **Problem**
+    - Reshwin wants to experience the scenic view of the kolleru lake from the periphery of the lake.
+    - Given a set of random points (which also contains the points which lie in the periphery of the lake), Reshwin has to find the points which lie in the periphery of a lake to traverse the outer limits of the lake.
+    - <img src="/src/assets/Convexhull.jpg" height=250/> 
+    - Develop an algorithm to help Reshwin
     
+  - **Example**
+  ```
+  {{0, 3}, {2, 2}, {1, 1}, {2, 1}, {1, 2},{3, 0}, {0, 0}, {3, 3}}
+  ```
+  ```
+  The outer limits are - {{0, 3}, {0, 0}, {3, 0}, {3, 3}}
+  ```
+  - **Resources**
+    - [Convex Hull](https://www.geeksforgeeks.org/convex-hull-set-1-jarviss-algorithm-or-wrapping/)
+    
+### **December 20 - 100 days of summer**
+  - **Problem**
+    - Nitya wants to visit a number of cities in her summer vacation.
+    -  Given a set of cities and distance between every pair of cities, the problem is to find the shortest possible route that visits every city exactly once and returns to the starting point.
+    	<img src="/src/assets/tsp.jpg" height=250/> 
+    -  The input is in the form of a matrix where the indices represent the city number and the value in the matrix represents the distance between the two cities
+    - The output is the least distance
+  - **Example**  
+ 	For four cities A,B,C,D the input will be in the following format (**Note**: The matrix is symmetric since the distance from A->B is the distance from B->A)
+ 	- Input
+ 	```	
+		A	B	C	D
+	 A	0km	40km	10km	30km			
+
+	 B	40km	0km	20km	10km	
+
+	 C	10km	20km	0km	50km		
+
+	 D	30km	10km	50km	0km
+  	```
+  	- Output 
+	```
+	The shortest distance is 70km
+	```
+	
+  - **Resources**
+    - [Travelling Salesman Problem](https://www.tutorialspoint.com/Travelling-Salesman-Problem)
+  
 ## Maintainers
 - [K-Kraken](https://github.com/K-Kraken)
 - [jyuvaraj03](https://github.com/jyuvaraj03)
@@ -537,6 +583,9 @@ We have a small collection of algorithms, one for every day of the month. Scroll
 - [ajaykrishnan23](https://github.com/ajaykrishnan23)
 - [dhirajv2000](https://github.com/dhirajv2000)
 - [dhivya141](https://github.com/dhivya141)
+- [Humaidabdullah](https://github.com/Humaidabdullah)
+- [Vignesh040](https://github.com/Vignesh0404)
+
 
 
 FAQ:
