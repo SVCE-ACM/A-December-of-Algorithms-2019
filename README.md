@@ -555,7 +555,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - **Example**
   ```
  The input is a file with the coordinates of points. There are two lines: first all the x-coordinates then all the y-coordinates per line. For example:
-    0.0 4.0  1.0  3.0  
+    0.0  4.0  1.0  3.0  
     4.0  0.0  2.0  1.0  
     1.0  2.0  0.0  5.0
     3.0  1.0  5.0  0.0 
