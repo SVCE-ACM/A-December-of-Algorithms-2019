@@ -34,6 +34,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - [**December 18 - Your Password is too WEAK**](#december-18---your-password-is-too-weak)
   - [**December 19 - Periphery of a lake**](#december-19---periphery-of-a-lake)
   - [**December 20 - 100 days of summer**](#december-20---100-days-of-summer)
+  - [**December 21 - Marching Partners**](#december-21---marching-partners)
   - [**FAQ**](#faq)
 
 
@@ -360,7 +361,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   		]
        }
        ```
-       - **Sample Output:**
+       - **Sampl- Inpute Output:**
        ```json
        {
         "directions": 
@@ -485,7 +486,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
      4h  4s  ks  5d  10s: one-pair
      qc  10c 7c  6c  4c:  flush
     ```
-  - <img src="/src/assets/casino.gif" height=250/>
+  	<img src="/src/assets/casino.gif" height=250/>
   
   - **Resources**
     - [Poker hand ranking](https://en.wikipedia.org/wiki/List_of_poker_hands#Hand-ranking_categories)
@@ -494,8 +495,9 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     
 ### **December 17 - Subway Surfer**
   - **Problem**
-    - Many metro train systems across the world have multiple lines. These lines often meet each other at few stations called interchanges. Commuters often change lines at interchanges based on their destination.
-    - <img src="/src/assets/December-17 Subway Surfers.png" height=250/>     
+    - Many metro train systems across the world have multiple lines. These lines often meet each other at few stations called interchanges. Commuters often change lines at interchanges based on their destination.   
+    
+    	<img src="/src/assets/December-17 Subway Surfers.png" height=250/>     
     - In the above diagram we can observe that if we want to travel between Greenwich station and the Airport we have to travel for 10 stations in the red line : `GREENWICH -> SUNTECH  -> MARINA -> CENTRAL -> CITY HALL -> BAY -> MUSEUM -> RIVERFRONT -> DOWNTOWN -> AIRPORT`
     - However if the passengers switch trains to the blue line in CENTRAL station they can save time and reach their destination faster: `GREENWICH -> SUNTECH ->MARINA -> CENTRAL -> ZOO -> ESTATE ->AIRPORT`
     - Write a program that accepts two ordered arrays of railway lines and calculates the fastest route possible between two stations.
@@ -533,7 +535,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - **Problem**
     - Reshwin wants to experience the scenic view of the kolleru lake from the periphery of the lake.
     - Given a set of random points (which also contains the points which lie in the periphery of the lake), Reshwin has to find the points which lie in the periphery of a lake to traverse the outer limits of the lake.
-    - <img src="/src/assets/Convexhull.jpg" height=250/> 
+    	<img src="/src/assets/Convexhull.jpg" height=250/> 
     - Develop an algorithm to help Reshwin
     
   - **Example**
@@ -556,7 +558,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - **Example**  
  	For four cities A,B,C,D the input will be in the following format (**Note**: The matrix is symmetric since the distance from A->B is the distance from B->A)
  	- Input
- 	```	
+ 	```
 		A	B	C	D
 	 A	0km	40km	10km	30km			
 
@@ -574,6 +576,25 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - **Resources**
     - [Travelling Salesman Problem](https://www.tutorialspoint.com/Travelling-Salesman-Problem)
   
+### **December 21 - Marching Partners**
+  - **Problem**
+    - Nikhil wants to organise a procession with his students.
+    - In this procession, two students will walk side-by-side in each row.
+    - Nikhil expects that the height difference of the two students who walk in each row should not exceed a certain threshold. That is, two students can be paired as long as their height difference does not exceed `d`.
+    - If there are `n` students in the class in which the `i`th student is `H[i]` units tall, pair the maximum number of students corresponding to the above condition.
+    - _Note_: A student cannot be part of more than one pair.
+    - Implement a function `marching_partners(n, H, d)` that prints the maximum number of pairs that can be formed. 
+  - **Example**  
+ 	```bash
+	> marching_partners(5, [147,149,149,155,150], 2)
+	  2
+  	```	
+  - **Explanation**
+    - The 5 students have heights 147, 149, 149, 155 and 150 respectively. The maximum allowed difference in the heights of two students forming a pair is at most 2. It is clear that the 4th student (height 155) cannot be paired with any other student. The remaining 4 students can be paired as (1st and 3rd) and (2nd and 5th) to form 2 pairs.
+  - **Resources**
+    - [Greedy Algorithms](https://www.hackerearth.com/practice/algorithms/greedy/basics-of-greedy-algorithms/tutorial/)
+
+
 ## Maintainers
 - [K-Kraken](https://github.com/K-Kraken)
 - [jyuvaraj03](https://github.com/jyuvaraj03)
