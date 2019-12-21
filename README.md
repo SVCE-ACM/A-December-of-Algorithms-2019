@@ -485,7 +485,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
      4h  4s  ks  5d  10s: one-pair
      qc  10c 7c  6c  4c:  flush
     ```
-  - <img src="/src/assets/casino.gif" height=250/>
+  	<img src="/src/assets/casino.gif" height=250/>
   
   - **Resources**
     - [Poker hand ranking](https://en.wikipedia.org/wiki/List_of_poker_hands#Hand-ranking_categories)
@@ -494,8 +494,9 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     
 ### **December 17 - Subway Surfer**
   - **Problem**
-    - Many metro train systems across the world have multiple lines. These lines often meet each other at few stations called interchanges. Commuters often change lines at interchanges based on their destination.
-    - <img src="/src/assets/December-17 Subway Surfers.png" height=250/>     
+    - Many metro train systems across the world have multiple lines. These lines often meet each other at few stations called interchanges. Commuters often change lines at interchanges based on their destination.   
+    
+    	<img src="/src/assets/December-17 Subway Surfers.png" height=250/>     
     - In the above diagram we can observe that if we want to travel between Greenwich station and the Airport we have to travel for 10 stations in the red line : `GREENWICH -> SUNTECH  -> MARINA -> CENTRAL -> CITY HALL -> BAY -> MUSEUM -> RIVERFRONT -> DOWNTOWN -> AIRPORT`
     - However if the passengers switch trains to the blue line in CENTRAL station they can save time and reach their destination faster: `GREENWICH -> SUNTECH ->MARINA -> CENTRAL -> ZOO -> ESTATE ->AIRPORT`
     - Write a program that accepts two ordered arrays of railway lines and calculates the fastest route possible between two stations.
@@ -533,7 +534,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - **Problem**
     - Reshwin wants to experience the scenic view of the kolleru lake from the periphery of the lake.
     - Given a set of random points (which also contains the points which lie in the periphery of the lake), Reshwin has to find the points which lie in the periphery of a lake to traverse the outer limits of the lake.
-    - <img src="/src/assets/Convexhull.jpg" height=250/> 
+    	<img src="/src/assets/Convexhull.jpg" height=250/> 
     - Develop an algorithm to help Reshwin
     
   - **Example**
