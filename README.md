@@ -35,6 +35,8 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - [**December 19 - Periphery of a lake**](#december-19---periphery-of-a-lake)
   - [**December 20 - 100 days of summer**](#december-20---100-days-of-summer)
   - [**December 21 - Marching Partners**](#december-21---marching-partners)
+  - [**December 22 - Alternating Balls**](#december-22---alternating-balls)
+  - [**December 23 - Finding the centroid of a polygon**](#december-23---finding-the-centroid-of-a-polygon)
   - [**FAQ**](#faq)
 
 
@@ -593,8 +595,60 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - The 5 students have heights 147, 149, 149, 155 and 150 respectively. The maximum allowed difference in the heights of two students forming a pair is at most 2. It is clear that the 4th student (height 155) cannot be paired with any other student. The remaining 4 students can be paired as (1st and 3rd) and (2nd and 5th) to form 2 pairs.
   - **Resources**
     - [Greedy Algorithms](https://www.hackerearth.com/practice/algorithms/greedy/basics-of-greedy-algorithms/tutorial/)
-
-
+    
+### **December 22 - Alternating Balls**
+  - **Problem**
+    - There are `N` balls arranged in a row. They are either red or blue in colour.
+    - A sub-row is said to be alternating if any two adjacent balls are of different colours. 
+    - For each ball located at position `x` (from 1 to `N`), compute the length of the longest alternating sub-row that starts at `x`. 
+    - Implement a function `alt_balls(N,arr)` that outputs the length of the longest alternating sub-row for each `x` from 1 to N.
+  - **Example** 
+   	```bash
+	> alt_balls(4, [B,B,B,B])
+	  1 1 1 1
+	> alt_balls(4, [B,R,B,R])
+	  4 3 2 1
+	> alt_balls(6, [B,B,B,R,B,B])
+	  1 1 3 2 1 1 
+ 	```	
+  - **Explanation**
+    - `Case 1`: No two balls have different colours, so any alternating sub-row may only consist of a single ball.
+    - `Case 2`: Every sub-row is alternating.
+    - `Case 3`: The only alternating sub-row of length 3 is from position 3 to 5.
+  - **Resources**
+    - [Dynamic Programming](https://www.topcoder.com/community/competitive-programming/tutorials/dynamic-programming-from-novice-to-advanced/)  	
+    
+### **December 23 - Finding the centroid of a polygon**
+  - **Problem**
+    - Given a set of vertices, write a function to find the centroid of a closed polygon.
+    - Centroid of a polygon is its geometric centre.
+    - It can be determined by referencing the Shoelace Formula.
+    
+  - **Example**
+      ```
+ 	Vertices={{3,4},{5,2},{6,7}}
+	Centroid={4.66,4.33}
+	
+	Vertices={{0,4},{0,0},{4,0},{4,4}}
+	Centroid={2,2}
+	
+	Vertices={{0,0},{0,40},{80,40},{80,90},{0,90},{0,120},{120,120}}
+	Centroid={66.9,65}
+      ```
+      ```
+      Case 1: 
+      Centroid is calculated using centroid of a triangle formula.
+      
+      Case 2:
+      Centroid for a square is point of intersection of its diagnols.
+      
+      Case 3:
+      Centroid is calculated for irregular polygons by calculating seperate summation of areas and dividing them for x and y      coordinates.
+      ```
+    - **Resources**
+      - [Shoelace Formula](https://en.wikipedia.org/wiki/Shoelace_formula)
+      - [Centroid](https://en.wikipedia.org/wiki/List_of_centroids)
+      
 ## Maintainers
 - [K-Kraken](https://github.com/K-Kraken)
 - [jyuvaraj03](https://github.com/jyuvaraj03)
