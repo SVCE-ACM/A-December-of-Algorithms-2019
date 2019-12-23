@@ -36,7 +36,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - [**December 20 - 100 days of summer**](#december-20---100-days-of-summer)
   - [**December 21 - Marching Partners**](#december-21---marching-partners)
   - [**December 22 - Alternating Balls**](#december-22---alternating-balls)
-  - [**December 23 - Finding the centroid of a polygon**](#december-23---Finding-the-centroid-of-a-polygon)
+  - [**December 23 - Finding the centroid of a polygon**](#december-23---finding-the-centroid-of-a-polygon)
   - [**FAQ**](#faq)
 
 
