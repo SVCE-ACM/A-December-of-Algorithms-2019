@@ -643,11 +643,11 @@ We have a small collection of algorithms, one for every day of the month. Scroll
       Centroid for a square is point of intersection of its diagnols.
       
       Case 3:
-      Centroid is calculated for irregular polygons by calculating seperate summation of areas and dividing them for x and y       coordinates.
+      Centroid is calculated for irregular polygons by calculating seperate summation of areas and dividing them for x and y      coordinates.
       ```
     - **Resources**
-      - [Shoelace Formula] (https://en.wikipedia.org/wiki/Shoelace_formula)
-      - [Centroid] (https://en.wikipedia.org/wiki/List_of_centroids)
+      - [Shoelace Formula](https://en.wikipedia.org/wiki/Shoelace_formula)
+      - [Centroid](https://en.wikipedia.org/wiki/List_of_centroids)
       
 ## Maintainers
 - [K-Kraken](https://github.com/K-Kraken)
