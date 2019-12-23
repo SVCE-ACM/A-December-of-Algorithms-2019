@@ -631,6 +631,9 @@ We have a small collection of algorithms, one for every day of the month. Scroll
 	
 	Vertices={{0,4},{0,0},{4,0},{4,4}}
 	Centroid={2,2}
+	
+	Vertices={{0,0},{0,40},{80,40},{80,90},{0,90},{0,120},{120,120}}
+	Centroid={66.9,65}
       ```
       ```
       Case 1: 
@@ -638,6 +641,9 @@ We have a small collection of algorithms, one for every day of the month. Scroll
       
       Case 2:
       Centroid for a square is point of intersection of its diagnols.
+      
+      Case 3:
+      Centroid is calculated for irregular polygons by calculating seperate summation of areas and dividing them for x and y       coordinates.
       ```
     - **Resources**
       - [Shoelace Formula] (https://en.wikipedia.org/wiki/Shoelace_formula)
