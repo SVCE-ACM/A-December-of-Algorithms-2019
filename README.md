@@ -489,11 +489,11 @@ We have a small collection of algorithms, one for every day of the month. Scroll
      qc  10c 7c  6c  4c:  flush
     ```
   	<img src="/src/assets/casino.gif" height=250/>
-  
   - **Resources**
     - [Poker hand ranking](https://en.wikipedia.org/wiki/List_of_poker_hands#Hand-ranking_categories)
     - [Arrays](https://makecode.microbit.org/types/array)
     - [Sorting](https://www.geeksforgeeks.org/sorting-algorithms)
+    
     
 ### **December 17 - Subway Surfer**
   - **Problem**
@@ -519,6 +519,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - [Arrays in Java](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html)
     - [Arrays in Python](https://www.w3schools.com/python/python_lists.asp)
     
+    
 ### **December 18 - Your Password is too WEAK**
   - **Problem**
     - Brute Force Attack is the simplest password cracking method. This attack simply tries to use every possible ASCII printable characters (character code 32-126) combination as a password. Brute Forcing takes time but the chances of getting it right is certain.
@@ -533,13 +534,13 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - [Multithreading in C++](https://www.geeksforgeeks.org/multithreading-in-cpp/)
     - [Multithreading in Java](https://www.geeksforgeeks.org/multithreading-in-java/)
     
+    
 ### **December 19 - Periphery of a lake**
   - **Problem**
     - Reshwin wants to experience the scenic view of the kolleru lake from the periphery of the lake.
     - Given a set of random points (which also contains the points which lie in the periphery of the lake), Reshwin has to find the points which lie in the periphery of a lake to traverse the outer limits of the lake.
     	<img src="/src/assets/Convexhull.jpg" height=250/> 
     - Develop an algorithm to help Reshwin
-    
   - **Example**
   ```
   {{0, 3}, {2, 2}, {1, 1}, {2, 1}, {1, 2},{3, 0}, {0, 0}, {3, 3}}
@@ -549,6 +550,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   ```
   - **Resources**
     - [Convex Hull](https://www.geeksforgeeks.org/convex-hull-set-1-jarviss-algorithm-or-wrapping/)
+    
     
 ### **December 20 - 100 days of summer**
   - **Problem**
@@ -574,9 +576,9 @@ We have a small collection of algorithms, one for every day of the month. Scroll
 	```
 	The shortest distance is 70km
 	```
-	
   - **Resources**
     - [Travelling Salesman Problem](https://www.tutorialspoint.com/Travelling-Salesman-Problem)
+  
   
 ### **December 21 - Marching Partners**
   - **Problem**
@@ -595,6 +597,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - The 5 students have heights 147, 149, 149, 155 and 150 respectively. The maximum allowed difference in the heights of two students forming a pair is at most 2. It is clear that the 4th student (height 155) cannot be paired with any other student. The remaining 4 students can be paired as (1st and 3rd) and (2nd and 5th) to form 2 pairs.
   - **Resources**
     - [Greedy Algorithms](https://www.hackerearth.com/practice/algorithms/greedy/basics-of-greedy-algorithms/tutorial/)
+    
     
 ### **December 22 - Alternating Balls**
   - **Problem**
@@ -618,12 +621,12 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - **Resources**
     - [Dynamic Programming](https://www.topcoder.com/community/competitive-programming/tutorials/dynamic-programming-from-novice-to-advanced/)  	
     
+    
 ### **December 23 - Finding the centroid of a polygon**
   - **Problem**
     - Given a set of vertices, write a function to find the centroid of a closed polygon.
     - Centroid of a polygon is its geometric centre.
     - It can be determined by referencing the Shoelace Formula.
-    
   - **Example**
       ```
  	Vertices={{3,4},{5,2},{6,7}}
@@ -643,12 +646,16 @@ We have a small collection of algorithms, one for every day of the month. Scroll
       Centroid for a square is point of intersection of its diagnols.
       
       Case 3:
-      Centroid is calculated for irregular polygons by calculating seperate summation of areas and dividing them for x and y      coordinates.
+      Centroid is calculated for irregular polygons by calculating seperate summation of areas and 
+      dividing them for x and y coordinates.
       ```
     - **Resources**
       - [Shoelace Formula](https://en.wikipedia.org/wiki/Shoelace_formula)
       - [Centroid](https://en.wikipedia.org/wiki/List_of_centroids)
-      
+    
+    
+    
+    
 ## Maintainers
 - [K-Kraken](https://github.com/K-Kraken)
 - [jyuvaraj03](https://github.com/jyuvaraj03)
