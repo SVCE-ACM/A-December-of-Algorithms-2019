@@ -38,6 +38,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - [**December 22 - Alternating Balls**](#december-22---alternating-balls)
   - [**December 23 - Finding the centroid of a polygon**](#december-23---finding-the-centroid-of-a-polygon)
   - [**December 24 - Find the list**](#december-24---find-the-list)
+  - [**December 25 - Naughty Jack**](#december-25---naughty-jack)
   - [**FAQ**](#faq)
 
 
@@ -677,6 +678,35 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - **Resources**
     - [Doubly linked list](https://www.geeksforgeeks.org/doubly-linked-list/)  
     - [Circular linked list](https://www.geeksforgeeks.org/circular-linked-list/)
+    
+ ### **December 25 - Naughty Jack**
+  - **Problem**
+  	- Ho Ho oh no ! Its christmas today today but Santa and his logistics support team have encountered problems in making their deliveries. 
+	- Jack, a memeber of Santa's notorious naughty list has decided to hack into the North Pole's servers and deleted some data to
+interfere with delivery operations.
+	- You have been called to restore the data erased by jack. Luckily the data has been stored in compilance with the principles of **RAID**. Create an algorithm that would restore Santa's Data and resume operations at the north pole.
+  - **Example** 
+  	- Missing bits are denoted by *, parity bits(even parity) are followed by a p
+	-  ```
+		             DISK 1 | DISK 2 | DISK 3 | DISK 4 | DISK 5
+		                0        1        *        0       1P
+		                1        0        0        0P      *
+		                1        1        0P       *       1
+		                *        1P       0        1       0
+		                1p       0        0        0       *
+		   
+	     After data restoration: 
+	     
+	                 DISK 1 | DISK 2 | DISK 3 | DISK 4 | DISK 5
+		                0        1        0        0       1P
+		                1        0        0        0P      1
+		                1        1        0P       1       1
+		                0        1P       0        1       0
+		                1p       0        0        0       1  
+	     
+  - **Resources**
+    - [Raid Storage](https://en.wikipedia.org/wiki/RAID)  
+    - [Parity Bits](https://www.computerhope.com/jargon/p/paritybi.htm)
     
     
 ## Maintainers
