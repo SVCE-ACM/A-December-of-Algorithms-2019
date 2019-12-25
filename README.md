@@ -34,6 +34,10 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - [**December 18 - Your Password is too WEAK**](#december-18---your-password-is-too-weak)
   - [**December 19 - Periphery of a lake**](#december-19---periphery-of-a-lake)
   - [**December 20 - 100 days of summer**](#december-20---100-days-of-summer)
+  - [**December 21 - Marching Partners**](#december-21---marching-partners)
+  - [**December 22 - Alternating Balls**](#december-22---alternating-balls)
+  - [**December 23 - Finding the centroid of a polygon**](#december-23---finding-the-centroid-of-a-polygon)
+  - [**December 24 - Find the list**](#december-24---find-the-list)
   - [**FAQ**](#faq)
 
 
@@ -360,7 +364,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   		]
        }
        ```
-       - **Sample Output:**
+       - **Sampl- Inpute Output:**
        ```json
        {
         "directions": 
@@ -485,17 +489,18 @@ We have a small collection of algorithms, one for every day of the month. Scroll
      4h  4s  ks  5d  10s: one-pair
      qc  10c 7c  6c  4c:  flush
     ```
-  - <img src="/src/assets/casino.gif" height=250/>
-  
+  	<img src="/src/assets/casino.gif" height=250/>
   - **Resources**
     - [Poker hand ranking](https://en.wikipedia.org/wiki/List_of_poker_hands#Hand-ranking_categories)
     - [Arrays](https://makecode.microbit.org/types/array)
     - [Sorting](https://www.geeksforgeeks.org/sorting-algorithms)
     
+    
 ### **December 17 - Subway Surfer**
   - **Problem**
-    - Many metro train systems across the world have multiple lines. These lines often meet each other at few stations called interchanges. Commuters often change lines at interchanges based on their destination.
-    - <img src="/src/assets/December-17 Subway Surfers.png" height=250/>     
+    - Many metro train systems across the world have multiple lines. These lines often meet each other at few stations called interchanges. Commuters often change lines at interchanges based on their destination.   
+    
+    	<img src="/src/assets/December-17 Subway Surfers.png" height=250/>     
     - In the above diagram we can observe that if we want to travel between Greenwich station and the Airport we have to travel for 10 stations in the red line : `GREENWICH -> SUNTECH  -> MARINA -> CENTRAL -> CITY HALL -> BAY -> MUSEUM -> RIVERFRONT -> DOWNTOWN -> AIRPORT`
     - However if the passengers switch trains to the blue line in CENTRAL station they can save time and reach their destination faster: `GREENWICH -> SUNTECH ->MARINA -> CENTRAL -> ZOO -> ESTATE ->AIRPORT`
     - Write a program that accepts two ordered arrays of railway lines and calculates the fastest route possible between two stations.
@@ -515,6 +520,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - [Arrays in Java](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html)
     - [Arrays in Python](https://www.w3schools.com/python/python_lists.asp)
     
+    
 ### **December 18 - Your Password is too WEAK**
   - **Problem**
     - Brute Force Attack is the simplest password cracking method. This attack simply tries to use every possible ASCII printable characters (character code 32-126) combination as a password. Brute Forcing takes time but the chances of getting it right is certain.
@@ -529,13 +535,13 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - [Multithreading in C++](https://www.geeksforgeeks.org/multithreading-in-cpp/)
     - [Multithreading in Java](https://www.geeksforgeeks.org/multithreading-in-java/)
     
+    
 ### **December 19 - Periphery of a lake**
   - **Problem**
     - Reshwin wants to experience the scenic view of the kolleru lake from the periphery of the lake.
     - Given a set of random points (which also contains the points which lie in the periphery of the lake), Reshwin has to find the points which lie in the periphery of a lake to traverse the outer limits of the lake.
-    - <img src="/src/assets/Convexhull.jpg" height=250/> 
+    	<img src="/src/assets/Convexhull.jpg" height=250/> 
     - Develop an algorithm to help Reshwin
-    
   - **Example**
   ```
   {{0, 3}, {2, 2}, {1, 1}, {2, 1}, {1, 2},{3, 0}, {0, 0}, {3, 3}}
@@ -545,6 +551,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   ```
   - **Resources**
     - [Convex Hull](https://www.geeksforgeeks.org/convex-hull-set-1-jarviss-algorithm-or-wrapping/)
+    
     
 ### **December 20 - 100 days of summer**
   - **Problem**
@@ -556,7 +563,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - **Example**  
  	For four cities A,B,C,D the input will be in the following format (**Note**: The matrix is symmetric since the distance from A->B is the distance from B->A)
  	- Input
- 	```	
+ 	```
 		A	B	C	D
 	 A	0km	40km	10km	30km			
 
@@ -570,10 +577,108 @@ We have a small collection of algorithms, one for every day of the month. Scroll
 	```
 	The shortest distance is 70km
 	```
-	
   - **Resources**
     - [Travelling Salesman Problem](https://www.tutorialspoint.com/Travelling-Salesman-Problem)
   
+  
+### **December 21 - Marching Partners**
+  - **Problem**
+    - Nikhil wants to organise a procession with his students.
+    - In this procession, two students will walk side-by-side in each row.
+    - Nikhil expects that the height difference of the two students who walk in each row should not exceed a certain threshold. That is, two students can be paired as long as their height difference does not exceed `d`.
+    - If there are `n` students in the class in which the `i`th student is `H[i]` units tall, pair the maximum number of students corresponding to the above condition.
+    - _Note_: A student cannot be part of more than one pair.
+    - Implement a function `marching_partners(n, H, d)` that prints the maximum number of pairs that can be formed. 
+  - **Example**  
+ 	```bash
+	> marching_partners(5, [147,149,149,155,150], 2)
+	  2
+  	```	
+  - **Explanation**
+    - The 5 students have heights 147, 149, 149, 155 and 150 respectively. The maximum allowed difference in the heights of two students forming a pair is at most 2. It is clear that the 4th student (height 155) cannot be paired with any other student. The remaining 4 students can be paired as (1st and 3rd) and (2nd and 5th) to form 2 pairs.
+  - **Resources**
+    - [Greedy Algorithms](https://www.hackerearth.com/practice/algorithms/greedy/basics-of-greedy-algorithms/tutorial/)
+    
+    
+### **December 22 - Alternating Balls**
+  - **Problem**
+    - There are `N` balls arranged in a row. They are either red or blue in colour.
+    - A sub-row is said to be alternating if any two adjacent balls are of different colours. 
+    - For each ball located at position `x` (from 1 to `N`), compute the length of the longest alternating sub-row that starts at `x`. 
+    - Implement a function `alt_balls(N,arr)` that outputs the length of the longest alternating sub-row for each `x` from 1 to N.
+  - **Example** 
+   	```bash
+	> alt_balls(4, [B,B,B,B])
+	  1 1 1 1
+	> alt_balls(4, [B,R,B,R])
+	  4 3 2 1
+	> alt_balls(6, [B,B,B,R,B,B])
+	  1 1 3 2 1 1 
+ 	```	
+  - **Explanation**
+    - `Case 1`: No two balls have different colours, so any alternating sub-row may only consist of a single ball.
+    - `Case 2`: Every sub-row is alternating.
+    - `Case 3`: The only alternating sub-row of length 3 is from position 3 to 5.
+  - **Resources**
+    - [Dynamic Programming](https://www.topcoder.com/community/competitive-programming/tutorials/dynamic-programming-from-novice-to-advanced/)  	
+    
+    
+### **December 23 - Finding the centroid of a polygon**
+  - **Problem**
+    - Given a set of vertices, write a function to find the centroid of a closed polygon.
+    - Centroid of a polygon is its geometric centre.
+    - It can be determined by referencing the Shoelace Formula.
+  - **Example**
+      ```
+ 	Vertices={{3,4},{5,2},{6,7}}
+	Centroid={4.66,4.33}
+	
+	Vertices={{0,4},{0,0},{4,0},{4,4}}
+	Centroid={2,2}
+	
+	Vertices={{0,0},{0,40},{80,40},{80,90},{0,90},{0,120},{120,120}}
+	Centroid={66.9,65}
+      ```
+      ```
+      Case 1: 
+      Centroid is calculated using centroid of a triangle formula.
+      
+      Case 2:
+      Centroid for a square is point of intersection of its diagnols.
+      
+      Case 3:
+      Centroid is calculated for irregular polygons by calculating seperate summation of areas and 
+      dividing them for x and y coordinates.
+      ```
+    - **Resources**
+      - [Shoelace Formula](https://en.wikipedia.org/wiki/Shoelace_formula)
+      - [Centroid](https://en.wikipedia.org/wiki/List_of_centroids)
+    
+### **December 24 - Find the list**
+  - **Problem**
+  	- Reena has an algorithm which prints the three continuous elements of a circular doubly linked list.It begins with the first element or the head of the list and runs till infinity. 
+	- Say for example when the list is `89,67,33,44` the algorithm's output is `89,67,33,67,33,44,33,44,89,......`
+	- Given a part of the output of the algorithm ,help Reena to find the actual number of elements in the list and print the input list with respective elements.
+  - **Example** 
+  	- Input:
+		- Length of the list returned as output by the algorithm
+		- Elements returned by the algorithm
+		```
+		12
+		54 65 44 65 44 89 44 89 54 89
+		```
+	- Output:
+		- Length of the original list
+		- Elements of the original list
+		```
+		4
+		54 65 44 89
+		```
+  - **Resources**
+    - [Doubly linked list](https://www.geeksforgeeks.org/doubly-linked-list/)  
+    - [Circular linked list](https://www.geeksforgeeks.org/circular-linked-list/)
+    
+    
 ## Maintainers
 - [K-Kraken](https://github.com/K-Kraken)
 - [jyuvaraj03](https://github.com/jyuvaraj03)
