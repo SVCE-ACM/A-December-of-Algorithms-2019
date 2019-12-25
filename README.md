@@ -37,6 +37,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - [**December 21 - Marching Partners**](#december-21---marching-partners)
   - [**December 22 - Alternating Balls**](#december-22---alternating-balls)
   - [**December 23 - Finding the centroid of a polygon**](#december-23---finding-the-centroid-of-a-polygon)
+  - [**December 24 - Find the list**](#december-24---find-the-list)
   - [**FAQ**](#faq)
 
 
@@ -653,7 +654,29 @@ We have a small collection of algorithms, one for every day of the month. Scroll
       - [Shoelace Formula](https://en.wikipedia.org/wiki/Shoelace_formula)
       - [Centroid](https://en.wikipedia.org/wiki/List_of_centroids)
     
-    
+### **December 24 - Find the list**
+  - **Problem**
+  	- Reena has an algorithm which prints the three continuous elements of a circular doubly linked list.It begins with the first element or the head of the list and runs till infinity. 
+	- Say for example when the list is `89,67,33,44` the algorithm's output is `89,67,33,67,33,44,33,44,89,......`
+	- Given a part of the output of the algorithm ,help Reena to find the actual number of elements in the list and print the input list with respective elements.
+  - **Example** 
+  	- Input:
+		- Length of the list returned as output by the algorithm
+		- Elements returned by the algorithm
+		```
+		12
+		54 65 44 65 44 89 44 89 54 89
+		```
+	- Output:
+		- Length of the original list
+		- Elements of the original list
+		```
+		4
+		54 65 44 89
+		```
+  - **Resources**
+    - [Doubly linked list](https://www.geeksforgeeks.org/doubly-linked-list/)  
+    - [Circular linked list](https://www.geeksforgeeks.org/circular-linked-list/)
     
     
 ## Maintainers
