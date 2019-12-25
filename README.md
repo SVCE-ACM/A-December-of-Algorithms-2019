@@ -38,6 +38,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - [**December 22 - Alternating Balls**](#december-22---alternating-balls)
   - [**December 23 - Finding the centroid of a polygon**](#december-23---finding-the-centroid-of-a-polygon)
   - [**December 24 - Find the list**](#december-24---find-the-list)
+  - [**December 25 - Naughty Jack**](#december-25---naughty-jack-christmas_tree)
   - [**FAQ**](#faq)
 
 
@@ -50,7 +51,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - A "sevenish" number is a natural number which is either a power of 7, or the sum of unique powers of 7
     - The first 5 sevenish numbers are: `1`, `7`, `8`, `49`, `50`.
     - Now, implement an algorithm to find the `n`th sevenish number.
-  - **Example**
+  - **Sample Input/Output**
       ```bash
       > sevenish_number(1)
         1
@@ -80,7 +81,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
         * Sum the partial sums of the even digits to form s2
     - If s1 + s2 ends in zero then the original number is in the form of a valid credit card number as verified by the Luhn test.  
     </br>
-    
+ - **Sample Input/Output**
     ```
     Reverse the digits:
     61789372994
@@ -116,7 +117,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - **Decide for yourself:** What would Thanos do if the universe carried an odd amount of living things?
  ![hello](/src/assets/thanos-snap.gif)
     - The list is sorted if no elements are smaller than any previous item. Duplicates may exist in the input and may exist in the output.
-  - **Example**
+  - **Sample Input/Output**
       ```c
       // A sorted list remains sorted
       [1, 2, 3, 4, 5] -> [1, 2, 3, 4, 5]
@@ -139,7 +140,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - For example, suppose `N = 5`, and the respective citations of each paper are `[4, 3, 0, 1, 5]`
     - Then the h-index would be `3`, since the researcher has 3 papers with at least 3 citations.
     - Given a list of paper citations of Dr. Bruce Banner, calculate his h-index.
-  - **Example**
+  - **Sample Input/Output**
       ```bash
       > h_index(5, [4,3,0,1,5])
         3
@@ -157,7 +158,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - **Problem**
     - A comma-separated values (CSV) file is a delimited text file that uses a comma to separate values. A CSV file stores tabular data in plain text. Each line of the file is a data record. Each record consists of one or more fields, separated by commas. 
     - Data in a CSV file is not very easy to understand. Your task is to read data from a CSV file and convert into a code for a HTML table and store it another file with a .html extension. Use the CSV file given in the resources to build your algorithm. 
-  - **Example**
+  - **Sample Input/Output**
       - **CSV**
         ```csv
         column1,column2,column3
@@ -195,7 +196,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
        - For example, suppose `N = 3`
     - Then the series will have 3 Fibonacci prime numbers : 2,3,5
     - Given the count of prime numbers needed by Henry , compute the series for him.
-  - **Example**
+  - **Sample Input/Output**
       ```
         Enter the value for (n): 5
         
@@ -215,7 +216,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
 	- A medical clinic assigns a token number to every patient who visits. The token number starts from 1 and it is given based on the order of arrival, to the `n` patients who arrive. But, the receptionist accepts bribe and lets a person `k` in first. The task is to print the token number and the patient's name in the order in which they see the doctor.
  	- Implement the concept of Queues to solve this problem
 	- <img src="https://media.giphy.com/media/6kyrz1j5uhJdK/giphy.gif" height=250/>
-- **Example**
+- **Sample Input/Output**
 ```
 	Enter N: 5
 	Enter (token no, id):
@@ -244,7 +245,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     	-  Behind him = 0.2
     	-  To his left or right = 0.2
     	-  In any of his 4 closest diagonals = 0.025
-  - **Example**
+  - **Sample Input/Output**
     - **Input**
        ``` 
         CSE ECE CSE 
@@ -268,7 +269,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - In mathematics a one to one function is that which has a unique element in the range for every corresponding domain.
     - Let there be a function `f`: `X->Y` such that  if a,b belong to `X` and if `f(a)=f(b)` then `a=b`. This proves the one to one property of a function. If there exists more than one "X's" for the same "Y's" then the function is not one to one.
     - Your task is to write a program that accepts two sets of numbers and the relationship between them and evaluate if they are indeed a one-one function.
-  - **Example**
+  - **Sample Input/Output**
       ```
       Set 1: {1,2,3,4}
       Set 2: {1,4,9,16}
@@ -299,7 +300,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - The integers `n`, `p` and `c` represent money to spend, cost of a cookie, and the number of cookie jars he can turn in for a free cookie respectively.
     - Implement a function `cookieCount(n, p, c)` to count the number of cookies Alex could buy.
    
-  - **Example**
+  - **Sample Input/Output**
     ```bash
     > cookieCount(10, 2, 5)
       6
@@ -347,7 +348,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - Parse the JaSON.json(in src/res) file and get the latitude and longitude values of the current and destination location.
     - Also find the distance between those two locations (refer resources for the link)
     - Return a Directions json file with your personalized message, distance and some direction.
-  - **Example**
+  - **Sample Input/Output**
        - **JaSON.json(src/res):**
        ```json
        {
@@ -397,7 +398,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - The task is to write `O(n)` and constant time functions to find how many switches are in the `on` state (two separate functions).
     - [optional] Find the switch nos. that are in the 'on' state after n such iterations.
 
-  - **Example**
+  - **Sample Input/Output**
   ```
   Enter no of switches: 5
        
@@ -423,7 +424,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - A makes substrings starting with a vowel(a,e,i,o,u) and B makes substrings starting with consonants.
     - For each occurence of their substring in 's', the players get 1 point.
     - The task is to find who has the maximum score and what's the winner's score for a string 's'.
-  - **Example**
+  - **Sample Input/Output**
        ```
        String: london
        A's score:7 (o,on,ond,ondo,ondon)
@@ -446,7 +447,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - Rick Sanchez just discovered that someone from another planet has been intruding into his private planet use its resources.
     - In order to lure that person in to humiliate him, Rick decides to send a dish as a gift. This dish has been cooked with a balance between its main ingredients: Animal A and Liquid B.
     - If for every 1g of A 1ml of B has to be added, write a code that uses **Backtracking** to print the number of ways the ingredients can be added when the quantity of A needed is provided.
-  - **Example**
+  - **Sample Input/Output**
     ```
     Quantity of A(in grams): 2
     Combinations: [AABB, ABAB]
@@ -477,7 +478,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
 	 high-card
 	 invalid
     ```
-  - **Example**
+  - **Sample Input/Output**
     ```
      2h  2h  2h  kc  qd:  three-of-a-kind
      2h  5h  7d  8c  9s:  high-card
@@ -504,7 +505,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - In the above diagram we can observe that if we want to travel between Greenwich station and the Airport we have to travel for 10 stations in the red line : `GREENWICH -> SUNTECH  -> MARINA -> CENTRAL -> CITY HALL -> BAY -> MUSEUM -> RIVERFRONT -> DOWNTOWN -> AIRPORT`
     - However if the passengers switch trains to the blue line in CENTRAL station they can save time and reach their destination faster: `GREENWICH -> SUNTECH ->MARINA -> CENTRAL -> ZOO -> ESTATE ->AIRPORT`
     - Write a program that accepts two ordered arrays of railway lines and calculates the fastest route possible between two stations.
-  - **Example**
+  - **Sample Input/Output**
       ```
       Enter Train Lines, Start and Endpoint:
       Line 1: Park, Central, Beach, Mylapore, Kilpauk
@@ -526,7 +527,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - Brute Force Attack is the simplest password cracking method. This attack simply tries to use every possible ASCII printable characters (character code 32-126) combination as a password. Brute Forcing takes time but the chances of getting it right is certain.
     - The problem is to calculate the time taken to find the password given that you know the length of the password string using Brute Force and Multithreading. 
     **Note:** Brute Forcing doesn't work in real life.
-  - **Example**
+  - **Sample Input/Output**
   ```
   Enter Password: T!Kk@
   Time Taken: 6723.45 seconds
@@ -542,7 +543,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - Given a set of random points (which also contains the points which lie in the periphery of the lake), Reshwin has to find the points which lie in the periphery of a lake to traverse the outer limits of the lake.
     	<img src="/src/assets/Convexhull.jpg" height=250/> 
     - Develop an algorithm to help Reshwin
-  - **Example**
+  - **Sample Input/Output**
   ```
   {{0, 3}, {2, 2}, {1, 1}, {2, 1}, {1, 2},{3, 0}, {0, 0}, {3, 3}}
   ```
@@ -560,17 +561,14 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     	<img src="/src/assets/tsp.jpg" height=250/> 
     -  The input is in the form of a matrix where the indices represent the city number and the value in the matrix represents the distance between the two cities
     - The output is the least distance
-  - **Example**  
+  - **Sample Input/Output**  
  	For four cities A,B,C,D the input will be in the following format (**Note**: The matrix is symmetric since the distance from A->B is the distance from B->A)
  	- Input
  	```
 		A	B	C	D
 	 A	0km	40km	10km	30km			
-
 	 B	40km	0km	20km	10km	
-
 	 C	10km	20km	0km	50km		
-
 	 D	30km	10km	50km	0km
   	```
   	- Output 
@@ -589,7 +587,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - If there are `n` students in the class in which the `i`th student is `H[i]` units tall, pair the maximum number of students corresponding to the above condition.
     - _Note_: A student cannot be part of more than one pair.
     - Implement a function `marching_partners(n, H, d)` that prints the maximum number of pairs that can be formed. 
-  - **Example**  
+  - **Sample Input/Output**  
  	```bash
 	> marching_partners(5, [147,149,149,155,150], 2)
 	  2
@@ -606,7 +604,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - A sub-row is said to be alternating if any two adjacent balls are of different colours. 
     - For each ball located at position `x` (from 1 to `N`), compute the length of the longest alternating sub-row that starts at `x`. 
     - Implement a function `alt_balls(N,arr)` that outputs the length of the longest alternating sub-row for each `x` from 1 to N.
-  - **Example** 
+  - **Sample Input/Output** 
    	```bash
 	> alt_balls(4, [B,B,B,B])
 	  1 1 1 1
@@ -628,7 +626,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - Given a set of vertices, write a function to find the centroid of a closed polygon.
     - Centroid of a polygon is its geometric centre.
     - It can be determined by referencing the Shoelace Formula.
-  - **Example**
+  - **Sample Input/Output**
       ```
  	Vertices={{3,4},{5,2},{6,7}}
 	Centroid={4.66,4.33}
@@ -659,7 +657,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   	- Reena has an algorithm which prints the three continuous elements of a circular doubly linked list.It begins with the first element or the head of the list and runs till infinity. 
 	- Say for example when the list is `89,67,33,44` the algorithm's output is `89,67,33,67,33,44,33,44,89,......`
 	- Given a part of the output of the algorithm ,help Reena to find the actual number of elements in the list and print the input list with respective elements.
-  - **Example** 
+  - **Sample Input/Output** 
   	- Input:
 		- Length of the list returned as output by the algorithm
 		- Elements returned by the algorithm
@@ -677,6 +675,38 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - **Resources**
     - [Doubly linked list](https://www.geeksforgeeks.org/doubly-linked-list/)  
     - [Circular linked list](https://www.geeksforgeeks.org/circular-linked-list/)
+    
+    
+ ### **December 25 - Naughty Jack** :christmas_tree:
+  - **Problem**
+  	- Ho Ho oh no ! Its christmas today today but Santa and his logistics support team have encountered problems in making their deliveries. 
+	- Jack, a memeber of Santa's notorious naughty list has decided to hack into the North Pole's servers and deleted some data to
+interfere with delivery operations. Luckily, the elves know their way around Server Storages.
+	-Help the Elves to restore the data erased by jack. Luckily the data has been stored in compilance with the principles of **RAID**. Create an algorithm that would restore Santa's Data and resume operations at the north pole.
+	- Missing bits are denoted by `*`, parity bits(even parity) are followed by a `P`
+  - **Sample Input/Output** 
+	-  ```
+		             DISK 1 | DISK 2 | DISK 3 | DISK 4 | DISK 5
+		                0        1        *        0       1P
+		                1        0        0        0P      *
+		                1        1        0P       *       1
+		                *        1P       0        1       0
+		                1P       0        0        0       *
+		   
+	     After data restoration: 
+	     
+	                 DISK 1 | DISK 2 | DISK 3 | DISK 4 | DISK 5
+		                0        1        0        0       1P
+		                1        0        0        0P      1
+		                1        1        0P       1       1
+		                0        1P       0        1       0
+		                1P       0        0        0       1  
+	```     
+  <img src="https://media.giphy.com/media/GkX4gNIUW2jni/giphy.gif" height=250/>
+  
+  - **Resources**
+    - [Raid Storage](https://en.wikipedia.org/wiki/RAID)  
+    - [Parity Bits](https://www.computerhope.com/jargon/p/paritybi.htm)
     
     
 ## Maintainers
