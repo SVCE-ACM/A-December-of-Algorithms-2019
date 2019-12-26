@@ -39,6 +39,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - [**December 23 - Finding the centroid of a polygon**](#december-23---finding-the-centroid-of-a-polygon)
   - [**December 24 - Find the list**](#december-24---find-the-list)
   - [**December 25 - Naughty Jack**](#december-25---naughty-jack-christmas_tree)
+  - [**December 26 - Build The Tower**](#december-26---build-the-tower)
   - [**FAQ**](#faq)
 
 
@@ -707,7 +708,32 @@ interfere with delivery operations. Luckily, the elves know their way around Ser
   - **Resources**
     - [Raid Storage](https://en.wikipedia.org/wiki/RAID)  
     - [Parity Bits](https://www.computerhope.com/jargon/p/paritybi.htm)
-    
+   
+ ### **December 26 - Build The Tower** 
+  - **Problem**
+  	- Mento Constructions has planned to build a tower with `n` compartments, where height of i-th compartment is given by `hArr[i]`
+	- The tower will be made on a consecutive section of the compartments.
+	- The height starts from 1 and increase by exactly 1 each time till some height and then decrease by exactly 1 each time to height 1. Also, heights of all the compartments other than of the tower should have zero height, so that the tower is visible to people.
+	- You want to construct a tower. For that, you can reduce the heights of some of the compartments. In a single operation, you can reduce the height of a compartment by 1 unit.
+	- Create a function `buildTower(n,hArr)` that prints the minimum number of operations required to build a tower. Here `n` represents the number of compartments and `hArr` represents the array of heights.
+	
+  - **Sample Input/Output** 
+  	```bash
+	> buildTower(3,[1, 2, 1])
+	  0
+	> buildTower(4,[1, 1, 2, 1])
+	  1
+	> buildTower(5,[1, 2, 6, 2, 1])
+	  3
+ 	```	
+  - **Explanation**
+    - `Case 1`: A tower is already present. So, there is no need to make any operation.
+    - `Case 2`:  If you reduce the height of the first compartment to 0. You get 0 1 2 1. The blocks 1, 2, 1 form a tower. So, the answer is 1.
+    - `Case 3`:  One possible tower can be 1 2 3 2 1. It requires 3 operations to build. 
+
+  - **Resources**
+    - [Binary Search](https://www.geeksforgeeks.org/binary-search/)  
+        
     
 ## Maintainers
 - [K-Kraken](https://github.com/K-Kraken)
