@@ -40,6 +40,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - [**December 24 - Find the list**](#december-24---find-the-list)
   - [**December 25 - Naughty Jack**](#december-25---naughty-jack-christmas_tree)
   - [**December 26 - Build The Tower**](#december-26---build-the-tower)
+  - [**December 27 - Spiralling**](#december-27---spiralling)
   - [**FAQ**](#faq)
 
 
@@ -733,7 +734,40 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - **Resources**
     - [Binary Search](https://www.geeksforgeeks.org/binary-search/)  
         
-    
+### **December 27 - Spiralling**
+  - **Problem**
+  	- In CVV Students were made to stand in the auditorium for the morning assembly.
+	- They are standing in an order such that the number of rows and columns might not be equal.
+	- Towards the end, students are ordered to disperse in a spiral manner.(Clockwise)
+	- Develop an algorithm to traverse the matrix of students in the spiral manner.
+  - **Sample Input/Output**
+  	- Input:
+	  ``` 	
+	   1    2   3   4
+	   5    6   7   8
+	   9   10  11  12
+	   13  14  15  16
+	  ```
+	- Output:
+		
+		```
+		1 2 3 4 8 12 16 15 14 13 9 5 6 7 11 10
+		```
+  - **NOTE**
+  	-The Algorithm should work for any number of rows and columns.
+	- Input:
+	  ``` 	
+	   1    2   3   4   5   6
+	   7    8   9   10  11  12
+	   13   14  15  16  17  18  
+	  ```
+	- Output:
+		
+		```
+		1 2 3 4 5 6 12 18 17 16 15 14 13 7 8 9 10 11
+		```
+   - **Resources**
+     - [Matrix](https://www.geeksforgeeks.org/matrix/)
 ## Maintainers
 - [K-Kraken](https://github.com/K-Kraken)
 - [jyuvaraj03](https://github.com/jyuvaraj03)
