@@ -742,12 +742,12 @@ We have a small collection of algorithms, one for every day of the month. Scroll
 	- Develop an algorithm to traverse the matrix of students in the spiral manner.
   - **Sample Input/Output**
   	- Input:
-		- ``` 	
-		   1    2   3   4
-		   5    6   7   8
-		   9   10  11  12
-		   13  14  15  16
-		  ```
+	  ``` 	
+	   1    2   3   4
+	   5    6   7   8
+	   9   10  11  12
+	   13  14  15  16
+	  ```
 	- Output:
 		
 		```
@@ -756,11 +756,11 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - **NOTE**
   	-The Algorithm should work for any number of rows and columns.
 	- Input:
-		- ``` 	
-			1   2   3   4  5   6
-        	7   8   9  10  11  12
-        	13  14  15 16  17  18
-		  ```
+	  ``` 	
+	   1    2   3   4   5   6
+	   7    8   9   10  11  12
+	   13   14  15  16  17  18  
+	  ```
 	- Output:
 		
 		```
