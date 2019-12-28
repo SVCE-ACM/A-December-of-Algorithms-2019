@@ -41,6 +41,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - [**December 25 - Naughty Jack**](#december-25---naughty-jack-christmas_tree)
   - [**December 26 - Build The Tower**](#december-26---build-the-tower)
   - [**December 27 - Spiralling**](#december-27---spiralling)
+  - [**December 28 - Toss a coin to your Witcher**](#december-28---toss-a-coin-to-your-witcher)
   - [**FAQ**](#faq)
 
 
@@ -768,6 +769,31 @@ We have a small collection of algorithms, one for every day of the month. Scroll
 		```
    - **Resources**
      - [Matrix](https://www.geeksforgeeks.org/matrix/)
+     
+### **December 28 - Toss a coin to your Witcher**
+  - **Problem**
+    - Geralt of Rivia had accepted a contract that involved keep watch over a Ball to prevent any assassinations from happening and even identify the **[Doppler](https://witcher.fandom.com/wiki/Doppler)** who was rumored to be present during the event to assassinate the Queen.
+    - After a few hours of observing he had noticed that the aristocrats had formed groups with people they knew and these groups were of a **transitive** nature.
+    - A noble i knew a noble j if G[i][j] = 1.
+    - Calculate the **number of groups** that were formed in the party, if there is any group with **only one member** return True denoting that it may be an assassin.
+  - **Example**
+  	- Input: 
+	```
+	[[1,1,0,1],
+	[1,1,0,0],
+	[0,0,1,0],
+	[1,0,0,0]]
+	```
+  	- Output: 
+	```
+	Number of groups: 2
+	An Assassin is present
+  	```
+  **Explanation:**
+   - Group 1 consists of nobles i = 1,i = 2,i = 4(1 and 2 know each other, 1 knows 4 implying 2 also knows 4 through transitive property)
+   - Group 2 consists of just 1 member, i = 3. Since this group has just 1 member, it is safe to assume that the person might be an assassin.
+   
+   
 ## Maintainers
 - [K-Kraken](https://github.com/K-Kraken)
 - [jyuvaraj03](https://github.com/jyuvaraj03)
