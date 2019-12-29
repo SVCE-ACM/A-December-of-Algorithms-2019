@@ -42,6 +42,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - [**December 26 - Build The Tower**](#december-26---build-the-tower)
   - [**December 27 - Spiralling**](#december-27---spiralling)
   - [**December 28 - Toss a coin to your Witcher**](#december-28---toss-a-coin-to-your-witcher)
+  - [**December 29 - Vigenere Cipher**](#december-29---vigenere-cipher)
   - [**FAQ**](#faq)
 
 
@@ -792,14 +793,42 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   **Explanation:**
    - Group 1 consists of nobles i = 1,i = 2,i = 4(1 and 2 know each other, 1 knows 4 implying 2 also knows 4 through transitive property)
    - Group 2 consists of just 1 member, i = 3. Since this group has just 1 member, it is safe to assume that the person might be an assassin.
-   
-   
+
+### **December 29 - Vigenere Cipher**
+  - **Problem**  
+    - Vigenère cipher is a type of substitution cipher invented by the 16th-century French cryptographer Blaise de Vigenère and used for data encryption.
+    - To encrypt a message using the Vigenère Cipher you first need to choose a keyword (or keyphrase). You then repeat this keyword over and over until it is the same length as the plaintext. This is called the keystream.
+    - The encryption can be made easy with the help of the tableau
+
+    	<img src="https://pages.mtu.edu/~shene/NSF-4/Tutorial/VIG/FIG-VIG-Table-EX-M.jpg" height=250/>
+	
+	- If there is an 'H' in plaintext and 'M' in the keystream, it gets encrypted as 'T'. 
+	```
+	 key: RELATIONS
+	 Keystream: RELAT IONSR ELATI ONSRE LATIO NSREL
+	 Plaintext:	TOBEO RNOTT OBETH ATIST HEQUE STION
+	 Ciphertext: KSMEH ZBBLK SMEMP OGAJX SEJCS FLZSY
+    ```
+    
+    - Given a ciphered text and the key, the task is to decrypt it back to the original message.
+
+  - **Sample Input/Output**
+  ```
+  	Keyword: BATTISTA
+  	Keystream: BATTISTABATTIS
+  	CipheredText: BSBFXDXEYAFITW
+  	Message: ASIMPLEEXAMPLE
+
+  ```
+  - **Resources**
+    - [Vigenere Cipher](https://pages.mtu.edu/~shene/NSF-4/Tutorial/VIG/Vig-Base.html)
+
 ## Maintainers
 - [K-Kraken](https://github.com/K-Kraken)
 - [jyuvaraj03](https://github.com/jyuvaraj03)
 - [mahavisvanathan](https://github.com/mahavisvanathan)
 - [shrusri27](https://github.com/shrusri27)
-- [ShriRam0509](https://github.com/SHRIRAM0509)
+- [Shriram0509](https://github.com/SHRIRAM0509)
 - [ajaykrishnan23](https://github.com/ajaykrishnan23)
 - [dhirajv2000](https://github.com/dhirajv2000)
 - [dhivya141](https://github.com/dhivya141)
