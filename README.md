@@ -39,6 +39,9 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - [**December 23 - Finding the centroid of a polygon**](#december-23---finding-the-centroid-of-a-polygon)
   - [**December 24 - Find the list**](#december-24---find-the-list)
   - [**December 25 - Naughty Jack**](#december-25---naughty-jack-christmas_tree)
+  - [**December 26 - Build The Tower**](#december-26---build-the-tower)
+  - [**December 27 - Spiralling**](#december-27---spiralling)
+  - [**December 28 - Toss a coin to your Witcher**](#december-28---toss-a-coin-to-your-witcher)
   - [**FAQ**](#faq)
 
 
@@ -652,6 +655,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
       - [Shoelace Formula](https://en.wikipedia.org/wiki/Shoelace_formula)
       - [Centroid](https://en.wikipedia.org/wiki/List_of_centroids)
     
+    
 ### **December 24 - Find the list**
   - **Problem**
   	- Reena has an algorithm which prints the three continuous elements of a circular doubly linked list.It begins with the first element or the head of the list and runs till infinity. 
@@ -679,10 +683,9 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     
  ### **December 25 - Naughty Jack** :christmas_tree:
   - **Problem**
-  	- Ho Ho oh no ! Its christmas today today but Santa and his logistics support team have encountered problems in making their deliveries. 
-	- Jack, a memeber of Santa's notorious naughty list has decided to hack into the North Pole's servers and deleted some data to
-interfere with delivery operations. Luckily, the elves know their way around Server Storages.
-	-Help the Elves to restore the data erased by jack. Luckily the data has been stored in compilance with the principles of **RAID**. Create an algorithm that would restore Santa's Data and resume operations at the north pole.
+  	- Ho Ho oh no! It's Christmas today but Santa and his logistics support team have encountered problems in making their deliveries. 
+	- Jack, a member of Santa's notorious naughty list has decided to hack into the North Pole's servers and deleted some data to interfere with delivery operations. Luckily, the elves know their way around Server Storages.
+	- Help the Elves to restore the data erased by Jack. Luckily the data has been stored in compliance with the principles of **RAID**. Create an algorithm that would restore Santa's data and resume operations at the north pole.
 	- Missing bits are denoted by `*`, parity bits(even parity) are followed by a `P`
   - **Sample Input/Output** 
 	-  ```
@@ -707,8 +710,90 @@ interfere with delivery operations. Luckily, the elves know their way around Ser
   - **Resources**
     - [Raid Storage](https://en.wikipedia.org/wiki/RAID)  
     - [Parity Bits](https://www.computerhope.com/jargon/p/paritybi.htm)
-    
-    
+  
+  
+ ### **December 26 - Build The Tower** 
+  - **Problem**
+  	- Mento Constructions has planned to build a tower with `n` compartments, where height of i-th compartment is given by `hArr[i]`
+	- The tower will be made on a consecutive section of the compartments.
+	- The height starts from 1 and increase by exactly 1 each time till some height and then decrease by exactly 1 each time to height 1. Also, heights of all the compartments other than of the tower should have zero height, so that the tower is visible to people.
+	- You want to construct a tower. For that, you can reduce the heights of some of the compartments. In a single operation, you can reduce the height of a compartment by 1 unit.
+	- Create a function `buildTower(n,hArr)` that prints the minimum number of operations required to build a tower. Here `n` represents the number of compartments and `hArr` represents the array of heights.
+  - **Sample Input/Output** 
+  	```bash
+	> buildTower(3,[1, 2, 1])
+	  0
+	> buildTower(4,[1, 1, 2, 1])
+	  1
+	> buildTower(5,[1, 2, 6, 2, 1])
+	  3
+ 	```	
+  - **Explanation**
+    - `Case 1`: A tower is already present. So, there is no need to make any operation.
+    - `Case 2`:  If you reduce the height of the first compartment to 0. You get 0 1 2 1. The blocks 1, 2, 1 form a tower. So, the answer is 1.
+    - `Case 3`:  One possible tower can be 1 2 3 2 1. It requires 3 operations to build. 
+  - **Resources**
+    - [Binary Search](https://www.geeksforgeeks.org/binary-search/)  
+        
+### **December 27 - Spiralling**
+  - **Problem**
+  	- In CVV Students were made to stand in the auditorium for the morning assembly.
+	- They are standing in an order such that the number of rows and columns might not be equal.
+	- Towards the end, students are ordered to disperse in a spiral manner.(Clockwise)
+	- Develop an algorithm to traverse the matrix of students in the spiral manner.
+  - **Sample Input/Output**
+  	- Input:
+	  ``` 	
+	   1    2   3   4
+	   5    6   7   8
+	   9   10  11  12
+	   13  14  15  16
+	  ```
+	- Output:
+		
+		```
+		1 2 3 4 8 12 16 15 14 13 9 5 6 7 11 10
+		```
+  - **NOTE**
+  	-The Algorithm should work for any number of rows and columns.
+	- Input:
+	  ``` 	
+	   1    2   3   4   5   6
+	   7    8   9   10  11  12
+	   13   14  15  16  17  18  
+	  ```
+	- Output:
+		
+		```
+		1 2 3 4 5 6 12 18 17 16 15 14 13 7 8 9 10 11
+		```
+   - **Resources**
+     - [Matrix](https://www.geeksforgeeks.org/matrix/)
+     
+### **December 28 - Toss a coin to your Witcher**
+  - **Problem**
+    - Geralt of Rivia had accepted a contract that involved keep watch over a Ball to prevent any assassinations from happening and even identify the **[Doppler](https://witcher.fandom.com/wiki/Doppler)** who was rumored to be present during the event to assassinate the Queen.
+    - After a few hours of observing he had noticed that the aristocrats had formed groups with people they knew and these groups were of a **transitive** nature.
+    - A noble i knew a noble j if G[i][j] = 1.
+    - Calculate the **number of groups** that were formed in the party, if there is any group with **only one member** return True denoting that it may be an assassin.
+  - **Example**
+  	- Input: 
+	```
+	[[1,1,0,1],
+	[1,1,0,0],
+	[0,0,1,0],
+	[1,0,0,1]]
+	```
+  	- Output: 
+	```
+	Number of groups: 2
+	An Assassin is present
+  	```
+  **Explanation:**
+   - Group 1 consists of nobles i = 1,i = 2,i = 4(1 and 2 know each other, 1 knows 4 implying 2 also knows 4 through transitive property)
+   - Group 2 consists of just 1 member, i = 3. Since this group has just 1 member, it is safe to assume that the person might be an assassin.
+   
+   
 ## Maintainers
 - [K-Kraken](https://github.com/K-Kraken)
 - [jyuvaraj03](https://github.com/jyuvaraj03)
