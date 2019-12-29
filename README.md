@@ -42,7 +42,6 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - [**December 26 - Build The Tower**](#december-26---build-the-tower)
   - [**December 27 - Spiralling**](#december-27---spiralling)
   - [**December 28 - Toss a coin to your Witcher**](#december-28---toss-a-coin-to-your-witcher)
-
   - [**December 29 - Vigenere Cipher**](#december-29---vigenere-cipher)
   - [**FAQ**](#faq)
 
@@ -803,11 +802,9 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - Vigenère cipher is a type of substitution cipher invented by the 16th-century French cryptographer Blaise de Vigenère and used for data encryption.
     - To encrypt a message using the Vigenère Cipher you first need to choose a keyword (or keyphrase). You then repeat this keyword over and over until it is the same length as the plaintext. This is called the keystream.
     - The encryption can be made easy with the help of the tableau
-
-    	<img src="https://pages.mtu.edu/~shene/NSF-4/Tutorial/VIG/FIG-VIG-Table-EX-M.jpg" height=250/>
-	
-	- If there is an 'H' in plaintext and 'M' in the keystream, it gets encrypted as 'T'. 
-	  ```
+    - <img src="https://pages.mtu.edu/~shene/NSF-4/Tutorial/VIG/FIG-VIG-Table-EX-M.jpg" height=250/>
+    - If there is an 'H' in plaintext and 'M' in the keystream, it gets encrypted as 'T'. 
+    ```
 	 key: RELATIONS
 	 Keystream: RELAT IONSR ELATI ONSRE LATIO NSREL
 	 Plaintext: TOBEO RNOTT OBETH ATIST HEQUE STION
