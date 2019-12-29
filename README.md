@@ -42,6 +42,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - [**December 26 - Build The Tower**](#december-26---build-the-tower)
   - [**December 27 - Spiralling**](#december-27---spiralling)
   - [**December 28 - Toss a coin to your Witcher**](#december-28---toss-a-coin-to-your-witcher)
+
   - [**December 29 - Vigenere Cipher**](#december-29---vigenere-cipher)
   - [**FAQ**](#faq)
 
@@ -735,7 +736,8 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - `Case 3`:  One possible tower can be 1 2 3 2 1. It requires 3 operations to build. 
   - **Resources**
     - [Binary Search](https://www.geeksforgeeks.org/binary-search/)  
-        
+     
+     
 ### **December 27 - Spiralling**
   - **Problem**
   	- In CVV Students were made to stand in the auditorium for the morning assembly.
@@ -771,6 +773,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
    - **Resources**
      - [Matrix](https://www.geeksforgeeks.org/matrix/)
      
+     
 ### **December 28 - Toss a coin to your Witcher**
   - **Problem**
     - Geralt of Rivia had accepted a contract that involved keep watch over a Ball to prevent any assassinations from happening and even identify the **[Doppler](https://witcher.fandom.com/wiki/Doppler)** who was rumored to be present during the event to assassinate the Queen.
@@ -794,6 +797,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
    - Group 1 consists of nobles i = 1,i = 2,i = 4(1 and 2 know each other, 1 knows 4 implying 2 also knows 4 through transitive property)
    - Group 2 consists of just 1 member, i = 3. Since this group has just 1 member, it is safe to assume that the person might be an assassin.
 
+
 ### **December 29 - Vigenere Cipher**
   - **Problem**  
     - Vigenère cipher is a type of substitution cipher invented by the 16th-century French cryptographer Blaise de Vigenère and used for data encryption.
@@ -803,14 +807,13 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     	<img src="https://pages.mtu.edu/~shene/NSF-4/Tutorial/VIG/FIG-VIG-Table-EX-M.jpg" height=250/>
 	
 	- If there is an 'H' in plaintext and 'M' in the keystream, it gets encrypted as 'T'. 
-	```
+	  ```
 	 key: RELATIONS
 	 Keystream: RELAT IONSR ELATI ONSRE LATIO NSREL
 	 Plaintext: TOBEO RNOTT OBETH ATIST HEQUE STION
 	 Ciphertext: KSMEH ZBBLK SMEMP OGAJX SEJCS FLZSY
     ```
-    
-    - Given a ciphered text and the key, the task is to decrypt it back to the original message.
+   - Given a ciphered text and the key, the task is to decrypt it back to the original message.
 
   - **Sample Input/Output**
   ```
@@ -818,10 +821,11 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   	Keystream: BATTISTABATTIS
   	CipheredText: BSBFXDXEYAFITW
   	Message: ASIMPLEEXAMPLE
-
   ```
   - **Resources**
     - [Vigenere Cipher](https://pages.mtu.edu/~shene/NSF-4/Tutorial/VIG/Vig-Base.html)
+
+
 
 ## Maintainers
 - [K-Kraken](https://github.com/K-Kraken)
