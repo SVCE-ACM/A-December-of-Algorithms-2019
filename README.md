@@ -806,7 +806,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
 	```
 	 key: RELATIONS
 	 Keystream: RELAT IONSR ELATI ONSRE LATIO NSREL
-	 Plaintext:	TOBEO RNOTT OBETH ATIST HEQUE STION
+	 Plaintext: TOBEO RNOTT OBETH ATIST HEQUE STION
 	 Ciphertext: KSMEH ZBBLK SMEMP OGAJX SEJCS FLZSY
     ```
     
@@ -828,7 +828,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
 - [jyuvaraj03](https://github.com/jyuvaraj03)
 - [mahavisvanathan](https://github.com/mahavisvanathan)
 - [shrusri27](https://github.com/shrusri27)
-- [Shriram0509](https://github.com/SHRIRAM0509)
+- [SHRIRAM0509](https://github.com/SHRIRAM0509)
 - [ajaykrishnan23](https://github.com/ajaykrishnan23)
 - [dhirajv2000](https://github.com/dhirajv2000)
 - [dhivya141](https://github.com/dhivya141)
