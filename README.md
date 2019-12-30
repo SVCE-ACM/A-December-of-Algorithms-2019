@@ -847,6 +847,30 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - [Graph Algorithms](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)
     - [Representing Graphs](https://www.khanacademy.org/computing/computer-science/algorithms/graph-representation/a/representing-graphs)
 
+### **December 31 - Build a city**
+  - **Problem**
+    - There is a city with 100 houses. The co-ordinates of the houses are given in this [csv file](https://github.com/SVCE-ACM/A-December-of-Algorithms-2019/blob/dec31/src/res/build_city_csv.csv). The first column consists of the x co-ordinates of all the houses and the second column consists of the y co-ordinates of the houses. 
+    - The mayor of the city wants to build three supermarkets and has asked you to find the best places to build them in the city. 
+    - He tells you that the supermarkets must be placed in the most optimal position so that all houses can access these supermarkets in approximately the same time.  
+        <img src="src/assets/build_city.jpg" height=250/>  
+    - Use [this](https://elleknowsmachines.com/k-means-clustering/) algorithm to find the best position for the supermarkets in the city. 
+    - The result is the co-ordinates of the supermarkets. 
+
+  - **Expected output:**
+  	```
+  	Store 1 : (-5,5)
+	Store 2 : (0,0)
+	Store 3 : (5,5)
+  	```
+  	<sub>_For the given file these are the **approximate**(accurate upto 0.1) locations of the supermarkets_</sub>
+  - **For extra points:**
+    - Provide a visualization of your results, including location of the supermarkets
+  - **Resources:**
+    - [Data visualization in Python](https://mode.com/blog/python-data-visualization-libraries)
+    - [Data visualization in C++](https://github.com/lava/matplotlib-cpp)
+    - [Data visualization in java](http://www.jfree.org/index.html)
+    - [Data visualization in javascript](https://blog.bitsrc.io/11-javascript-charts-and-data-visualization-libraries-for-2018-f01a283a5727)
+
 ## Maintainers
 - [K-Kraken](https://github.com/K-Kraken)
 - [jyuvaraj03](https://github.com/jyuvaraj03)
