@@ -44,6 +44,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - [**December 28 - Toss a coin to your Witcher**](#december-28---toss-a-coin-to-your-witcher)
   - [**December 29 - Vigenere Cipher**](#december-29---vigenere-cipher)
   - [**December 30 - Minimize Pipe Cost**](#december-30---minimize-pipe-cost)
+  - [**December 31 - Build a city**](#december-31---build-a-city)
   - [**FAQ**](#faq)
 
 
