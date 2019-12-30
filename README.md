@@ -43,6 +43,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - [**December 27 - Spiralling**](#december-27---spiralling)
   - [**December 28 - Toss a coin to your Witcher**](#december-28---toss-a-coin-to-your-witcher)
   - [**December 29 - Vigenere Cipher**](#december-29---vigenere-cipher)
+  - [**December 30 - Minimize Pipe Cost**](#december-30---minimize-pipe-cost)
   - [**FAQ**](#faq)
 
 
@@ -823,6 +824,28 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - [Vigenere Cipher](https://pages.mtu.edu/~shene/NSF-4/Tutorial/VIG/Vig-Base.html)
 
 
+### **December 30 - Minimize Pipe Cost**
+  - **Problem**
+    - In the island of Neverland, all the houses are connected to the main water source `S` by means of a set of pipes. 
+    - A house can either be directly connected to the source, or it can be indirectly connected by a pipe to a nearby house which is in turn connected to the source.
+    - Each pipe has a cost associated to it. The authorities of Neverland want to minimize this cost.
+    - Given an undirected graph (represented by an edge list `edgeList` described below) of pipe connections, return the lowest cost configuration of pipes such that each house has access to water.
+    - To represent an edge, we have an array of two vertices that the edge connects and a third element which represents the cost of the edge.
+    - For example, the edge `['S', 'A', 20]` represents an undirected edge between vertices `S` and `A` with a cost of `20`.
+    - The edge list `edgeList` consists of all such edges that exists.
+    - Implement a function `minimize_cost(edgeList)` that performs the above operation.
+  - **Example**
+    ![Houses](/src/assets/Houses.png)
+  - **Sample Input/Output**
+  ```bash
+  > minimize_cost( [ ['S','A',1], ['S','B',5], ['S','C',20], ['A','C',15], ['B','C',10] ] )
+    16
+  ```
+  - **Explanation**
+    - In the above setup, we can remove all pipes except the ones from `S` to `A`, `S` to `B`, and `B` to `C` for a total (minimum) cost of `16`.
+  - **Resources**
+    - [Graph Algorithms](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)
+    - [Representing Graphs](https://www.khanacademy.org/computing/computer-science/algorithms/graph-representation/a/representing-graphs)
 
 ## Maintainers
 - [K-Kraken](https://github.com/K-Kraken)
