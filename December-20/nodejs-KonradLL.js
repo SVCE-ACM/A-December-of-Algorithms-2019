@@ -34,7 +34,6 @@ class DistanceMatrix {
 }
 
 
-//TODO cleanup return to starting city
 function getShortestDistance(startCity, citiesLeft, distances) {
 	let shortestDistance;
 	for (const destCityIndex in citiesLeft) {
