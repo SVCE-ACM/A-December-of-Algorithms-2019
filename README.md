@@ -850,7 +850,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
 
 ### **December 31 - Build a city**
   - **Problem**
-    - There is a city with 100 houses. The co-ordinates of the houses are given in this [csv file](https://github.com/SVCE-ACM/A-December-of-Algorithms-2019/blob/dec31/src/res/build_city_csv.csv). The first column consists of the x co-ordinates of all the houses and the second column consists of the y co-ordinates of the houses. 
+    - There is a city with 100 houses. The co-ordinates of the houses are given in this [csv file](https://github.com/SVCE-ACM/A-December-of-Algorithms-2019/blob/master/src/res/build_city_csv.csv). The first column consists of the x co-ordinates of all the houses and the second column consists of the y co-ordinates of the houses. 
     - The mayor of the city wants to build three supermarkets and has asked you to find the best places to build them in the city. 
     - He tells you that the supermarkets must be placed in the most optimal position so that all houses can access these supermarkets in approximately the same time.  
         <img src="src/assets/build_city.jpg" height=250/>  
