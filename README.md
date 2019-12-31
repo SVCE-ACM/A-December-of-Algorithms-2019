@@ -38,6 +38,13 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - [**December 22 - Alternating Balls**](#december-22---alternating-balls)
   - [**December 23 - Finding the centroid of a polygon**](#december-23---finding-the-centroid-of-a-polygon)
   - [**December 24 - Find the list**](#december-24---find-the-list)
+  - [**December 25 - Naughty Jack**](#december-25---naughty-jack-christmas_tree)
+  - [**December 26 - Build The Tower**](#december-26---build-the-tower)
+  - [**December 27 - Spiralling**](#december-27---spiralling)
+  - [**December 28 - Toss a coin to your Witcher**](#december-28---toss-a-coin-to-your-witcher)
+  - [**December 29 - Vigenere Cipher**](#december-29---vigenere-cipher)
+  - [**December 30 - Minimize Pipe Cost**](#december-30---minimize-pipe-cost)
+  - [**December 31 - Build a city**](#december-31---build-a-city)
   - [**FAQ**](#faq)
 
 
@@ -50,7 +57,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - A "sevenish" number is a natural number which is either a power of 7, or the sum of unique powers of 7
     - The first 5 sevenish numbers are: `1`, `7`, `8`, `49`, `50`.
     - Now, implement an algorithm to find the `n`th sevenish number.
-  - **Example**
+  - **Sample Input/Output**
       ```bash
       > sevenish_number(1)
         1
@@ -80,7 +87,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
         * Sum the partial sums of the even digits to form s2
     - If s1 + s2 ends in zero then the original number is in the form of a valid credit card number as verified by the Luhn test.  
     </br>
-    
+ - **Sample Input/Output**
     ```
     Reverse the digits:
     61789372994
@@ -116,7 +123,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - **Decide for yourself:** What would Thanos do if the universe carried an odd amount of living things?
  ![hello](/src/assets/thanos-snap.gif)
     - The list is sorted if no elements are smaller than any previous item. Duplicates may exist in the input and may exist in the output.
-  - **Example**
+  - **Sample Input/Output**
       ```c
       // A sorted list remains sorted
       [1, 2, 3, 4, 5] -> [1, 2, 3, 4, 5]
@@ -139,7 +146,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - For example, suppose `N = 5`, and the respective citations of each paper are `[4, 3, 0, 1, 5]`
     - Then the h-index would be `3`, since the researcher has 3 papers with at least 3 citations.
     - Given a list of paper citations of Dr. Bruce Banner, calculate his h-index.
-  - **Example**
+  - **Sample Input/Output**
       ```bash
       > h_index(5, [4,3,0,1,5])
         3
@@ -157,7 +164,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - **Problem**
     - A comma-separated values (CSV) file is a delimited text file that uses a comma to separate values. A CSV file stores tabular data in plain text. Each line of the file is a data record. Each record consists of one or more fields, separated by commas. 
     - Data in a CSV file is not very easy to understand. Your task is to read data from a CSV file and convert into a code for a HTML table and store it another file with a .html extension. Use the CSV file given in the resources to build your algorithm. 
-  - **Example**
+  - **Sample Input/Output**
       - **CSV**
         ```csv
         column1,column2,column3
@@ -195,7 +202,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
        - For example, suppose `N = 3`
     - Then the series will have 3 Fibonacci prime numbers : 2,3,5
     - Given the count of prime numbers needed by Henry , compute the series for him.
-  - **Example**
+  - **Sample Input/Output**
       ```
         Enter the value for (n): 5
         
@@ -215,7 +222,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
 	- A medical clinic assigns a token number to every patient who visits. The token number starts from 1 and it is given based on the order of arrival, to the `n` patients who arrive. But, the receptionist accepts bribe and lets a person `k` in first. The task is to print the token number and the patient's name in the order in which they see the doctor.
  	- Implement the concept of Queues to solve this problem
 	- <img src="https://media.giphy.com/media/6kyrz1j5uhJdK/giphy.gif" height=250/>
-- **Example**
+- **Sample Input/Output**
 ```
 	Enter N: 5
 	Enter (token no, id):
@@ -244,7 +251,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     	-  Behind him = 0.2
     	-  To his left or right = 0.2
     	-  In any of his 4 closest diagonals = 0.025
-  - **Example**
+  - **Sample Input/Output**
     - **Input**
        ``` 
         CSE ECE CSE 
@@ -268,7 +275,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - In mathematics a one to one function is that which has a unique element in the range for every corresponding domain.
     - Let there be a function `f`: `X->Y` such that  if a,b belong to `X` and if `f(a)=f(b)` then `a=b`. This proves the one to one property of a function. If there exists more than one "X's" for the same "Y's" then the function is not one to one.
     - Your task is to write a program that accepts two sets of numbers and the relationship between them and evaluate if they are indeed a one-one function.
-  - **Example**
+  - **Sample Input/Output**
       ```
       Set 1: {1,2,3,4}
       Set 2: {1,4,9,16}
@@ -299,7 +306,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - The integers `n`, `p` and `c` represent money to spend, cost of a cookie, and the number of cookie jars he can turn in for a free cookie respectively.
     - Implement a function `cookieCount(n, p, c)` to count the number of cookies Alex could buy.
    
-  - **Example**
+  - **Sample Input/Output**
     ```bash
     > cookieCount(10, 2, 5)
       6
@@ -347,7 +354,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - Parse the JaSON.json(in src/res) file and get the latitude and longitude values of the current and destination location.
     - Also find the distance between those two locations (refer resources for the link)
     - Return a Directions json file with your personalized message, distance and some direction.
-  - **Example**
+  - **Sample Input/Output**
        - **JaSON.json(src/res):**
        ```json
        {
@@ -397,7 +404,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - The task is to write `O(n)` and constant time functions to find how many switches are in the `on` state (two separate functions).
     - [optional] Find the switch nos. that are in the 'on' state after n such iterations.
 
-  - **Example**
+  - **Sample Input/Output**
   ```
   Enter no of switches: 5
        
@@ -423,7 +430,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - A makes substrings starting with a vowel(a,e,i,o,u) and B makes substrings starting with consonants.
     - For each occurence of their substring in 's', the players get 1 point.
     - The task is to find who has the maximum score and what's the winner's score for a string 's'.
-  - **Example**
+  - **Sample Input/Output**
        ```
        String: london
        A's score:7 (o,on,ond,ondo,ondon)
@@ -446,7 +453,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - Rick Sanchez just discovered that someone from another planet has been intruding into his private planet use its resources.
     - In order to lure that person in to humiliate him, Rick decides to send a dish as a gift. This dish has been cooked with a balance between its main ingredients: Animal A and Liquid B.
     - If for every 1g of A 1ml of B has to be added, write a code that uses **Backtracking** to print the number of ways the ingredients can be added when the quantity of A needed is provided.
-  - **Example**
+  - **Sample Input/Output**
     ```
     Quantity of A(in grams): 2
     Combinations: [AABB, ABAB]
@@ -477,7 +484,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
 	 high-card
 	 invalid
     ```
-  - **Example**
+  - **Sample Input/Output**
     ```
      2h  2h  2h  kc  qd:  three-of-a-kind
      2h  5h  7d  8c  9s:  high-card
@@ -504,7 +511,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - In the above diagram we can observe that if we want to travel between Greenwich station and the Airport we have to travel for 10 stations in the red line : `GREENWICH -> SUNTECH  -> MARINA -> CENTRAL -> CITY HALL -> BAY -> MUSEUM -> RIVERFRONT -> DOWNTOWN -> AIRPORT`
     - However if the passengers switch trains to the blue line in CENTRAL station they can save time and reach their destination faster: `GREENWICH -> SUNTECH ->MARINA -> CENTRAL -> ZOO -> ESTATE ->AIRPORT`
     - Write a program that accepts two ordered arrays of railway lines and calculates the fastest route possible between two stations.
-  - **Example**
+  - **Sample Input/Output**
       ```
       Enter Train Lines, Start and Endpoint:
       Line 1: Park, Central, Beach, Mylapore, Kilpauk
@@ -526,7 +533,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - Brute Force Attack is the simplest password cracking method. This attack simply tries to use every possible ASCII printable characters (character code 32-126) combination as a password. Brute Forcing takes time but the chances of getting it right is certain.
     - The problem is to calculate the time taken to find the password given that you know the length of the password string using Brute Force and Multithreading. 
     **Note:** Brute Forcing doesn't work in real life.
-  - **Example**
+  - **Sample Input/Output**
   ```
   Enter Password: T!Kk@
   Time Taken: 6723.45 seconds
@@ -542,7 +549,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - Given a set of random points (which also contains the points which lie in the periphery of the lake), Reshwin has to find the points which lie in the periphery of a lake to traverse the outer limits of the lake.
     	<img src="/src/assets/Convexhull.jpg" height=250/> 
     - Develop an algorithm to help Reshwin
-  - **Example**
+  - **Sample Input/Output**
   ```
   {{0, 3}, {2, 2}, {1, 1}, {2, 1}, {1, 2},{3, 0}, {0, 0}, {3, 3}}
   ```
@@ -560,17 +567,14 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     	<img src="/src/assets/tsp.jpg" height=250/> 
     -  The input is in the form of a matrix where the indices represent the city number and the value in the matrix represents the distance between the two cities
     - The output is the least distance
-  - **Example**  
+  - **Sample Input/Output**  
  	For four cities A,B,C,D the input will be in the following format (**Note**: The matrix is symmetric since the distance from A->B is the distance from B->A)
  	- Input
  	```
 		A	B	C	D
 	 A	0km	40km	10km	30km			
-
 	 B	40km	0km	20km	10km	
-
 	 C	10km	20km	0km	50km		
-
 	 D	30km	10km	50km	0km
   	```
   	- Output 
@@ -589,7 +593,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - If there are `n` students in the class in which the `i`th student is `H[i]` units tall, pair the maximum number of students corresponding to the above condition.
     - _Note_: A student cannot be part of more than one pair.
     - Implement a function `marching_partners(n, H, d)` that prints the maximum number of pairs that can be formed. 
-  - **Example**  
+  - **Sample Input/Output**  
  	```bash
 	> marching_partners(5, [147,149,149,155,150], 2)
 	  2
@@ -606,7 +610,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - A sub-row is said to be alternating if any two adjacent balls are of different colours. 
     - For each ball located at position `x` (from 1 to `N`), compute the length of the longest alternating sub-row that starts at `x`. 
     - Implement a function `alt_balls(N,arr)` that outputs the length of the longest alternating sub-row for each `x` from 1 to N.
-  - **Example** 
+  - **Sample Input/Output** 
    	```bash
 	> alt_balls(4, [B,B,B,B])
 	  1 1 1 1
@@ -628,7 +632,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - Given a set of vertices, write a function to find the centroid of a closed polygon.
     - Centroid of a polygon is its geometric centre.
     - It can be determined by referencing the Shoelace Formula.
-  - **Example**
+  - **Sample Input/Output**
       ```
  	Vertices={{3,4},{5,2},{6,7}}
 	Centroid={4.66,4.33}
@@ -654,12 +658,13 @@ We have a small collection of algorithms, one for every day of the month. Scroll
       - [Shoelace Formula](https://en.wikipedia.org/wiki/Shoelace_formula)
       - [Centroid](https://en.wikipedia.org/wiki/List_of_centroids)
     
+    
 ### **December 24 - Find the list**
   - **Problem**
   	- Reena has an algorithm which prints the three continuous elements of a circular doubly linked list.It begins with the first element or the head of the list and runs till infinity. 
 	- Say for example when the list is `89,67,33,44` the algorithm's output is `89,67,33,67,33,44,33,44,89,......`
 	- Given a part of the output of the algorithm ,help Reena to find the actual number of elements in the list and print the input list with respective elements.
-  - **Example** 
+  - **Sample Input/Output** 
   	- Input:
 		- Length of the list returned as output by the algorithm
 		- Elements returned by the algorithm
@@ -679,12 +684,200 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - [Circular linked list](https://www.geeksforgeeks.org/circular-linked-list/)
     
     
+ ### **December 25 - Naughty Jack** :christmas_tree:
+  - **Problem**
+  	- Ho Ho oh no! It's Christmas today but Santa and his logistics support team have encountered problems in making their deliveries. 
+	- Jack, a member of Santa's notorious naughty list has decided to hack into the North Pole's servers and deleted some data to interfere with delivery operations. Luckily, the elves know their way around Server Storages.
+	- Help the Elves to restore the data erased by Jack. Luckily the data has been stored in compliance with the principles of **RAID**. Create an algorithm that would restore Santa's data and resume operations at the north pole.
+	- Missing bits are denoted by `*`, parity bits(even parity) are followed by a `P`
+  - **Sample Input/Output** 
+	-  ```
+		             DISK 1 | DISK 2 | DISK 3 | DISK 4 | DISK 5
+		                0        1        *        0       1P
+		                1        0        0        0P      *
+		                1        1        0P       *       1
+		                *        1P       0        1       0
+		                1P       0        0        0       *
+		   
+	     After data restoration: 
+	     
+	                 DISK 1 | DISK 2 | DISK 3 | DISK 4 | DISK 5
+		                0        1        0        0       1P
+		                1        0        0        0P      1
+		                1        1        0P       1       1
+		                0        1P       0        1       0
+		                1P       0        0        0       1  
+	```     
+  <img src="https://media.giphy.com/media/GkX4gNIUW2jni/giphy.gif" height=250/>
+  
+  - **Resources**
+    - [Raid Storage](https://en.wikipedia.org/wiki/RAID)  
+    - [Parity Bits](https://www.computerhope.com/jargon/p/paritybi.htm)
+  
+  
+ ### **December 26 - Build The Tower** 
+  - **Problem**
+  	- Mento Constructions has planned to build a tower with `n` compartments, where height of i-th compartment is given by `hArr[i]`
+	- The tower will be made on a consecutive section of the compartments.
+	- The height starts from 1 and increase by exactly 1 each time till some height and then decrease by exactly 1 each time to height 1. Also, heights of all the compartments other than of the tower should have zero height, so that the tower is visible to people.
+	- You want to construct a tower. For that, you can reduce the heights of some of the compartments. In a single operation, you can reduce the height of a compartment by 1 unit.
+	- Create a function `buildTower(n,hArr)` that prints the minimum number of operations required to build a tower. Here `n` represents the number of compartments and `hArr` represents the array of heights.
+  - **Sample Input/Output** 
+  	```bash
+	> buildTower(3,[1, 2, 1])
+	  0
+	> buildTower(4,[1, 1, 2, 1])
+	  1
+	> buildTower(5,[1, 2, 6, 2, 1])
+	  3
+ 	```	
+  - **Explanation**
+    - `Case 1`: A tower is already present. So, there is no need to make any operation.
+    - `Case 2`:  If you reduce the height of the first compartment to 0. You get 0 1 2 1. The blocks 1, 2, 1 form a tower. So, the answer is 1.
+    - `Case 3`:  One possible tower can be 1 2 3 2 1. It requires 3 operations to build. 
+  - **Resources**
+    - [Binary Search](https://www.geeksforgeeks.org/binary-search/)  
+     
+     
+### **December 27 - Spiralling**
+  - **Problem**
+  	- In CVV Students were made to stand in the auditorium for the morning assembly.
+	- They are standing in an order such that the number of rows and columns might not be equal.
+	- Towards the end, students are ordered to disperse in a spiral manner.(Clockwise)
+	- Develop an algorithm to traverse the matrix of students in the spiral manner.
+  - **Sample Input/Output**
+  	- Input:
+	  ``` 	
+	   1    2   3   4
+	   5    6   7   8
+	   9   10  11  12
+	   13  14  15  16
+	  ```
+	- Output:
+		
+		```
+		1 2 3 4 8 12 16 15 14 13 9 5 6 7 11 10
+		```
+  - **NOTE**
+  	-The Algorithm should work for any number of rows and columns.
+	- Input:
+	  ``` 	
+	   1    2   3   4   5   6
+	   7    8   9   10  11  12
+	   13   14  15  16  17  18  
+	  ```
+	- Output:
+		
+		```
+		1 2 3 4 5 6 12 18 17 16 15 14 13 7 8 9 10 11
+		```
+   - **Resources**
+     - [Matrix](https://www.geeksforgeeks.org/matrix/)
+     
+     
+### **December 28 - Toss a coin to your Witcher**
+  - **Problem**
+    - Geralt of Rivia had accepted a contract that involved keep watch over a Ball to prevent any assassinations from happening and even identify the **[Doppler](https://witcher.fandom.com/wiki/Doppler)** who was rumored to be present during the event to assassinate the Queen.
+    - After a few hours of observing he had noticed that the aristocrats had formed groups with people they knew and these groups were of a **transitive** nature.
+    - A noble i knew a noble j if G[i][j] = 1.
+    - Calculate the **number of groups** that were formed in the party, if there is any group with **only one member** return True denoting that it may be an assassin.
+  - **Example**
+  	- Input: 
+	```
+	[[1,1,0,1],
+	[1,1,0,0],
+	[0,0,1,0],
+	[1,0,0,1]]
+	```
+  	- Output: 
+	```
+	Number of groups: 2
+	An Assassin is present
+  	```
+  **Explanation:**
+   - Group 1 consists of nobles i = 1,i = 2,i = 4(1 and 2 know each other, 1 knows 4 implying 2 also knows 4 through transitive property)
+   - Group 2 consists of just 1 member, i = 3. Since this group has just 1 member, it is safe to assume that the person might be an assassin.
+
+
+### **December 29 - Vigenere Cipher**
+  - **Problem**  
+    - Vigenère cipher is a type of substitution cipher invented by the 16th-century French cryptographer Blaise de Vigenère and used for data encryption.
+    - To encrypt a message using the Vigenère Cipher you first need to choose a keyword (or keyphrase). You then repeat this keyword over and over until it is the same length as the plaintext. This is called the keystream.
+    - The encryption can be made easy with the help of the tableau
+    - <img src="https://pages.mtu.edu/~shene/NSF-4/Tutorial/VIG/FIG-VIG-Table-EX-M.jpg" height=250/>
+    - If there is an 'H' in plaintext and 'M' in the keystream, it gets encrypted as 'T'. 
+    ```
+	 key: RELATIONS
+	 Keystream: RELAT IONSR ELATI ONSRE LATIO NSREL
+	 Plaintext: TOBEO RNOTT OBETH ATIST HEQUE STION
+	 Ciphertext: KSMEH ZBBLK SMEMP OGAJX SEJCS FLZSY
+    ```
+   - Given a ciphered text and the key, the task is to decrypt it back to the original message.
+
+  - **Sample Input/Output**
+  ```
+  	Keyword: BATTISTA
+  	Keystream: BATTISTABATTIS
+  	CipheredText: BSBFXDXEYAFITW
+  	Message: ASIMPLEEXAMPLE
+  ```
+  - **Resources**
+    - [Vigenere Cipher](https://pages.mtu.edu/~shene/NSF-4/Tutorial/VIG/Vig-Base.html)
+
+
+### **December 30 - Minimize Pipe Cost**
+  - **Problem**
+    - In the island of Neverland, all the houses are connected to the main water source `S` by means of a set of pipes. 
+    - A house can either be directly connected to the source, or it can be indirectly connected by a pipe to a nearby house which is in turn connected to the source.
+    - Each pipe has a cost associated to it. The authorities of Neverland want to minimize this cost.
+    - Given an undirected graph (represented by an edge list `edgeList` described below) of pipe connections, return the lowest cost configuration of pipes such that each house has access to water.
+    - To represent an edge, we have an array of two vertices that the edge connects and a third element which represents the cost of the edge.
+    - For example, the edge `['S', 'A', 20]` represents an undirected edge between vertices `S` and `A` with a cost of `20`.
+    - The edge list `edgeList` consists of all such edges that exists.
+    - Implement a function `minimize_cost(edgeList)` that performs the above operation.
+  - **Example**
+    ![Houses](/src/assets/Houses.png)
+  - **Sample Input/Output**
+  ```bash
+  > minimize_cost( [ ['S','A',1], ['S','B',5], ['S','C',20], ['A','C',15], ['B','C',10] ] )
+    16
+  ```
+  - **Explanation**
+    - In the above setup, we can remove all pipes except the ones from `S` to `A`, `S` to `B`, and `B` to `C` for a total (minimum) cost of `16`.
+  - **Resources**
+    - [Graph Algorithms](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)
+    - [Representing Graphs](https://www.khanacademy.org/computing/computer-science/algorithms/graph-representation/a/representing-graphs)
+
+### **December 31 - Build a city**
+  - **Problem**
+    - There is a city with 100 houses. The co-ordinates of the houses are given in this [csv file](https://github.com/SVCE-ACM/A-December-of-Algorithms-2019/blob/master/src/res/build_city_csv.csv). The first column consists of the x co-ordinates of all the houses and the second column consists of the y co-ordinates of the houses. 
+    - The mayor of the city wants to build three supermarkets and has asked you to find the best places to build them in the city. 
+    - He tells you that the supermarkets must be placed in the most optimal position so that all houses can access these supermarkets in approximately the same time.  
+        <img src="src/assets/build_city.jpg" height=250/>  
+    - Use [this](https://elleknowsmachines.com/k-means-clustering/) algorithm to find the best position for the supermarkets in the city. 
+    - The result is the co-ordinates of the supermarkets. 
+
+  - **Expected output:**
+  	```
+  	Store 1 : (-5,5)
+	Store 2 : (0,0)
+	Store 3 : (5,5)
+  	```
+  	<sub>_For the given file these are the **approximate**(accurate upto 0.1) locations of the supermarkets_</sub>
+  - **For extra points:**
+    - Provide a visualization of your results, including location of the supermarkets
+  - **Resources:**
+    - [Data visualization in Python](https://mode.com/blog/python-data-visualization-libraries)
+    - [Data visualization in C++](https://github.com/lava/matplotlib-cpp)
+    - [Data visualization in java](http://www.jfree.org/index.html)
+    - [Data visualization in javascript](https://blog.bitsrc.io/11-javascript-charts-and-data-visualization-libraries-for-2018-f01a283a5727)
+
 ## Maintainers
 - [K-Kraken](https://github.com/K-Kraken)
 - [jyuvaraj03](https://github.com/jyuvaraj03)
 - [mahavisvanathan](https://github.com/mahavisvanathan)
 - [shrusri27](https://github.com/shrusri27)
-- [ShriRam0509](https://github.com/SHRIRAM0509)
+- [SHRIRAM0509](https://github.com/SHRIRAM0509)
 - [ajaykrishnan23](https://github.com/ajaykrishnan23)
 - [dhirajv2000](https://github.com/dhirajv2000)
 - [dhivya141](https://github.com/dhivya141)
