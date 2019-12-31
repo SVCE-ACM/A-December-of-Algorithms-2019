@@ -4,12 +4,12 @@ import           Data.List
 
 data Ball = B | R deriving (Show, Read, Eq)
 
-altBalls :: [Ball] -> [Int]
+altBalls :: Eq a => [a] -> [Int]
 altBalls balls =
     let subrows = filter (not . null) $ tails balls
     in  map (longestAltSequence) subrows
 
-longestAltSequence :: [Ball] -> Int
+longestAltSequence :: Eq a => [a] -> Int
 longestAltSequence s = altSeq s 1
   where
     altSeq []  count = count

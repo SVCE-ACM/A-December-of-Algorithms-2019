@@ -11,6 +11,7 @@ data Player = A | B
 vowels :: Set Char
 vowels = fromList "aeiou"
 
+isVowel :: Char -> Bool
 isVowel c = c `member` vowels
 
 -- Generates substrings of string

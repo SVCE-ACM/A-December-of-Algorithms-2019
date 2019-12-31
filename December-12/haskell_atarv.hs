@@ -65,7 +65,6 @@ cardinalDirection p
     | p > 5 * pi / 4 && p <= 7 * pi / 4 = "S"
     | otherwise = "E"
 
-
 main = do
     content <- LB.readFile "../src/res/JaSON.json"
     case decode content :: Maybe Markers of

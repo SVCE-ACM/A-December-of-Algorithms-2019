@@ -3,6 +3,7 @@ import Prelude
 
 -- Returns number of cookies that could be bought with given amount of credits,
 -- cookie jar cost, jars to return for a free cookie
+cookieCount :: Integral t => t -> t -> t -> t
 cookieCount credits cost jarsForCookie = 
     countCookies credits cost jarsForCookie 0
     where 

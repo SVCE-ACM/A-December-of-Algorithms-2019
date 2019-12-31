@@ -6,7 +6,7 @@ import           Text.Printf
 -- This is the naive solution with time complexity of O(n!)
 travellingSalesman :: (Num a, Ord a) => [[a]] -> a
 travellingSalesman distances =
-    minimum $ map (routeDistances distances) $ map (++ [0]) $ permutations
+    (minimum . map (routeDistances distances . (++ [0])) . permutations)
         [1 .. (length distances) - 1]
 
 routeDistances :: (Num a, Ord a) => [[a]] -> [Int] -> a
@@ -26,7 +26,7 @@ printMatrixRow :: [Int] -> IO ()
 printMatrixRow r = sequence_ $ (map (printf "%4d") r) ++ [putStrLn ""]
 
 printMatrix :: [[Int]] -> IO ()
-printMatrix m = mapM_ (printMatrixRow) m
+printMatrix = mapM_ (printMatrixRow)
 
 main = do
     putStrLn "For distance matrix: "
