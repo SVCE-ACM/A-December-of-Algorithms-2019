@@ -42,6 +42,9 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - [**December 26 - Build The Tower**](#december-26---build-the-tower)
   - [**December 27 - Spiralling**](#december-27---spiralling)
   - [**December 28 - Toss a coin to your Witcher**](#december-28---toss-a-coin-to-your-witcher)
+  - [**December 29 - Vigenere Cipher**](#december-29---vigenere-cipher)
+  - [**December 30 - Minimize Pipe Cost**](#december-30---minimize-pipe-cost)
+  - [**December 31 - Build a city**](#december-31---build-a-city)
   - [**FAQ**](#faq)
 
 
@@ -734,7 +737,8 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - `Case 3`:  One possible tower can be 1 2 3 2 1. It requires 3 operations to build. 
   - **Resources**
     - [Binary Search](https://www.geeksforgeeks.org/binary-search/)  
-        
+     
+     
 ### **December 27 - Spiralling**
   - **Problem**
   	- In CVV Students were made to stand in the auditorium for the morning assembly.
@@ -770,6 +774,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
    - **Resources**
      - [Matrix](https://www.geeksforgeeks.org/matrix/)
      
+     
 ### **December 28 - Toss a coin to your Witcher**
   - **Problem**
     - Geralt of Rivia had accepted a contract that involved keep watch over a Ball to prevent any assassinations from happening and even identify the **[Doppler](https://witcher.fandom.com/wiki/Doppler)** who was rumored to be present during the event to assassinate the Queen.
@@ -792,14 +797,87 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   **Explanation:**
    - Group 1 consists of nobles i = 1,i = 2,i = 4(1 and 2 know each other, 1 knows 4 implying 2 also knows 4 through transitive property)
    - Group 2 consists of just 1 member, i = 3. Since this group has just 1 member, it is safe to assume that the person might be an assassin.
-   
-   
+
+
+### **December 29 - Vigenere Cipher**
+  - **Problem**  
+    - Vigenère cipher is a type of substitution cipher invented by the 16th-century French cryptographer Blaise de Vigenère and used for data encryption.
+    - To encrypt a message using the Vigenère Cipher you first need to choose a keyword (or keyphrase). You then repeat this keyword over and over until it is the same length as the plaintext. This is called the keystream.
+    - The encryption can be made easy with the help of the tableau
+    - <img src="https://pages.mtu.edu/~shene/NSF-4/Tutorial/VIG/FIG-VIG-Table-EX-M.jpg" height=250/>
+    - If there is an 'H' in plaintext and 'M' in the keystream, it gets encrypted as 'T'. 
+    ```
+	 key: RELATIONS
+	 Keystream: RELAT IONSR ELATI ONSRE LATIO NSREL
+	 Plaintext: TOBEO RNOTT OBETH ATIST HEQUE STION
+	 Ciphertext: KSMEH ZBBLK SMEMP OGAJX SEJCS FLZSY
+    ```
+   - Given a ciphered text and the key, the task is to decrypt it back to the original message.
+
+  - **Sample Input/Output**
+  ```
+  	Keyword: BATTISTA
+  	Keystream: BATTISTABATTIS
+  	CipheredText: BSBFXDXEYAFITW
+  	Message: ASIMPLEEXAMPLE
+  ```
+  - **Resources**
+    - [Vigenere Cipher](https://pages.mtu.edu/~shene/NSF-4/Tutorial/VIG/Vig-Base.html)
+
+
+### **December 30 - Minimize Pipe Cost**
+  - **Problem**
+    - In the island of Neverland, all the houses are connected to the main water source `S` by means of a set of pipes. 
+    - A house can either be directly connected to the source, or it can be indirectly connected by a pipe to a nearby house which is in turn connected to the source.
+    - Each pipe has a cost associated to it. The authorities of Neverland want to minimize this cost.
+    - Given an undirected graph (represented by an edge list `edgeList` described below) of pipe connections, return the lowest cost configuration of pipes such that each house has access to water.
+    - To represent an edge, we have an array of two vertices that the edge connects and a third element which represents the cost of the edge.
+    - For example, the edge `['S', 'A', 20]` represents an undirected edge between vertices `S` and `A` with a cost of `20`.
+    - The edge list `edgeList` consists of all such edges that exists.
+    - Implement a function `minimize_cost(edgeList)` that performs the above operation.
+  - **Example**
+    ![Houses](/src/assets/Houses.png)
+  - **Sample Input/Output**
+  ```bash
+  > minimize_cost( [ ['S','A',1], ['S','B',5], ['S','C',20], ['A','C',15], ['B','C',10] ] )
+    16
+  ```
+  - **Explanation**
+    - In the above setup, we can remove all pipes except the ones from `S` to `A`, `S` to `B`, and `B` to `C` for a total (minimum) cost of `16`.
+  - **Resources**
+    - [Graph Algorithms](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)
+    - [Representing Graphs](https://www.khanacademy.org/computing/computer-science/algorithms/graph-representation/a/representing-graphs)
+
+### **December 31 - Build a city**
+  - **Problem**
+    - There is a city with 100 houses. The co-ordinates of the houses are given in this [csv file](https://github.com/SVCE-ACM/A-December-of-Algorithms-2019/blob/master/src/res/build_city_csv.csv). The first column consists of the x co-ordinates of all the houses and the second column consists of the y co-ordinates of the houses. 
+    - The mayor of the city wants to build three supermarkets and has asked you to find the best places to build them in the city. 
+    - He tells you that the supermarkets must be placed in the most optimal position so that all houses can access these supermarkets in approximately the same time.  
+        <img src="src/assets/build_city.jpg" height=250/>  
+    - Use [this](https://elleknowsmachines.com/k-means-clustering/) algorithm to find the best position for the supermarkets in the city. 
+    - The result is the co-ordinates of the supermarkets. 
+
+  - **Expected output:**
+  	```
+  	Store 1 : (-5,5)
+	Store 2 : (0,0)
+	Store 3 : (5,5)
+  	```
+  	<sub>_For the given file these are the **approximate**(accurate upto 0.1) locations of the supermarkets_</sub>
+  - **For extra points:**
+    - Provide a visualization of your results, including location of the supermarkets
+  - **Resources:**
+    - [Data visualization in Python](https://mode.com/blog/python-data-visualization-libraries)
+    - [Data visualization in C++](https://github.com/lava/matplotlib-cpp)
+    - [Data visualization in java](http://www.jfree.org/index.html)
+    - [Data visualization in javascript](https://blog.bitsrc.io/11-javascript-charts-and-data-visualization-libraries-for-2018-f01a283a5727)
+
 ## Maintainers
 - [K-Kraken](https://github.com/K-Kraken)
 - [jyuvaraj03](https://github.com/jyuvaraj03)
 - [mahavisvanathan](https://github.com/mahavisvanathan)
 - [shrusri27](https://github.com/shrusri27)
-- [ShriRam0509](https://github.com/SHRIRAM0509)
+- [SHRIRAM0509](https://github.com/SHRIRAM0509)
 - [ajaykrishnan23](https://github.com/ajaykrishnan23)
 - [dhirajv2000](https://github.com/dhirajv2000)
 - [dhivya141](https://github.com/dhivya141)
