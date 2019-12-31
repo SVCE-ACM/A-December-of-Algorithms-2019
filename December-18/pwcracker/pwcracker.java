@@ -1,5 +1,7 @@
 package pwcracker;
 
+import java.time.Instant;
+import java.time.Duration;
 import java.util.Iterator;
 import java.util.Scanner;
 
@@ -13,11 +15,15 @@ public class pwcracker {
         System.out.println("Enter a password that is up to 5 chars: ");
         pw = "" + scan.nextLine();
         length = pw.length();
-
+        Instant start = Instant.now();
         SequentialPatternGenerator generator = new SequentialPatternGenerator(length);
 
         generator.forEachRemaining(test -> {if(pw.equals(test)) {
             System.out.println("Your password: " + test );
+            Instant end = Instant.now();
+            long timeelap = Duration.between(start, end).getSeconds();
+            System.out.println("Time elapsed: " + timeelap + " s");
+            //System.out.print(timeelap);
         }});
 
     }
