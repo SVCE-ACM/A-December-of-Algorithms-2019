@@ -1,4 +1,4 @@
-file1 = open('example.csv','r')
+file1 = open('../src/res/csv_to_html_res.csv','r')
 file2 = open('example.html','a')
 open('example.html', 'w').close()
 openTag = "<html>\n^<body>\n^^<table>\n"
