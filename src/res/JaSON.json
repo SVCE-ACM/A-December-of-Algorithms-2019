@@ -1,0 +1,12 @@
+{	
+  "markers": [	
+    {	
+      "name": "start",	
+      "location": [25.1212, 55.1535]	
+    },	
+    {	
+      "name": "destination",	
+      "location": [25.2285, 55.3273]	
+    }	
+  ]	
+}
