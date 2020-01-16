@@ -1,3 +1,7 @@
+# Author - Nilesh D
+# December 14 - A Wordplay with Vowels and Consonants
+
+
 def subString(s, n):
     vowel = ['a', 'e', 'i', 'o', 'u']
     scoreA = scoreB = 0

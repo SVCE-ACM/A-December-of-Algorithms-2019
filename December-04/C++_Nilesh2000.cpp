@@ -1,3 +1,8 @@
+/*
+Author : Nilesh D
+December 4 - Dr. Bruce Banner's H-Index
+*/
+
 #include <iostream>
 #include <vector>
 #include <algorithm>

@@ -1,3 +1,8 @@
+/*
+Author : Nilesh D
+December 13 - Toggling Switches
+*/
+
 #include <iostream>
 #include <cmath>
 #include <vector>

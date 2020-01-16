@@ -1,12 +1,11 @@
 /*
-Started On : December 1, 2019
 Author : Nilesh D
-Objective : Performed a Queued Up Operation
+December 7 - Queued up
 */
 
-# include <iostream>
-# include <queue>
-# include <utility>
+#include <iostream>
+#include <queue>
+#include <utility>
 using namespace std;
 
 int main(void)
@@ -14,9 +13,9 @@ int main(void)
   int n;
   cout << "\nEnter N: ";
   cin >> n;
-  queue < pair<int, char> > Q;
+  queue<pair<int, char>> Q;
   cout << "Enter (token no, id): ";
-  while(n--)
+  while (n--)
   {
     int token_no;
     char id;
@@ -26,30 +25,30 @@ int main(void)
   int k;
   cout << "Enter k: ";
   cin >> k;
-  queue < pair<int, char> > tempQ;
-  while(--k)
+  queue<pair<int, char>> tempQ;
+  while (--k)
   {
     tempQ.push(Q.front());
     Q.pop();
   }
-  
-  pair <int, char> bribe = Q.front();
+
+  pair<int, char> bribe = Q.front();
   Q.pop();
-  
-  while(!Q.empty())
+
+  while (!Q.empty())
   {
     tempQ.push(Q.front());
     Q.pop();
   }
   Q.push(bribe);
-  
-  while(!tempQ.empty())
+
+  while (!tempQ.empty())
   {
     Q.push(tempQ.front());
     tempQ.pop();
   }
-  
-  while(!Q.empty())
+
+  while (!Q.empty())
   {
     cout << "(" << Q.front().first << ", " << Q.front().second << ")" << '\n';
     Q.pop();

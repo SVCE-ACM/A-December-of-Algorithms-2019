@@ -1,12 +1,11 @@
 /*
-Started On : December 1, 2019
 Author : Nilesh D
-Objective : Output the nth sevenish number
+December 1 - Sevenish Number
 */
 
-# include <iostream>
-# include <vector>
-# include <cmath>
+#include <iostream>
+#include <vector>
+#include <cmath>
 
 using namespace std;
 
@@ -14,13 +13,13 @@ int get_nth_sevenish(int n)
 {
   int power = 0;
   vector<int> sevenish_nums;
-  while(sevenish_nums.size() < n)
+  while (sevenish_nums.size() < n)
   {
     int num = pow(7, power);
     vector<int> new_sevenish_nums{num};
-    for(auto&& iter : sevenish_nums)
+    for (auto &&iter : sevenish_nums)
     {
-      if(sevenish_nums.size() + new_sevenish_nums.size() == n)
+      if (sevenish_nums.size() + new_sevenish_nums.size() == n)
         return new_sevenish_nums.back();
       new_sevenish_nums.push_back(num + iter);
     }

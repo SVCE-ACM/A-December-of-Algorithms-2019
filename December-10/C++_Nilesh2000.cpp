@@ -1,3 +1,6 @@
+// Author : Nilesh D
+// December 10 - Count The Cookies
+
 #include <iostream>
 
 using namespace std;
