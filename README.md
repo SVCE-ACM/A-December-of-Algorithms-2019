@@ -211,7 +211,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
       ```
   - **Resources**
     - [Fibonacci Numbers](https://en.wikipedia.org/wiki/Fibonacci_number)
-    - [Loops in C++](https://www.scaler.com/topics/cpp/loop-in-cpp/)
+    - [Fibonacci Series in Python](https://www.scaler.com/topics/fibonacci-series-in-python/)
   - **Fun Facts on Fibonacci**
     - Every positive integer can be written in a unique way as the sum of one or more distinct Fibonacci numbers in such a way that the sum does not include any two consecutive Fibonacci numbers. This is Zeckendorf Theorem.
     - Any three consecutive Fibonacci numbers, taken two at a time, are relatively prime.
