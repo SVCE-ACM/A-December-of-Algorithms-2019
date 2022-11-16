@@ -269,6 +269,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
     - [Arrays in Java](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html)
     - [Arrays in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
     - [Lists in Python](https://www.w3schools.com/python/python_lists.asp) 
+    - [Arrays in Python](https://www.scaler.com/topics/array-in-python/)
 
 
 ### **December 9 - One to One?**
