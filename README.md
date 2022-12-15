@@ -542,6 +542,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
   - **Resources**
     - [Multithreading in C++](https://www.geeksforgeeks.org/multithreading-in-cpp/)
     - [Multithreading in Java](https://www.geeksforgeeks.org/multithreading-in-java/)
+    - [Multithreading in Python](https://www.scaler.com/topics/multithreading-in-python/)
     
     
 ### **December 19 - Periphery of a lake**
