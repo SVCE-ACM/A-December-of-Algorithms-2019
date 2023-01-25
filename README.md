@@ -243,6 +243,7 @@ We have a small collection of algorithms, one for every day of the month. Scroll
 - **Resources**
     - [Understanding queue data structure](https://www.geeksforgeeks.org/queue-data-structure/)
     - [Stacks and queues](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Stacks%20and%20Queues/Stacks%20and%20Queues.html)
+    - [Graph Data Structure Algorithms](https://www.interviewbit.com/courses/programming/graph-data-structure-algorithms/)
 
 
 ### **December 8 - Cheating Probability**
